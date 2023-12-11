@@ -1,3 +1,23 @@
+//JAVA SCRIPT PAGE INDEX
+
+document.addEventListener('DOMContentLoaded', function () {
+	const toggleBtn = document.getElementById('toggleBtn');
+	const navbarCollapse = document.getElementById('navbarNavAltMarkup');
+  
+	toggleBtn.addEventListener('click', function () {
+	  navbarCollapse.classList.toggle('show');
+	});
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const rectangles = document.querySelector('.rectangles');
+    rectangles.classList.add('show');
+});
+
+
+
+  
+
 //jQuery time
 var current_fs, next_fs, previous_fs; //fieldsets
 var left, opacity, scale; //fieldset properties which we will animate
