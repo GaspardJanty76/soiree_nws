@@ -11,14 +11,14 @@ body, h1, h2, p, ul, li {
 /* AFFICHAGE COULEUR NAV */
 
 .navbar-color {
-    margin-bottom: 60px;
+    position: relative;
+    margin-bottom: 90px;
 }
 
 .rectangles {
     position: relative;
-    opacity: 0;
-    transform: translateY(-100%);
-    transition: opacity 1s ease-out, transform 1s ease-out;
+    z-index: -1;
+    /* overflow: hidden; */
 }
 
 .red-rectangle,
@@ -26,29 +26,37 @@ body, h1, h2, p, ul, li {
     position: absolute;
     left: 0;
     width: 100%;
-    opacity: 1; /* Ajoutez cette ligne */
+    opacity: 1;
 }
 
 .red-rectangle {
-    background-color: var(--red);
-    height: 13px;
+    background-color: var(--blue);
+    height: 50px;
+    top: -50px; /* Position au-dessus du .rectangles */
 }
 
 .blue-rectangle {
-    background-color: var(--blue);
-    height: 7px;
+    background-color: var(--red);
+    height: 20px;
+    top: -20px; /* Position au-dessus du .rectangles */
 }
 
-.rectangles.show {
-    opacity: 1;
-    transform: translateY(0);
+.rectangles.show .red-rectangle {
+    top: 0; /* Descendre jusqu'à la position initiale */
+    transition: top 0.8s ease-out;
+}
+
+.rectangles.show .blue-rectangle {
+    top: 0; /* Descendre jusqu'à la position initiale */
+    transition: top 0.7s ease-out;
 }
 
 /* BARRE DE NAVIGATION */
 
 .navbar {
+    z-index: 2;
     background-color: var(--black);
-    padding: 15px 0;
+    padding: 35px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -59,7 +67,7 @@ body, h1, h2, p, ul, li {
 }
 
 .navbar-brand {
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: bold;
     margin-left: 30px;
     margin-right: 20px;
@@ -103,6 +111,7 @@ body, h1, h2, p, ul, li {
 .nav-link {
     margin: 0 15px;
     text-decoration: none;
+    font-size: 1.5rem;
     color: white;
     font-weight: bold;
     transition: color 0.3s ease-in-out;
