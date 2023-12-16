@@ -1,133 +1,192 @@
-/*custom font*/
-@import url(https://fonts.googleapis.com/css?family=Montserrat);
-
-/*basic reset*/
-* {margin: 0; padding: 0;}
-
-html {
-	height: 100%;
-	/*Image only BG fallback*/
-	
-	/*background = gradient + image pattern combo*/
-	background: 
-		linear-gradient(rgba(196, 102, 0, 0.6), rgba(155, 89, 182, 0.6));
-}
-
 body {
-	font-family: montserrat, arial, verdana;
+    font-family: Arial, sans-serif;
+    background-color: #202020;
 }
-/*form styles*/
-#msform {
-	width: 400px;
-	margin: 50px auto;
-	text-align: center;
-	position: relative;
+
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
 }
-#msform fieldset {
-	background: white;
-	border: 0 none;
-	border-radius: 3px;
-	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
-	padding: 20px 30px;
-	box-sizing: border-box;
-	width: 80%;
-	margin: 0 10%;
-	
-	/*stacking fieldsets above each other*/
-	position: relative;
+
+/* AFFICHAGE COULEUR NAV */
+
+.navbar-color {
+    position: relative;
+    margin-bottom: 90px;
 }
-/*Hide all except first fieldset*/
-#msform fieldset:not(:first-of-type) {
-	display: none;
+
+.rectangles {
+    position: relative;
+    z-index: -1;
+    /* overflow: hidden; */
 }
-/*inputs*/
-#msform input, #msform textarea {
-	padding: 15px;
-	border: 1px solid #ccc;
-	border-radius: 3px;
-	margin-bottom: 10px;
-	width: 100%;
-	box-sizing: border-box;
-	font-family: montserrat;
-	color: #2C3E50;
-	font-size: 13px;
+
+.red-rectangle,
+.blue-rectangle {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    opacity: 1;
 }
-/*buttons*/
-#msform .action-button {
-	width: 100px;
-	background: #27AE60;
-	font-weight: bold;
-	color: white;
-	border: 0 none;
-	border-radius: 1px;
-	cursor: pointer;
-	padding: 10px;
-	margin: 10px 5px;
-  text-decoration: none;
-  font-size: 14px;
+
+.red-rectangle {
+    background-color: var(--blue);
+    height: 50px;
+    top: -50px; /* Position au-dessus du .rectangles */
 }
-#msform .action-button:hover, #msform .action-button:focus {
-	box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+
+.blue-rectangle {
+    background-color: var(--red);
+    height: 20px;
+    top: -20px; /* Position au-dessus du .rectangles */
 }
-/*headings*/
-.fs-title {
-	font-size: 15px;
-	text-transform: uppercase;
-	color: #2C3E50;
-	margin-bottom: 10px;
+
+.rectangles.show .red-rectangle {
+    top: 0; /* Descendre jusqu'à la position initiale */
+    transition: top 0.8s ease-out;
 }
-.fs-subtitle {
-	font-weight: normal;
-	font-size: 13px;
-	color: #666;
-	margin-bottom: 20px;
+
+.rectangles.show .blue-rectangle {
+    top: 0; /* Descendre jusqu'à la position initiale */
+    transition: top 0.7s ease-out;
 }
-/*progressbar*/
-#progressbar {
-	margin-bottom: 30px;
-	overflow: hidden;
-	/*CSS counters to number the steps*/
-	counter-reset: step;
+
+/* BARRE DE NAVIGATION */
+
+.navbar {
+    z-index: 2;
+    background-color: var(--black);
+    padding: 35px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-#progressbar li {
-	list-style-type: none;
-	color: white;
-	text-transform: uppercase;
-	font-size: 9px;
-	width: 33.33%;
-	float: left;
-	position: relative;
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-#progressbar li:before {
-	content: counter(step);
-	counter-increment: step;
-	width: 20px;
-	line-height: 20px;
-	display: block;
-	font-size: 10px;
-	color: #333;
-	background: white;
-	border-radius: 3px;
-	margin: 0 auto 5px auto;
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
 }
-/*progressbar connectors*/
-#progressbar li:after {
-	content: '';
-	width: 100%;
-	height: 2px;
-	background: white;
-	position: absolute;
-	left: -50%;
-	top: 9px;
-	z-index: -1; /*put it behind the numbers*/
+
+.navbar-brand:hover {
+    color: var(--gray);
 }
-#progressbar li:first-child:after {
-	/*connector not needed before the first step*/
-	content: none; 
+
+.navbar-toggler {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
-/*marking active/completed steps green*/
-/*The number of the step and the connector before it = green*/
-#progressbar li.active:before,  #progressbar li.active:after{
-	background: #27AE60;
-	color: white;
+
+.navbar-toggler-icon {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: var(--gray);
+    border-radius: 3px;
+}
+
+.navbar-collapse {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar-nav {
+    display: flex;
+    list-style: none;
+}
+
+.nav-link {
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: var(--gray);
+}
+
+.navbar-nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav-right .nav-link {
+    margin-right: 15px;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+    .navbar-toggler {
+        display: block;
+    }
+
+    .navbar-collapse {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: var(--black);
+        flex-direction: column;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-link {
+        margin: 10px 0;
+    }
+
+    .navbar-collapse.show {
+        display: flex;
+    }
+}
+
+/* BOUTON INSCRIPTION HAUT DE PAGE */
+
+.center-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inscription-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: x-large;
+    text-decoration: none;
+    color: var(--red);
+    background-color: transparent;
+    border: 2px solid var(--red);
+    border-radius: 40px;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.inscription-btn:hover {
+    background-color: var(--red);
+    color: #202020;
+    border-color: transparent;
+}
+
+/* COULEURS ROOT */
+
+:root {
+    --red: #a50515;
+    --blue: #017c7c;
+    --black: #000000;
+    --gray: #dadada;
 }
