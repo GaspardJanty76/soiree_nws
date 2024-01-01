@@ -1,48 +1,145 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" integrity="sha384-bOudLgBE9W3do5jp+RTpP6kMVvZMLvIuHdCWaBBXgi0xWItLtMH3uG7nUJ4Hq4V9" crossorigin="anonymous">
-    <title>La Nuit Des Ambassadeurs</title>
-</head>
-<body>
-    <div class="navbar-color">
-        <nav class="navbar">
-            <div class="container">
-                <a class="navbar-brand" href="#Accueil">Accueil</a>
-                <button class="navbar-toggler" id="toggleBtn">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav navbar-nav-right">
-                        <a class="nav-link" aria-current="page" href="#Info">Info</a>
-                        <a class="nav-link" href="#LaNuitDesAmbassadeurs">LDNA</a>
-                        <a class="nav-link" href="#Inscription">Inscription</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="css/styleguide.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+  <div class="div">
+        <div class="overlap">
+            <a href="#" class="text-nav-input">LNDA</a>
+            <a href="#" class="text-nav-input">Informations</a>
+            <a href="#" class="text-nav-input button">Inscription</a>
+        </div>
+        <div class="container">
+            <div class="text-wrapper">La nuit des ambassadeurs</div>
+            <p class="p">votre évènement commence dans :</p>
 
-        <div class="rectangles">
-            <div class="red-rectangle"></div>
-            <div class="blue-rectangle"></div>
+            <div class="overlap-group">
+                <div class="rectangle"></div>
+                <div class="overlap-group-wrapper">
+                <div class="overlap-group-2">
+                    <div class="text-wrapper-2">16</div>
+                    <div class="text-wrapper-3">jours</div>
+                </div>
+                </div>
+
+                <!-- <div class="rectangle"></div>
+                <div class="overlap-group-wrapper">
+                <div class="overlap-group-2">
+                    <div class="text-wrapper-2">10</div>
+                    <div class="text-wrapper-3">heures</div>
+                </div>
+                </div> -->
+            </div>
         </div>
     </div>
 
-    <div class="center-container">
-        <a href="#Inscription" class="inscription-btn">Inscription</a>
+    <div class="overlap-2">
+        <div class="rectangle-2"></div>
+        <div class="rectangle-3"></div>
+        <div class="group">
+        <p class="lorem-ipsum-dolor">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Interdum consectetur libero id faucibus nisl tincidunt eget nullam. Facilisi morbi
+            tempus iaculis urna id volutpat. Eu lobortis elementum nibh tellus molestie. Amet porttitor eget dolor
+            morbi non arcu risus quis. Convallis tellus id interdum velit laoreet id. <br /><br />Vel turpis nunc eget
+            lorem dolor sed. A cras semper auctor neque vitae tempus quam pellentesque nec. Nisi vitae suscipit tellus
+            mauris a diam maecenas sed enim. Adipiscing enim eu turpis egestas pretium aenean. At varius vel pharetra
+            vel turpis nunc. Scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus
+            et. Viverra maecenas accumsan lacus vel facilisis volutpat est. Morbi tristique senectus et netus et.
+            Vestibulum sed arcu non odio.
+        </p>
+        <div class="text-wrapper-4">La nuit de l ambassadeur</div>
+        <div class="div-wrapper">
+            <div class="overlap-group-3"><div class="text-wrapper-5">Inscription</div></div>
+        </div>
+    </div>
+    <div class="group-2">
+        <div class="rectangle-4"></div>
+            <div class="group-3">
+            <p class="lorem-ipsum-dolor-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Magna ac placerat vestibulum lectus mauris ultrices eros in. Orci phasellus egestas
+            tellus rutrum tellus pellentesque eu tincidunt. In hendrerit gravida rutrum quisque non tellus orci. Sit
+            amet nisl purus in mollis nunc. Dictum varius duis at consectetur lorem donec massa. <br /><br />Justo
+            nec ultrices dui sapien eget. Proin nibh nisl condimentum id venenatis a condimentum vitae sapien.
+            Convallis posuere morbi leo urna molestie. Est sit amet facilisis magna etiam tempor orci. Viverra
+            mauris in aliquam sem fringilla ut morbi. Molestie at elementum eu facilisis. Nulla facilisi cras
+            fermentum odio eu feugiat pretium. Sed odio morbi quis commodo odio aenean sed adipiscing. Venenatis
+            urna cursus eget nunc scelerisque viverra.
+            </p>
+            <div class="text-wrapper-6">Information</div>
+        </div>
     </div>
 
-    <section id="Accueil">Accueil</section>
-    <section id="Info">Info</section>
-    <section id="LaNuitDesAmbassadeurs"> LNDA</section>
-    <section id="Inscription">inscription</section>
-    <div class="buttonup">
-      <a href="#Accueil"><svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 384 512"><style>svg{fill:#35fcfc}</style><path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"/></svg></a>
-    </div>
+    <!-- INSCRIPTION -->
 
-    <script src="js/index.js"></script>
-</body>
+    <div class="text-wrapper-7">Inscription</div>
+    <form action="methodes/registration.php" method="post" enctype="multipart/form-data">
+        <div class="group-4">
+            <div class="text-wrapper-8">Nom</div>
+            <input type="text" class="overlap-group-4" name="lastname" required>
+        </div>
+        <div class="group-5">
+            <div class="text-wrapper-8">Téléphone</div>
+            <input type="text" class="overlap-group-4" name="tel" required>
+        </div>
+        <div class="group-6">
+            <div class="text-wrapper-8">Mail</div>
+            <input type="text" class="overlap-group-4" name="mail" required>
+        </div>
+        <div class="group-7">
+            <div class="text-wrapper-10">Prénom</div>
+            <input type="text" class="overlap-group-4" name="firstname" required>
+        </div>
+        <div class="group-8">
+            <div class="group-wrapper">
+                <div class="group-9">
+                    <div class="text-wrapper-8">Entreprise</div>
+                    <input type="text" class="overlap-group-4" name="company" required>
+                </div>
+            </div>
+            <div class="group-10">
+                <div class="text-wrapper-10">Poste</div>
+                <input type="text" class="overlap-group-4" name="job" required>
+            </div>
+        </div>
+        <div class="text-wrapper-12">Informations personnelles</div>
+        <div class="text-wrapper-13">Entreprise</div>
+        <img class="icon-user" src="img/image.png" />
+        <img class="img" src="img/icon-user.png" />
+        <input type="checkbox" class="rectangle-5" required>
+        <p class="text-wrapper-14">J'accepte la politique de confidentialité</p>
+        <div class="overlap-wrapper">
+            <input class="overlap-group-3" type="submit" value="Validé l'inscription">
+        </div>
+    </form>
+
+    <div class="overlap-4">
+        <div class="rectangle-6"></div>
+        <div class="group-11">
+        <div class="text-wrapper-15">Contact</div>
+        <div class="frame">
+            <div class="frame-2">
+            <img class="icon-alternate-phone" src="img/icon-alternate-phone.png" />
+            <div class="text-wrapper-16">0606060606</div>
+            </div>
+            <div class="frame-3">
+            <img class="icon-envelope" src="img/icon-envelope.png" />
+            <div class="text-wrapper-17">ldna@gmail.com</div>
+            </div>
+            <div class="frame-4">
+            <img class="icon-alternate-map" src="img/icon-alternate-map-marker.png" />
+            <div class="text-wrapper-17">adresse</div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+    <img class="bfet" src="img/b6fet-2.png" />
+    </div>
+  </body>
 </html>
