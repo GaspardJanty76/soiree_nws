@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compte à Rebours</title>
+</head>
+<body>
+
+<div id="countdown"></div>
+
+<script>
+    // Date de fin du compte à rebours (format : année, mois - 1, jour, heure, minute, seconde)
+    var countdownDate = new Date(2024, 4, 25, 11, 30, 0).getTime();
+
+    // Mettez à jour le compte à rebours toutes les secondes
+    var countdownInterval = setInterval(function() {
+        // Obtenez la date actuelle
+        var now = new Date().getTime();
+
+        // Calculez la différence entre la date de fin et la date actuelle
+        var distance = countdownDate - now;
+
+        // Calculs pour jours, heures, minutes et secondes
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Affichez le compte à rebours dans l'élément avec l'ID "countdown"
+        document.getElementById("countdown").innerHTML = days + "j " + hours + "h "
+            + minutes + "m " + seconds + "s ";
+
+        // Si le compte à rebours est terminé, affichez un message
+        if (distance < 0) {
+            clearInterval(countdownInterval);
+            document.getElementById("countdown").innerHTML = "EXPIRED";
+        }
+    }, 1000); // Mettez à jour toutes les secondes
+</script>
+
+</body>
+</html>

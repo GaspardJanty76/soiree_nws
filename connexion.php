@@ -1,10 +1,25 @@
-<h2>Connexion</h2>
-<form method="post" action="methodes/adminAuth.php">
-    <label for="auth">Pseudo :</label>
-    <input type="text" id="auth" name="auth" required><br><br>
+<!doctype html>
+<html lang="en"> 
 
-    <label for="password">Mot de passe :</label>
-    <input type="password" id="password" name="password" required><br><br>
+ <head> 
+  <meta charset="UTF-8"> 
+  <link rel="stylesheet" href="css/styleguide.css"> 
+  <link rel="stylesheet" href="css/connexion.css"> 
+ </head> 
+ <body>
+<div class="login-page">
+  <div class="form">
+    <form class="login-form" action="methodes/adminAuth.php" method="post">
+      <input type="text" id="auth" name="auth" placeholder="nom d'utilisateur" required/>
+      <input type="password" id="password" name="password" placeholder="mot de passe" required/>
+      <input type="submit" value="Se connecter">
+    </form>
+  </div>
+</div>
 
-    <input type="submit" value="Se connecter">
-</form>
+ </body>
+
+</html>
+
+
+

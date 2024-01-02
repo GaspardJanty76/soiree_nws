@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #202020;
+}
+
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+label{
+    color : rgba(252, 185, 0, 1);
+    font-family: "Poppins-Bold", Helvetica;
+}
+
+input.text{
+
+    width: 398px;
+    height: 30px;
+    top: 20px;
+    left: 0;
+    background-color: #ffffff;
+    border-radius: 15px;
+}
