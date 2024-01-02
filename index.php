@@ -53,7 +53,7 @@
         </p>
         <div class="text-wrapper-4">La nuit de l ambassadeur</div>
         <div class="div-wrapper">
-            <div class="overlap-group-3"><div class="text-wrapper-5">Inscription</div></div>
+            <a href="#" class="text-nav-input button">Inscription</a>
         </div>
     </div>
     <div class="group-2">

@@ -39,6 +39,7 @@ body .nav {
 
 body .text-nav-input {
   color: #fff;
+  font-family: var(--h-1-font-family);
   text-decoration: none;
   padding: 5px 10px;
   margin-right: 10px;
@@ -241,14 +242,6 @@ body .div-wrapper {
   height: 35px;
   top: 312px;
   left: 421px;
-}
-
-body .overlap-group-3 {
-  position: relative;
-  width: 189px;
-  height: 35px;
-  background-color: var(--secondary);
-  border-radius: 4px;
 }
 
 body .text-wrapper-5 {
