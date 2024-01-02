@@ -17,22 +17,21 @@
             <div class="text-wrapper">La nuit des ambassadeurs</div>
             <p class="p">votre évènement commence dans :</p>
 
-            <div class="overlap-group">
-                <div class="rectangle"></div>
-                <div class="overlap-group-wrapper">
-                <div class="overlap-group-2">
-                    <div class="text-wrapper-2">16</div>
-                    <div class="text-wrapper-3">jours</div>
-                </div>
+            <div class="flex-container">
+                <div class="timer-block">
+                    <div class="text-block-2" id="days">0</div>
+                    <div class="text-block-3">jours</div>
                 </div>
 
-                <!-- <div class="rectangle"></div>
-                <div class="overlap-group-wrapper">
-                <div class="overlap-group-2">
-                    <div class="text-wrapper-2">10</div>
-                    <div class="text-wrapper-3">heures</div>
+                <div class="timer-block">
+                    <div class="text-block-2" id="hours">0</div>
+                    <div class="text-block-3">heures</div>
                 </div>
-                </div> -->
+
+                <div class="timer-block">
+                    <div class="text-block-2" id="minutes">0</div>
+                    <div class="text-block-3">minutes</div>
+                </div>
             </div>
         </div>
     </div>
@@ -141,5 +140,7 @@
     </div>
     <img class="bfet" src="img/b6fet-2.png" />
     </div>
+
+    <script src="js/index.js"></script>
   </body>
 </html>
