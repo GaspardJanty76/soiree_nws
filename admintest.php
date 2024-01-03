@@ -2,10 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/admin.css" />
 </head>
 <body>
     <h1>Administration</h1>
+
+    <!-- Tableau admin -->
+    <div class="container tableau">
+        <div class="table-responsive">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nom</th>
+                        <th>Prénom</th>
+                        <th>Téléphone</th>
+                        <th>Email</th>
+                        <th>Entreprise</th>
+                        <th>Poste</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php include ('methodes/get.php');?>
+                </tbody>
+            </table>
+        </div>
+    </div>
 </body>
 </html>
