@@ -1,4 +1,6 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 require_once 'dbConnect.php';
 
 class UserRegistration
@@ -21,18 +23,20 @@ class UserRegistration
             $company = isset($_POST["company"]) ? $_POST["company"] : null;
             $job = isset($_POST["job"]) ? $_POST["job"] : null;
 
+            $ipAddress = isset($_SERVER['REMOTE_ADDR']) ? $_SERVER['REMOTE_ADDR'] : null;
+
             // Vérifiez que les valeurs ne sont pas nulles avant d'insérer dans la base de données
             if ($firstname !== null && $lastname !== null && $tel !== null && $mail !== null && $company !== null && $job !== null) {
-                $this->insertUser($firstname, $lastname, $tel, $mail, $company, $job);
+                $this->insertUser($firstname, $lastname, $tel, $mail, $company, $job, $ipAddress);
             } else {
                 echo "Error: Les champs requis ne sont pas définis.";
             }
         }
     }
 
-    private function insertUser($firstname, $lastname, $tel, $mail, $company, $job)
+    private function insertUser($firstname, $lastname, $tel, $mail, $company, $job, $ipAddress)
     {
-        $sql = "INSERT INTO registration (firstname, lastname, tel, mail, company, job, confirmed) VALUES (?, ?, ?, ?, ?, ?, 0)";
+        $sql = "INSERT INTO registration (firstname, lastname, tel, mail, company, job, ipAddress, confirmed) VALUES (?, ?, ?, ?, ?, ?, ?, 0)";
         $stmt = $this->pdo->prepare($sql);
         $stmt->bindParam(1, $firstname);
         $stmt->bindParam(2, $lastname);
@@ -40,6 +44,7 @@ class UserRegistration
         $stmt->bindParam(4, $mail);
         $stmt->bindParam(5, $company);
         $stmt->bindParam(6, $job);
+        $stmt->bindParam(7, $ipAddress);
 
         if ($stmt->execute()) {
             header('Location: ../index.php');;

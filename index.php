@@ -143,7 +143,7 @@
         <input type="checkbox" class="rectangle-5" required>
         <p class="text-wrapper-14">J'accepte la politique de confidentialité</p>
         <div class="overlap-wrapper">
-            <input class="overlap-group-3" type="submit" value="Validé l'inscription">
+            <input class="overlap-group-3" type="submit" value="Valider l'inscription">
         </div>
     </form>
 
@@ -173,5 +173,31 @@
 
 
     <script src="js/index.js"></script>
+    <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    function sendScrollPosition(position) {
+      fetch("methodes/scroll_tracking.php", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ scrollPosition: position }),
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          // Gérez la réponse du serveur si nécessaire
+          console.log(data);
+        })
+        .catch((error) => {
+          console.error("Erreur lors de l'envoi des données de défilement :", error);
+        });
+    }
+
+    window.addEventListener("scroll", function () {
+      var scrollPosition = window.scrollY || document.documentElement.scrollTop;
+      sendScrollPosition(scrollPosition);
+    });
+  });
+</script>
   </body>
 </html>
