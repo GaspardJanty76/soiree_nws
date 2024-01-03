@@ -2,68 +2,20 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="globals.css" />
     <link rel="stylesheet" href="css/styleguide.css" />
     <link rel="stylesheet" href="css/style.css" />
-    
   </head>
   <body>
   <div class="div">
         <div class="overlap">
-            <a href="#LNDA" class="text-nav-input">LNDA</a>
-            <a href="#Info" class="text-nav-input">Informations</a>
-            <a href="#Inscri" class="text-nav-input button">Inscription</a>
+            <a href="#lnda" class="text-nav-input">LNDA</a>
+            <a href="#info" class="text-nav-input">Informations</a>
+            <a href="#inscription" class="text-nav-input button">Inscription</a>
         </div>
         <div class="container">
             <div class="text-wrapper">La nuit des ambassadeurs</div>
             <p class="p">votre évènement commence dans :</p>
 
-<<<<<<< HEAD
-            <div class="overlap-group">
-            <div class="rectangle"></div>
-            <div class="overlap-group-wrapper">
-                <div class="overlap-group-2">
-                    <div class="text-wrapper-2" id="days">0</div>
-                    <div class="text-wrapper-3">jours</div>
-                </div>
-            </div>
-        </div>
-        <!-- <div class="overlap-5">
-            <div class="rectangle"></div>
-            <div class="overlap-group-wrapper">
-            <div class="overlap-group-2">
-                <div class="text-wrapper-2" id="hours">0</div>
-                <div class="text-wrapper-3">heures</div>
-            </div>
-            </div>
-        </div>
-        <div class="overlap-6">
-            <div class="rectangle"></div>
-            <div class="overlap-group-wrapper">
-            <div class="overlap-group-2">
-                <div class="text-wrapper-2" id="minutes">0</div>
-                <div class="text-wrapper-3">minutes</div>
-            </div>
-            </div>
-        </div> -->
-
-            <!-- <div class="overlap-group">
-                <div class="rectangle"></div>
-                <div class="overlap-group-wrapper">
-                <div class="overlap-group-2">
-                    <div class="text-wrapper-2">16</div>
-                    <div class="text-wrapper-3">jours</div>
-                </div>
-                </div>
-
-                <div class="rectangle"></div>
-                <div class="overlap-group-wrapper">
-                <div class="overlap-group-2">
-                    <div class="text-wrapper-2">10</div>
-                    <div class="text-wrapper-3">heures</div>
-                </div>
-                </div> 
-=======
             <div class="flex-container">
                 <div class="timer-block">
                     <div class="text-block-2" id="days">0</div>
@@ -79,11 +31,9 @@
                     <div class="text-block-2" id="minutes">0</div>
                     <div class="text-block-3">minutes</div>
                 </div>
->>>>>>> e5f0a9fc0ec41f78f854d6e91ed02084eb92f67f
             </div>
         </div>
-    </div> -->
-
+    </div>
     <div class="overlap-2">
         <div class="rectangle-2"></div>
         <div class="rectangle-3"></div>
@@ -189,10 +139,6 @@
     <img class="bfet" src="img/b6fet-2.png" />
     </div>
 
-<<<<<<< HEAD
-
-=======
->>>>>>> e5f0a9fc0ec41f78f854d6e91ed02084eb92f67f
     <script src="js/index.js"></script>
   </body>
 </html>
