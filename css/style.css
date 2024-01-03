@@ -174,75 +174,57 @@ body .text-block-3 {
 
 /* TEXTE ET BLOCK LNDA */
 
-body .overlap-2 {
+body .block-1 {
+  display: flex;
   position: absolute;
-  width: 1244px;
-  height: 1787px;
-  top: 840px;
-  left: 100px;
+  top: 700px;
+  margin-left: 2.5%;
+  margin-right: 2.5%
 }
 
-body .rectangle-2 {
-  position: absolute;
-  width: 572px;
-  height: 463px;
-  top: 0;
-  left: 1px;
-  background-color: #ffffff1a;
-  border-radius: 15px;
+body .block-texte-titre {
+  width: 47.5%;
+  margin-left: 50%;
 }
 
-body .rectangle-3 {
-  position: absolute;
-  width: 1239px;
-  height: 633px;
-  top: 1154px;
-  left: 0;
-  background-color: #ffffff33;
-  border-radius: 15px;
-}
-
-body .group {
-  position: absolute;
-  width: 1034px;
-  height: 1698px;
-  top: 59px;
-  left: 210px;
-}
-
-body .lorem-ipsum-dolor {
-  position: absolute;
-  width: 609px;
-  top: 57px;
-  left: 421px;
-  font-family: "Inter-Regular", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 16px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-body .text-wrapper-4 {
-  position: absolute;
-  width: 525px;
-  top: 0;
-  left: 422px;
+body .block-titre {
   font-family: "Poppins-Bold", Helvetica;
   font-weight: 700;
   color: #fcb900;
   font-size: 34px;
-  letter-spacing: 0;
-  line-height: normal;
 }
 
-body .div-wrapper {
-  position: absolute;
-  width: 191px;
-  height: 35px;
-  top: 312px;
-  left: 421px;
+body .block-texte {
+  margin-top: 60px;
+  font-family: var(--p-font-family);
+  font-weight: var(--p-font-weight);
+  color: #ffffff;
+  font-size: var(--p-font-size);
+  letter-spacing: var(--p-letter-spacing);
+  line-height: var(--p-line-height);
+  font-style: var(--p-font-style);
 }
+
+body .block-rectangle {
+  position: absolute;
+  width: 47.5%;
+  height: 381px;
+  background-color: #ffffff1a;
+  border-radius: 15px;
+}
+
+@media (max-width: 1000px) {
+  body .block-rectangle {
+    width: 95%;
+  }
+  body .block-texte-titre {
+    width: 95%;
+    margin-left: 0%;
+    margin-top: 425px;
+  }
+}
+
+/* TEXTE ET BLOCK INFO */
 
 body .text-wrapper-5 {
   position: absolute;
@@ -271,7 +253,7 @@ body .group-2 {
   position: absolute;
   width: 1239px;
   height: 381px;
-  top: 564px;
+  top: 1500px;
   left: 0;
 }
 

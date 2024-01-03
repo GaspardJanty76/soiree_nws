@@ -36,26 +36,27 @@
         </div>
     </div>
 
-    <div class="overlap-2">
-        <div class="rectangle-2"></div>
-        <div class="rectangle-3"></div>
-        <div class="group">
-        <p class="lorem-ipsum-dolor">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Interdum consectetur libero id faucibus nisl tincidunt eget nullam. Facilisi morbi
-            tempus iaculis urna id volutpat. Eu lobortis elementum nibh tellus molestie. Amet porttitor eget dolor
-            morbi non arcu risus quis. Convallis tellus id interdum velit laoreet id. <br /><br />Vel turpis nunc eget
-            lorem dolor sed. A cras semper auctor neque vitae tempus quam pellentesque nec. Nisi vitae suscipit tellus
-            mauris a diam maecenas sed enim. Adipiscing enim eu turpis egestas pretium aenean. At varius vel pharetra
-            vel turpis nunc. Scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus
-            et. Viverra maecenas accumsan lacus vel facilisis volutpat est. Morbi tristique senectus et netus et.
-            Vestibulum sed arcu non odio.
-        </p>
-        <div class="text-wrapper-4">La nuit de l ambassadeur</div>
-        <div class="div-wrapper">
-            <a href="#" class="text-nav-input button">Inscription</a>
+    <div class="block-1">
+        <div class="block-rectangle"></div>
+        <div class="block-texte-titre">
+            <div class="block-titre">La nuit de l ambassadeur</div>
+            <p class="block-texte">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Interdum consectetur libero id faucibus nisl tincidunt eget nullam. Facilisi morbi
+                tempus iaculis urna id volutpat. Eu lobortis elementum nibh tellus molestie. Amet porttitor eget dolor
+                morbi non arcu risus quis. Convallis tellus id interdum velit laoreet id. <br /><br />Vel turpis nunc eget
+                lorem dolor sed. A cras semper auctor neque vitae tempus quam pellentesque nec. Nisi vitae suscipit tellus
+                mauris a diam maecenas sed enim. Adipiscing enim eu turpis egestas pretium aenean. At varius vel pharetra
+                vel turpis nunc. Scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus
+                et. Viverra maecenas accumsan lacus vel facilisis volutpat est. Morbi tristique senectus et netus et.
+                Vestibulum sed arcu non odio.
+            </p>
+            <div class="block-bouton">
+                <a href="#" class="text-nav-input button">Inscription</a>
+            </div>
         </div>
     </div>
+
     <div class="group-2">
         <div class="rectangle-4"></div>
             <div class="group-3">
