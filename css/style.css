@@ -39,6 +39,7 @@ body .nav {
 
 body .text-nav-input {
   color: #fff;
+  font-family: var(--h-1-font-family);
   text-decoration: none;
   padding: 5px 10px;
   margin-right: 10px;
@@ -115,80 +116,59 @@ body .container {
   position: relative;
 }
 
-body .overlap-group {
+body .flex-container {
+  display: flex;
   position: absolute;
-  width: 80%; /* Adjust the width for responsiveness */
-  max-width: 236px; /* Set a maximum width if needed */
-  height: 179px;
-  top: 500px; /* Place it below the previous content */
+  top: 400px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
 }
 
-body .rectangle {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
+body .timer-block {
   background-color: #ffffff1a;
-  border-radius: 15px;
-}
-
-body .overlap-group-wrapper {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-}
-
-body .overlap-group-2 {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-body .text-wrapper-2,
-body .text-wrapper-3 {
-  position: absolute;
-  width: 100%;
-  font-family: var(--h-2-font-family);
-  font-weight: var(--h-2-font-weight);
+  border-radius: 0.9375rem;
+  width: 13rem;
+  height: 10rem;
   text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
-body .text-wrapper-2 {
-  top: 20%; /* Adjust the top position for vertical alignment */
-  color: #fcb900;
-  font-size: var(--h-2-font-size);
-  letter-spacing: var(--h-2-letter-spacing);
-  line-height: var(--h-2-line-height);
-  font-style: var(--h-2-font-style);
+body .text-block-2 {
+  color: #FCB900;
+  margin-top: 20px;
+  font-family: var(--h-1-font-family);
+  font-size: 3.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
-body .text-wrapper-3 {
-  top: 70%; /* Adjust the top position for vertical alignment */
-  color: #ffffff;
-  font-size: var(--h-3-font-size);
-  letter-spacing: var(--h-3-letter-spacing);
-  line-height: var(--h-3-line-height);
-  white-space: nowrap;
-  font-style: var(--h-3-font-style);
+body .text-block-3 {
+  color: #FFF;
+  text-align: center;
+  height: 2.25rem;
+  flex-shrink: 0;
+  font-family: var(--h-2-font-family);
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
-/* Media Query for Mobile Devices */
 @media (max-width: 767px) {
-  body .text-wrapper,
-  body .p,
-  body .overlap-group {
-    width: 90%;
+  body .flex-container {
+    top: 300px;
   }
-}   
-
-@media (max-width: 767px) {
-  body .overlap-group {
-    top: 400px;
+  body .timer-block {
+    width: 9rem;
+    height: 8rem;
+  }
+  body .text-block-2 {
+    font-size: 3rem;
+  }
+  body .text-block-3 {
+    font-size: 1.5rem;
   }
 }
 
@@ -262,14 +242,6 @@ body .div-wrapper {
   height: 35px;
   top: 312px;
   left: 421px;
-}
-
-body .overlap-group-3 {
-  position: relative;
-  width: 189px;
-  height: 35px;
-  background-color: var(--secondary);
-  border-radius: 4px;
 }
 
 body .text-wrapper-5 {

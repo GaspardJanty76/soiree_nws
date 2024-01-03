@@ -10,14 +10,15 @@
   <body>
   <div class="div">
         <div class="overlap">
-            <a href="#" class="text-nav-input">LNDA</a>
-            <a href="#" class="text-nav-input">Informations</a>
-            <a href="#" class="text-nav-input button">Inscription</a>
+            <a href="#LNDA" class="text-nav-input">LNDA</a>
+            <a href="#Info" class="text-nav-input">Informations</a>
+            <a href="#Inscri" class="text-nav-input button">Inscription</a>
         </div>
         <div class="container">
             <div class="text-wrapper">La nuit des ambassadeurs</div>
             <p class="p">votre évènement commence dans :</p>
 
+<<<<<<< HEAD
             <div class="overlap-group">
             <div class="rectangle"></div>
             <div class="overlap-group-wrapper">
@@ -62,6 +63,23 @@
                     <div class="text-wrapper-3">heures</div>
                 </div>
                 </div> 
+=======
+            <div class="flex-container">
+                <div class="timer-block">
+                    <div class="text-block-2" id="days">0</div>
+                    <div class="text-block-3">jours</div>
+                </div>
+
+                <div class="timer-block">
+                    <div class="text-block-2" id="hours">0</div>
+                    <div class="text-block-3">heures</div>
+                </div>
+
+                <div class="timer-block">
+                    <div class="text-block-2" id="minutes">0</div>
+                    <div class="text-block-3">minutes</div>
+                </div>
+>>>>>>> e5f0a9fc0ec41f78f854d6e91ed02084eb92f67f
             </div>
         </div>
     </div> -->
@@ -83,7 +101,7 @@
         </p>
         <div class="text-wrapper-4">La nuit de l ambassadeur</div>
         <div class="div-wrapper">
-            <div class="overlap-group-3"><div class="text-wrapper-5">Inscription</div></div>
+            <a href="#" class="text-nav-input button">Inscription</a>
         </div>
     </div>
     <div class="group-2">
@@ -171,7 +189,10 @@
     <img class="bfet" src="img/b6fet-2.png" />
     </div>
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> e5f0a9fc0ec41f78f854d6e91ed02084eb92f67f
     <script src="js/index.js"></script>
   </body>
 </html>
