@@ -9,9 +9,9 @@
   <body>
   <div class="div">
         <div class="overlap">
-            <a href="#" class="text-nav-input">LNDA</a>
-            <a href="#" class="text-nav-input">Informations</a>
-            <a href="#" class="text-nav-input button">Inscription</a>
+            <a href="#LNDA" class="text-nav-input">LNDA</a>
+            <a href="#Info" class="text-nav-input">Informations</a>
+            <a href="#Inscri" class="text-nav-input button">Inscription</a>
         </div>
         <div class="container">
             <div class="text-wrapper">La nuit des ambassadeurs</div>
