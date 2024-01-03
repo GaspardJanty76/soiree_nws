@@ -1,7 +1,4 @@
 <?php
-// Inclure le fichier 'connexion.php', qui contient les informations de connexion à la base de données
-include ('connexion.php');
-
 // Requête SQL pour sélectionner toutes les colonnes de la table "inscrit"
 $sql1 = "SELECT * FROM inscrit ORDER BY nom ";
 
