@@ -34,6 +34,7 @@
             </div>
         </div>
     </div>
+
     <div class="overlap-2">
         <div class="rectangle-2"></div>
         <div class="rectangle-3"></div>
@@ -54,6 +55,7 @@
             <a href="#" class="text-nav-input button">Inscription</a>
         </div>
     </div>
+
     <div class="group-2">
         <div class="rectangle-4"></div>
             <div class="group-3">
