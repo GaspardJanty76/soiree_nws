@@ -1,0 +1,25 @@
+.tableau {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgb(225, 225, 225);
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    white-space: nowrap;
+}
