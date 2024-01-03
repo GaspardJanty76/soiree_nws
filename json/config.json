@@ -1,7 +1,7 @@
 {
     "host": "localhost",
-    "port" : "8888",
-    "username": "root",
-    "password": "1597",
+    "port" : "3306",
+    "username": "wolfpac",
+    "password": "devilhel76",
     "database": "nwsnight"
 }

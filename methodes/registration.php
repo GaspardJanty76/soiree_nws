@@ -32,7 +32,7 @@ class UserRegistration
 
     private function insertUser($firstname, $lastname, $tel, $mail, $company, $job)
     {
-        $sql = "INSERT INTO registration (firstname, lastname, tel, mail, company, job) VALUES (?, ?, ?, ?, ?, ?)";
+        $sql = "INSERT INTO registration (firstname, lastname, tel, mail, company, job, confirmed) VALUES (?, ?, ?, ?, ?, ?, 0)";
         $stmt = $this->pdo->prepare($sql);
         $stmt->bindParam(1, $firstname);
         $stmt->bindParam(2, $lastname);
@@ -47,10 +47,21 @@ class UserRegistration
             echo "Error: " . $stmt->errorInfo()[2];
         }
     }
+
+    public function getUnconfirmedUsersCount()
+    {
+        $sql = "SELECT COUNT(*) FROM registration WHERE confirmed = 0";
+        $stmt = $this->pdo->query($sql);
+        $count = $stmt->fetchColumn();
+        return $count;
+    }
+
 }
+
 $pdoManager = new DBManager('nwsnight');
 $pdo = $pdoManager->getPDO();
 
 $userRegistration = new UserRegistration($pdo);
 $userRegistration->registerUser();
+
 ?>
