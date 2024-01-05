@@ -3,6 +3,7 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 require_once 'dbConnect.php';
 require_once 'registration.php';
+require_once 'visitorCounter.php';
 
 $ipstackApiKey = '73ab2f3c4ed1b624935493a819b03d95';
 
@@ -43,12 +44,15 @@ function getScrollPositions()
 // Obtenez les positions de défilement de la base de données
 $scrollPositions = getScrollPositions();
 
-  function generateKPICard($title, $value)
-        {
+function generateKPICard($title, $value)
+{
             echo '<div class="mb-6">';
             echo '<p class="text-lg">' . $title . ' : <span class="font-bold">' . $value . '</span></p>';
             echo '</div>';
-        }
+}
+
+// Récupère le nombre de visiteurs quotidiens depuis la session
+$nombreVisiteursQuotidiens = isset($_SESSION['nombreVisiteursQuotidiens']) ? $_SESSION['nombreVisiteursQuotidiens'] : 0;
 
 // Ajoutez d'autres KPI ici
 ?>
@@ -96,6 +100,12 @@ $scrollPositions = getScrollPositions();
                 // Utilisez la fonction pour afficher chaque position de défilement
                 generateKPICard("IP: " . $position['user_ip'], "Position: " . $position['scroll_position']);
             }
+        ?>
+    </div>
+
+    <div class="bg-white p-8 rounded shadow-md max-w-md w-full">
+        <?php 
+        generateVisitorsCard($pdo);
         ?>
     </div>
 

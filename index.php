@@ -1,3 +1,19 @@
+<?php 
+session_start(); // Démarre la session
+
+require_once 'methodes/dbConnect.php';
+require_once 'methodes/visitorCounter.php';
+
+$pdoManager = new DBManager('nwsnight');
+$pdo = $pdoManager->getPDO();
+
+// Appeler la fonction generateVisitorsCard pour mettre à jour le compteur de visiteurs
+generateVisitorsCard($pdo);
+
+// Enregistre le nombre de visiteurs dans une variable de session
+$_SESSION['nombreVisiteursQuotidiens'] = getVisitorsCount($pdo); 
+?>
+
 <!DOCTYPE html>
 <html>
   <head>
