@@ -1,0 +1,37 @@
+body{
+    font-family: var(--h-1-font-family);
+}
+
+/* Styles pour le fond obscurci */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.707);
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Styles pour la boîte du popup */
+  .popup {
+    background-color: var(--primary-background);
+    padding: 20px;
+    color: var(--primaryy);
+    border-radius: 15px;
+    text-align: center;
+    font-size: large;
+    font-weight: 700;
+  }
+  
+  /* Styles pour le bouton de fermeture du popup */
+  .close-btn {
+    cursor: pointer;
+    color: var(--primaryy);
+    font-size: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
