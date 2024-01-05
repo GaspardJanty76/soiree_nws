@@ -91,6 +91,28 @@
                 <div class="inscri-texte">Prénom</div>
                 <input type="text" class="inscri-input" name="firstname" required>
             </div>
+            <div class="inscri-3">
+                <div class="inscri-texte">Téléphone</div>
+                <input type="text" class="inscri-input" name="tel" required>
+            </div>
+            <div class="inscri-4">
+                <div class="inscri-texte">Mail</div>
+                <input type="text" class="inscri-input" name="mail" required>
+            </div>
+
+            <div class="inscri-info-entreprise">
+                <i class="fa-solid fa-user"></i>
+                Entreprise
+            </div>
+
+            <div class="inscri-5">
+                <div class="inscri-texte">Entreprise</div>
+                <input type="text" class="inscri-input" name="company" required>
+            </div>
+            <div class="inscri-6">
+                <div class="inscri-texte">Poste</div>
+                <input type="text" class="inscri-input" name="job" required>
+            </div>
 
             <!-- <div class="overlap-wrapper">
                 <input class="overlap-group-3" type="submit" value="Validé l'inscription">
@@ -108,7 +130,7 @@
 
     <!-- CONTACT EN FOOTER -->
 
-    <div class="overlap-4">
+    <!-- <div class="overlap-4">
         <div class="rectangle-6"></div>
         <div class="group-11">
         <div class="text-wrapper-15">Contact</div>
@@ -130,7 +152,7 @@
     </div>
     </div>
     <img class="bfet" src="img/b6fet-2.png" />
-    </div>
+    </div> -->
 
     <script src="js/index.js"></script>
   </body>
