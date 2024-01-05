@@ -114,9 +114,12 @@
                 <input type="text" class="inscri-input" name="job" required>
             </div>
 
-            <!-- <div class="overlap-wrapper">
-                <input class="overlap-group-3" type="submit" value="Validé l'inscription">
-            </div> -->
+            <input type="checkbox" class="inscri-check" required>
+            <p class="inscri-texte">J'accepte la politique de confidentialité</p>
+
+            <div class="inscri-bouton">
+                <input class="text-nav-input button" type="submit" value="Valider l'inscription">
+            </div>
         </form>
         <div class="overlay" id="overlay">
             <div class="popup">
