@@ -1,16 +1,19 @@
+<?php include('methodes/visitorCounter.php'); ?>
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
     <link rel="stylesheet" href="css/styleguide.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css"/>    
+    <link rel="stylesheet" href="css/popup.css"/>
   </head>
   <body>
   <div class="div">
         <div class="overlap">
-            <a href="#lnda" class="text-nav-input">LNDA</a>
-            <a href="#info" class="text-nav-input">Informations</a>
-            <a href="#inscription" class="text-nav-input button">Inscription</a>
+            <a href="#LNDA" class="text-nav-input">LNDA</a>
+            <a href="#Info" class="text-nav-input">Informations</a>
+            <a href="#Inscri" class="text-nav-input button">Inscription</a>
         </div>
         <div class="container">
             <div class="text-wrapper">La nuit des ambassadeurs</div>
@@ -35,24 +38,24 @@
         </div>
     </div>
 
-    <div class="overlap-2">
-        <div class="rectangle-2"></div>
-        <div class="rectangle-3"></div>
-        <div class="group">
-        <p class="lorem-ipsum-dolor">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Interdum consectetur libero id faucibus nisl tincidunt eget nullam. Facilisi morbi
-            tempus iaculis urna id volutpat. Eu lobortis elementum nibh tellus molestie. Amet porttitor eget dolor
-            morbi non arcu risus quis. Convallis tellus id interdum velit laoreet id. <br /><br />Vel turpis nunc eget
-            lorem dolor sed. A cras semper auctor neque vitae tempus quam pellentesque nec. Nisi vitae suscipit tellus
-            mauris a diam maecenas sed enim. Adipiscing enim eu turpis egestas pretium aenean. At varius vel pharetra
-            vel turpis nunc. Scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus
-            et. Viverra maecenas accumsan lacus vel facilisis volutpat est. Morbi tristique senectus et netus et.
-            Vestibulum sed arcu non odio.
-        </p>
-        <div class="text-wrapper-4">La nuit de l ambassadeur</div>
-        <div class="div-wrapper">
-            <a href="#" class="text-nav-input button">Inscription</a>
+    <div class="block-1">
+        <div class="block-rectangle"></div>
+        <div class="block-texte-titre">
+            <div class="block-titre">La nuit de l ambassadeur</div>
+            <p class="block-texte">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Interdum consectetur libero id faucibus nisl tincidunt eget nullam. Facilisi morbi
+                tempus iaculis urna id volutpat. Eu lobortis elementum nibh tellus molestie. Amet porttitor eget dolor
+                morbi non arcu risus quis. Convallis tellus id interdum velit laoreet id. <br /><br />Vel turpis nunc eget
+                lorem dolor sed. A cras semper auctor neque vitae tempus quam pellentesque nec. Nisi vitae suscipit tellus
+                mauris a diam maecenas sed enim. Adipiscing enim eu turpis egestas pretium aenean. At varius vel pharetra
+                vel turpis nunc. Scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus
+                et. Viverra maecenas accumsan lacus vel facilisis volutpat est. Morbi tristique senectus et netus et.
+                Vestibulum sed arcu non odio.
+            </p>
+            <div class="block-bouton">
+                <a href="#" class="text-nav-input button">Inscription</a>
+            </div>
         </div>
     </div>
 
@@ -77,10 +80,14 @@
     <!-- INSCRIPTION -->
 
     <div class="text-wrapper-7">Inscription</div>
-    <form action="methodes/registration.php" method="post" enctype="multipart/form-data">
+    <form method="post" enctype="multipart/form-data" onsubmit="showPopup(); return false;">
         <div class="group-4">
             <div class="text-wrapper-8">Nom</div>
             <input type="text" class="overlap-group-4" name="lastname" required>
+        </div>
+        <div class="group-7">
+            <div class="text-wrapper-10">Prénom</div>
+            <input type="text" class="overlap-group-4" name="firstname" required>
         </div>
         <div class="group-5">
             <div class="text-wrapper-8">Téléphone</div>
@@ -89,10 +96,6 @@
         <div class="group-6">
             <div class="text-wrapper-8">Mail</div>
             <input type="text" class="overlap-group-4" name="mail" required>
-        </div>
-        <div class="group-7">
-            <div class="text-wrapper-10">Prénom</div>
-            <input type="text" class="overlap-group-4" name="firstname" required>
         </div>
         <div class="group-8">
             <div class="group-wrapper">
@@ -116,7 +119,14 @@
             <input class="overlap-group-3" type="submit" value="Validé l'inscription">
         </div>
     </form>
-
+    <div class="overlay" id="overlay">
+    <div class="popup">
+      <span class="close-btn" onclick="closePopup()">&times;</span>
+      <p>Confirmez votre participation à La Nuit des Ambassadeurs
+        en cliquant sur le lien de confirmation dans votre boîte mail.</p>
+      <p>À bientôt !</p>
+    </div>
+  </div>
     <div class="overlap-4">
         <div class="rectangle-6"></div>
         <div class="group-11">
@@ -142,5 +152,6 @@
     </div>
 
     <script src="js/index.js"></script>
+    <script src="js/popup.js"></script>
   </body>
 </html>
