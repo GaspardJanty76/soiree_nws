@@ -18,4 +18,3 @@ var countdownInterval = setInterval(function() {
         document.getElementById("countdown").innerHTML = "EXPIRED";
     }
 }, 1000);
-

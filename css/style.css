@@ -5,6 +5,7 @@ body {
   justify-content: center;
   width: 100%;
   overflow-x: hidden;
+  margin: 0;
 }
 
 body .div {
@@ -93,7 +94,7 @@ body .p {
   font-style: var(--h-3-font-style);
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1000px) {
   body .text-wrapper,
   body .p {
     width: 90%
@@ -156,7 +157,7 @@ body .text-block-3 {
   line-height: normal;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1000px) {
   body .flex-container {
     top: 300px;
   }
@@ -178,8 +179,8 @@ body .block-1 {
   display: flex;
   position: absolute;
   top: 700px;
-  margin-left: 2.5%;
-  margin-right: 2.5%
+  left: 6.25rem;
+  right: 6.25rem;
 }
 
 body .block-texte-titre {
@@ -195,7 +196,7 @@ body .block-titre {
 }
 
 body .block-texte {
-  margin-top: 60px;
+  margin-top: 25px;
   font-family: var(--p-font-family);
   font-weight: var(--p-font-weight);
   color: #ffffff;
@@ -208,321 +209,155 @@ body .block-texte {
 body .block-rectangle {
   position: absolute;
   width: 47.5%;
-  height: 381px;
+  height: 450px;
   background-color: #ffffff1a;
   border-radius: 15px;
 }
 
 @media (max-width: 1000px) {
   body .block-rectangle {
-    width: 95%;
+    width: 100%;
   }
   body .block-texte-titre {
-    width: 95%;
+    width: 100%;
     margin-left: 0%;
-    margin-top: 425px;
+    margin-top: 475px;
   }
 }
 
 /* TEXTE ET BLOCK INFO */
 
-body .text-wrapper-5 {
+body .block-2 {
+  display: flex;
   position: absolute;
-  width: 189px;
-  height: 35px;
-  top: 0;
-  left: 0;
-  font-family: "Inter-Regular", Helvetica;
-  font-weight: 400;
+  top: 1250px;
+  left: 6.25rem;
+  right: 6.25rem;
+}
+
+body .block-texte-titre-2 {
+  width: 47.5%;
+}
+
+body .block-titre-2 {
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #fcb900;
+  font-size: 34px;
+}
+
+body .block-texte-2 {
+  margin-top: 25px;
+  font-family: var(--p-font-family);
+  font-weight: var(--p-font-weight);
   color: #ffffff;
-  font-size: 16px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
+  font-size: var(--p-font-size);
+  letter-spacing: var(--p-letter-spacing);
+  line-height: var(--p-line-height);
+  font-style: var(--p-font-style);
 }
 
-body .overlap-wrapper {
+body .block-rectangle-2 {
   position: absolute;
-  width: 191px;
-  height: 35px;
-  top: 1663px;
-  left: 0;
-}
-
-body .group-2 {
-  position: absolute;
-  width: 1239px;
-  height: 381px;
-  top: 1500px;
-  left: 0;
-}
-
-body .rectangle-4 {
-  position: absolute;
-  width: 514px;
-  height: 381px;
-  top: 0;
-  left: 725px;
+  width: 47.5%;
+  margin-left: 50%;
+  height: 450px;
   background-color: #ffffff1a;
   border-radius: 15px;
 }
 
-body .group-3 {
-  position: absolute;
-  width: 613px;
-  height: 298px;
-  top: 42px;
-  left: 0;
+@media (max-width: 1000px) {
+  body .block-2 {
+    margin-top: 400px;
+  }
+  body .block-rectangle-2 {
+    width: 100%;
+    margin-left: 0%;
+  }
+  body .block-texte-titre-2 {
+    width: 100%;
+    margin-top: 475px;
+  }
 }
 
-body .lorem-ipsum-dolor-2 {
-  position: absolute;
-  width: 609px;
-  top: 57px;
-  left: 0;
-  font-family: var(--p-font-family);
-  font-weight: var(--p-font-weight);
-  color: #ffffff;
-  font-size: var(--p-font-size);
-  letter-spacing: var(--p-letter-spacing);
-  line-height: var(--p-line-height);
-  font-style: var(--p-font-style);
-}
+/* FORM INSCRIPTION */
 
-body .text-wrapper-6 {
+body .inscri-titre {
+  display: flex;
   position: absolute;
-  width: 525px;
-  top: 0;
-  left: 1px;
+  align-items: center;
+  margin-top: 1850px;
   font-family: "Poppins-Bold", Helvetica;
   font-weight: 700;
   color: #fcb900;
   font-size: 34px;
-  letter-spacing: 0;
-  line-height: normal;
 }
 
-body .text-wrapper-7 {
+body .inscri-rectangle {
+  display: flex;
   position: absolute;
-  width: 1239px;
-  top: 1087px;
-  left: 1px;
+  top: 1950px;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  width: 90%;
+  height: 600px;
+  background-color: #ffffff1a;
+  border-radius: 15px;
+}
+
+body .inscri-form {
+  padding-top: 50px;
+  margin-left: 150px;
+}
+
+body .inscri-info-perso {
+  margin-bottom: 25px;
   font-family: "Poppins-Bold", Helvetica;
-  font-weight: 700;
-  color: #fcb900;
-  font-size: 34px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-body .group-4 {
-  position: absolute;
-  width: 402px;
-  height: 76px;
-  top: 1276px;
-  left: 211px;
-}
-
-body .text-wrapper-8 {
-  position: absolute;
-  width: 397px;
-  height: 22px;
-  top: 0;
-  left: 1px;
-  font-family: "Inter-Bold", Helvetica;
-  font-weight: 700;
   color: #ffffff;
-  font-size: 16px;
-  letter-spacing: 0;
-  line-height: normal;
+  font-size: 30px;
+  font-weight: 700;
 }
 
-body .overlap-group-4 {
+body .inscri-form .fa-user {
+  color: #FCB900;
+}
+
+body .inscri-texte {
+  font-family: "Poppins-Bold", Helvetica;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+body .inscri-1 {
   position: absolute;
-  width: 398px;
   height: 50px;
-  top: 26px;
-  left: 0;
+  width: 50%;
+}
+
+body .inscri-2 {
+  position: absolute;
+  height: 50px; 
+  padding-left: 50%;
+}
+
+body .inscri-input {
+  position: absolute;
+  width: 50%;
+  height: 50px;
   background-color: #ffffff;
   border-radius: 15px;
 }
 
-body .text-wrapper-9 {
-  width: 368px;
-  position: absolute;
-  height: 36px;
-  top: 7px;
-  left: 15px;
-  font-family: var(--p-font-family);
-  font-weight: var(--p-font-weight);
-  color: #000000;
-  font-size: var(--p-font-size);
-  letter-spacing: var(--p-letter-spacing);
-  line-height: var(--p-line-height);
-  font-style: var(--p-font-style);
+@media (max-width: 1000px) {
+  body .inscri-titre {
+    margin-top: 2500px;
+  }
+  body .inscri-rectangle {
+    top: 2600px;
+  }
 }
 
-body .group-5 {
-  position: absolute;
-  width: 402px;
-  height: 76px;
-  top: 1366px;
-  left: 210px;
-}
-
-body .group-6 {
-  position: absolute;
-  width: 402px;
-  height: 76px;
-  top: 1366px;
-  left: 632px;
-}
-
-body .group-7 {
-  position: absolute;
-  width: 404px;
-  height: 76px;
-  top: 1276px;
-  left: 630px;
-}
-
-body .text-wrapper-10 {
-  position: absolute;
-  width: 399px;
-  height: 22px;
-  top: 0;
-  left: 1px;
-  font-family: "Inter-Bold", Helvetica;
-  font-weight: 700;
-  color: #ffffff;
-  font-size: 16px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-body .overlap-3 {
-  position: absolute;
-  width: 400px;
-  height: 50px;
-  top: 26px;
-  left: 0;
-  background-color: #ffffff;
-  border-radius: 15px;
-}
-
-body .text-wrapper-11 {
-  width: 370px;
-  position: absolute;
-  height: 36px;
-  top: 7px;
-  left: 15px;
-  font-family: var(--p-font-family);
-  font-weight: var(--p-font-weight);
-  color: #000000;
-  font-size: var(--p-font-size);
-  letter-spacing: var(--p-letter-spacing);
-  line-height: var(--p-line-height);
-  font-style: var(--p-font-style);
-}
-
-body .group-8 {
-  position: absolute;
-  width: 819px;
-  height: 76px;
-  top: 1568px;
-  left: 212px;
-}
-
-body .group-wrapper {
-  position: absolute;
-  width: 398px;
-  height: 76px;
-  top: 0;
-  left: 0;
-}
-
-body .group-9 {
-  position: relative;
-  width: 402px;
-  height: 76px;
-}
-
-body .group-10 {
-  position: absolute;
-  width: 404px;
-  height: 76px;
-  top: 0;
-  left: 419px;
-}
-
-body .text-wrapper-12 {
-  position: absolute;
-  width: 388px;
-  height: 50px;
-  top: 1204px;
-  left: 273px;
-  font-family: "Inter-Bold", Helvetica;
-  font-weight: 700;
-  color: #ffffff;
-  font-size: 30px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-body .text-wrapper-13 {
-  position: absolute;
-  width: 388px;
-  height: 50px;
-  top: 1496px;
-  left: 273px;
-  font-family: "Inter-Bold", Helvetica;
-  font-weight: 700;
-  color: #ffffff;
-  font-size: 30px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-body .icon-user {
-  position: absolute;
-  width: 44px;
-  height: 50px;
-  top: 1205px;
-  left: 210px;
-}
-
-body .img {
-  position: absolute;
-  width: 44px;
-  height: 50px;
-  top: 1497px;
-  left: 210px;
-}
-
-body .rectangle-5 {
-  position: absolute;
-  width: 22px;
-  height: 22px;
-  top: 1670px;
-  left: 210px;
-  border: 1px solid;
-  border-color: #000000;
-}
-
-body .text-wrapper-14 {
-  position: absolute;
-  width: 441px;
-  height: 22px;
-  top: 1669px;
-  left: 237px;
-  font-family: "Inter-Regular", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 14px;
-  letter-spacing: 0;
-  line-height: normal;
-}
+/* FOOTER ET CONTACT */
 
 body .overlap-4 {
   position: absolute;

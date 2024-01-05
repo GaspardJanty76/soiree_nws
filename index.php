@@ -5,8 +5,7 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="globals.css" />
     <link rel="stylesheet" href="css/styleguide.css" />
-    <link rel="stylesheet" href="css/style.css"/>    
-    <link rel="stylesheet" href="css/popup.css"/>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
   <div class="div">
@@ -43,15 +42,14 @@
         <div class="block-texte-titre">
             <div class="block-titre">La nuit de l ambassadeur</div>
             <p class="block-texte">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Interdum consectetur libero id faucibus nisl tincidunt eget nullam. Facilisi morbi
-                tempus iaculis urna id volutpat. Eu lobortis elementum nibh tellus molestie. Amet porttitor eget dolor
-                morbi non arcu risus quis. Convallis tellus id interdum velit laoreet id. <br /><br />Vel turpis nunc eget
-                lorem dolor sed. A cras semper auctor neque vitae tempus quam pellentesque nec. Nisi vitae suscipit tellus
-                mauris a diam maecenas sed enim. Adipiscing enim eu turpis egestas pretium aenean. At varius vel pharetra
-                vel turpis nunc. Scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus
-                et. Viverra maecenas accumsan lacus vel facilisis volutpat est. Morbi tristique senectus et netus et.
-                Vestibulum sed arcu non odio.
+                <strong>La Nuit des Ambassadeurs c’est quoi ?</strong><br><br>
+                La Nuit des Ambassadeurs est un événement où la Normandie Web School ouvre ses portes aux entreprises et aux professionnels, 
+                offrant une opportunité unique de présenter notre école tout en encourageant les échanges entre les entreprises présentes. 
+                Au-delà d'une simple soirée, c'est un catalyseur d'opportunités, favorisant la création de nouvelles connexions et le développement de partenariats.<br><br>
+                <strong>Objectifs</strong><br><br>
+                Au cœur de cette soirée, La Normandie Web School aspire à atteindre un objectif clair  : favoriser la création de liens significatifs 
+                et le développement de collaborations innovantes entre les acteurs du monde académique et professionnel. Nous croyons en l'importance 
+                de dépasser les frontières traditionnelles pour créer des opportunités concrètes.
             </p>
             <div class="block-bouton">
                 <a href="#" class="text-nav-input button">Inscription</a>
@@ -59,35 +57,27 @@
         </div>
     </div>
 
-    <div class="group-2">
-        <div class="rectangle-4"></div>
-            <div class="group-3">
-            <p class="lorem-ipsum-dolor-2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Magna ac placerat vestibulum lectus mauris ultrices eros in. Orci phasellus egestas
-            tellus rutrum tellus pellentesque eu tincidunt. In hendrerit gravida rutrum quisque non tellus orci. Sit
-            amet nisl purus in mollis nunc. Dictum varius duis at consectetur lorem donec massa. <br /><br />Justo
-            nec ultrices dui sapien eget. Proin nibh nisl condimentum id venenatis a condimentum vitae sapien.
-            Convallis posuere morbi leo urna molestie. Est sit amet facilisis magna etiam tempor orci. Viverra
-            mauris in aliquam sem fringilla ut morbi. Molestie at elementum eu facilisis. Nulla facilisi cras
-            fermentum odio eu feugiat pretium. Sed odio morbi quis commodo odio aenean sed adipiscing. Venenatis
-            urna cursus eget nunc scelerisque viverra.
+    <div class="block-2">
+        <div class="block-rectangle-2"></div>
+        <div class="block-texte-titre-2">
+            <div class="block-titre-2">Informations</div>
+            <p class="block-texte-2">
+                <i>une véritable plateforme de découverte, de collaboration et de partage de connaissances.</i><br><br>
+                Chaque participant, qu'il soit de la Normandie Web School ou d'une entreprise, devient un ambassadeur d'une vision commune pour un 
+                futur où l'éducation et l'industrie du web convergent de manière harmonieuse.<br><br>
+                Participez à cette soirée, où chaque interaction contribue à esquisser un futur riche en collaborations fructueuses. Soyez acteur de cette 
+                expérience qui encourage la création de liens durables et le partage d'expertise. Rejoignez-nous dans cette aventure vers un futur collaboratif et innovant. <br><br>
             </p>
-            <div class="text-wrapper-6">Information</div>
         </div>
     </div>
 
     <!-- INSCRIPTION -->
 
     <div class="text-wrapper-7">Inscription</div>
-    <form method="post" enctype="multipart/form-data" onsubmit="showPopup(); return false;">
+    <form action="methodes/registration.php" method="post" enctype="multipart/form-data">
         <div class="group-4">
             <div class="text-wrapper-8">Nom</div>
             <input type="text" class="overlap-group-4" name="lastname" required>
-        </div>
-        <div class="group-7">
-            <div class="text-wrapper-10">Prénom</div>
-            <input type="text" class="overlap-group-4" name="firstname" required>
         </div>
         <div class="group-5">
             <div class="text-wrapper-8">Téléphone</div>
@@ -97,6 +87,10 @@
             <div class="text-wrapper-8">Mail</div>
             <input type="text" class="overlap-group-4" name="mail" required>
         </div>
+        <div class="group-7">
+            <div class="text-wrapper-10">Prénom</div>
+            <input type="text" class="overlap-group-4" name="firstname" required>
+        </div>
         <div class="group-8">
             <div class="group-wrapper">
                 <div class="group-9">
@@ -104,9 +98,17 @@
                     <input type="text" class="overlap-group-4" name="company" required>
                 </div>
             </div>
-            <div class="group-10">
-                <div class="text-wrapper-10">Poste</div>
-                <input type="text" class="overlap-group-4" name="job" required>
+
+            <!-- <div class="overlap-wrapper">
+                <input class="overlap-group-3" type="submit" value="Validé l'inscription">
+            </div> -->
+        </form>
+        <div class="overlay" id="overlay">
+            <div class="popup">
+                <span class="close-btn" onclick="closePopup()">&times;</span>
+                <p>Confirmez votre participation à La Nuit des Ambassadeurs
+                    en cliquant sur le lien de confirmation dans votre boîte mail.</p>
+                <p>À bientôt !</p>
             </div>
         </div>
         <div class="text-wrapper-12">Informations personnelles</div>
@@ -119,14 +121,7 @@
             <input class="overlap-group-3" type="submit" value="Validé l'inscription">
         </div>
     </form>
-    <div class="overlay" id="overlay">
-    <div class="popup">
-      <span class="close-btn" onclick="closePopup()">&times;</span>
-      <p>Confirmez votre participation à La Nuit des Ambassadeurs
-        en cliquant sur le lien de confirmation dans votre boîte mail.</p>
-      <p>À bientôt !</p>
-    </div>
-  </div>
+
     <div class="overlap-4">
         <div class="rectangle-6"></div>
         <div class="group-11">
