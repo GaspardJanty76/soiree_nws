@@ -143,15 +143,15 @@
                         <div class="text-wrapper-15">Contact</div>
                             <div class="frame">
                                 <div class="frame-2">
-                                    <img class="icon-alternate-phone" src="img/icon-alternate-phone.png" />
+                                    <i class="orange-icone icon-alternate-phone fa-solid fa-phone"></i>
                                     <div class="text-wrapper-16">0606060606</div>
                                 </div>
                                 <div class="frame-3">
-                                    <img class="icon-envelope" src="img/icon-envelope.png" />
+                                    <i class="orange-icone icon-envelope fa-solid fa-envelope"></i>
                                     <div class="text-wrapper-17">ldna@gmail.com</div>
                                 </div>
                                 <div class="frame-4">
-                                    <img class="icon-alternate-map" src="img/icon-alternate-map-marker.png" />
+                                    <i class="orange-icone icon-alternate-map fa-solid fa-location-dot"></i>
                                     <div class="text-wrapper-17">adresse</div>
                                 </div>
                             </div>

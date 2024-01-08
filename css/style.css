@@ -565,4 +565,8 @@ body .bfet {
   top: 2887px;
   left: 101px;
   object-fit: cover;
-}  
+}
+
+body .orange-icone {
+  color: #FCB900;
+}
