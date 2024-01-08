@@ -1,0 +1,17 @@
+{
+    "name": "grego/testsoiree",
+    "autoload": {
+        "psr-4": {
+            "Grego\\Testsoiree\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "2bleG",
+            "email": "2bleg.akagucci@gmail.com"
+        }
+    ],
+    "require": {
+        "swiftmailer/swiftmailer": "^6.3"
+    }
+}
