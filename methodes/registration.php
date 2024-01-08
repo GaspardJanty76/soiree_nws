@@ -38,7 +38,7 @@ class UserRegistration
     private function insertUser($firstname, $lastname, $tel, $mail, $company, $job, $ipAddress)
     {
     
-        $sql = "INSERT INTO registrationgasp (firstname, lastname, tel, mail, company, job) VALUES (?, ?, ?, ?, ?, ?)";
+        $sql = "INSERT INTO registrationgasp (firstname, lastname, tel, mail, company, job, registration_date) VALUES (?, ?, ?, ?, ?, ?, NOW())";
         $stmt = $this->pdo->prepare($sql);
         $stmt->bindParam(1, $firstname);
         $stmt->bindParam(2, $lastname);

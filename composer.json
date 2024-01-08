@@ -1,6 +1,9 @@
 {
     "require": {
         "swiftmailer/swiftmailer": "6.0",
-        "phpoffice/phpspreadsheet": "^1.29"
+        "phpoffice/phpspreadsheet": "^1.29",
+        "endroid/qrcode": "^5.0",
+        "simplesoftwareio/simple-qrcode": "^4.2",
+        "bacon/bacon-qr-code": "^2.0"
     }
 }

@@ -40,7 +40,4 @@ if (!$row) {
     // Si l'adresse IP existe déjà, vous pouvez mettre à jour la localisation ici si nécessaire
     $location = $row['location'];
 }
-
-// Affichez la localisation actuelle de l'utilisateur
-echo "Votre localisation actuelle : " . $location;
 ?>
