@@ -117,7 +117,7 @@
             <input type="checkbox" class="inscri-check" required>
             <p class="inscri-texte">J'accepte la politique de confidentialité</p>
 
-            <div class="inscri-bouton">
+            <div>
                 <input class="text-nav-input button" type="submit" value="Valider l'inscription">
             </div>
         </form>

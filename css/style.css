@@ -331,21 +331,21 @@ body .inscri-texte {
 body .inscri-1 {
   position: absolute;
   height: 50px; 
-  width: 0%;
+  width: 50%;
 }
 
 body .inscri-2 {
   position: absolute;
   height: 50px; 
   margin-left: 50%;
-  width: 0%;
+  width: 50%;
 }
 
 body .inscri-3 {
   position: absolute;
   height: 50px; 
   margin-top: 100px;
-  width: 0%;
+  width: 50%;
 }
 
 body .inscri-4 {
@@ -353,12 +353,12 @@ body .inscri-4 {
   height: 50px; 
   margin-left: 50%;
   margin-top: 100px;
-  width: 0%;
+  width: 50%;
 }
 
 body .inscri-input {
   position: absolute;
-  width: 398px;
+  width: 50%;
   height: 50px;
   top: 26px;
   left: 0;
