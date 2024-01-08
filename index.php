@@ -99,9 +99,49 @@
                 </div>
             </div>
 
+<<<<<<< HEAD
             <!-- <div class="overlap-wrapper">
                 <input class="overlap-group-3" type="submit" value="Validé l'inscription">
             </div> -->
+=======
+            <div class="inscri-1">
+                <div class="inscri-texte">Nom</div>
+                <input type="text" class="inscri-input" name="lastname" required>
+            </div>
+            <div class="inscri-2">
+                <div class="inscri-texte">Prénom</div>
+                <input type="text" class="inscri-input" name="firstname" required>
+            </div>
+            <div class="inscri-3">
+                <div class="inscri-texte">Téléphone</div>
+                <input type="text" class="inscri-input" name="tel" required>
+            </div>
+            <div class="inscri-4">
+                <div class="inscri-texte">Mail</div>
+                <input type="text" class="inscri-input" name="mail" required>
+            </div>
+
+            <div class="inscri-info-entreprise">
+                <i class="fa-solid fa-user"></i>
+                Entreprise
+            </div>
+
+            <div class="inscri-5">
+                <div class="inscri-texte">Entreprise</div>
+                <input type="text" class="inscri-input" name="company" required>
+            </div>
+            <div class="inscri-6">
+                <div class="inscri-texte">Poste</div>
+                <input type="text" class="inscri-input" name="job" required>
+            </div>
+
+            <input type="checkbox" class="inscri-check" required>
+            <p class="inscri-texte">J'accepte la politique de confidentialité</p>
+
+            <div>
+                <input class="text-nav-input button" type="submit" value="Valider l'inscription">
+            </div>
+>>>>>>> 3fc393258f3826c95c52795c590e342de8736876
         </form>
         <div class="overlay" id="overlay">
             <div class="popup">
