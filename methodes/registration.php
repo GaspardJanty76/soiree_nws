@@ -24,20 +24,22 @@ class UserRegistration
             $company = isset($_POST["company"]) ? $_POST["company"] : null;
             $job = isset($_POST["job"]) ? $_POST["job"] : null;
 
+            $ipAddress = isset($_SERVER['REMOTE_ADDR']) ? $_SERVER['REMOTE_ADDR'] : null;
+
             // Vérifiez que les valeurs ne sont pas nulles avant d'insérer dans la base de données
             if ($firstname !== null && $lastname !== null && $tel !== null && $mail !== null && $company !== null && $job !== null) {
-                $this->insertUser($firstname, $lastname, $tel, $mail, $company, $job);
+                $this->insertUser($firstname, $lastname, $tel, $mail, $company, $job, $ipAddress);
             } else {
                 echo "Error: Les champs requis ne sont pas définis.";
             }
         }
     }
 
-    private function insertUser($firstname, $lastname, $tel, $mail, $company, $job)
+    private function insertUser($firstname, $lastname, $tel, $mail, $company, $job, $ipAddress)
     {
         $token = bin2hex(random_bytes(32));
     
-        $sql = "INSERT INTO registration (firstname, lastname, tel, mail, company, job, token) VALUES (?, ?, ?, ?, ?, ?, ?)";
+        $sql = "INSERT INTO registration (firstname, lastname, tel, mail, company, job, token, ipAddress, ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, )";
         $stmt = $this->pdo->prepare($sql);
         $stmt->bindParam(1, $firstname);
         $stmt->bindParam(2, $lastname);
@@ -46,6 +48,7 @@ class UserRegistration
         $stmt->bindParam(5, $company);
         $stmt->bindParam(6, $job);
         $stmt->bindParam(7, $token);
+        $stmt->bindParam(8, $ipAddress);
     
         if ($stmt->execute()) {
             // Send confirmation email
@@ -89,6 +92,8 @@ class UserRegistration
             echo 'Erreur lors de l\'envoi de l\'e-mail de confirmation.';
         }
     }
+
+
 }    
 $pdoManager = new DBManager('nwsnight');
 $pdo = $pdoManager->getPDO();

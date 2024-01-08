@@ -5,7 +5,7 @@ if (isset($_SESSION['username'])) {
     ?>
         <nav>
             <a href="#">Inscriptions</a> 
-            <a href="">KPI</a>
+            <a href="kpi.php">KPI</a>
             <a href="methodes/adminUnAuth.php">deconnexion</a>
         </nav>
         <h1>Administration</h1>
