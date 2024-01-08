@@ -1,18 +1,42 @@
 <?php
-// Démarrage de la session
 session_start();
 
-// Vérification si une session 'username' est définie (si l'utilisateur est connecté)
 if (isset($_SESSION['username'])) {
-    // Affiche un message
-    echo "ça fonctionne";
+    ?>
+        <h1>Administration</h1>
+        <a href="methodes/adminUnAuth.php">deconnexion</a>
+        <button type="button" class="btn btn-primary calibri text-white fw-bold" onclick="exportToExcel()">Télécharger le tableau Excel</button>
     
-    // Affiche un lien pour se déconnecter et redirige vers le script de déconnexion
-    echo '<a href="methodes/adminUnAuth.php">deconnexion</a>';
+        <script>
+        function exportToExcel() {
+            // Redirigez l'utilisateur vers le script "export.php" lorsqu'il clique sur le bouton
+            window.location.href = 'methodes/export.php';
+        }
+        </script>
+        <div class="container tableau">
+        <div class="table-responsive">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nom</th>
+                        <th>Prénom</th>
+                        <th>Téléphone</th>
+                        <th>Email</th>
+                        <th>Entreprise</th>
+                        <th>Poste</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php include ('methodes/get.php');?>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <?php
+    
+
 } else {
-    // Si l'utilisateur n'est pas connecté, redirige vers la page de connexion
     header("Location: connexion.php");
-    // Arrête l'exécution du script
     exit();
 }
 ?>

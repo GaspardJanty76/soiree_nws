@@ -102,7 +102,7 @@
             <!-- <div class="overlap-wrapper">
                 <input class="overlap-group-3" type="submit" value="Validé l'inscription">
             </div> -->
-        </form>
+
         <div class="overlay" id="overlay">
             <div class="popup">
                 <span class="close-btn" onclick="closePopup()">&times;</span>
