@@ -41,7 +41,7 @@ if (count($result) > 0) {
 }
 
 // Nom du fichier Excel
-$filename = 'tableau_excel.xlsx';
+$filename = 'export_inscriptions.xlsx';
 
 // Créez l'objet Writer pour Excel
 $writer = \PhpOffice\PhpSpreadsheet\IOFactory::createWriter($spreadsheet, 'Xlsx');

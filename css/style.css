@@ -388,8 +388,11 @@ body .inscri-6 {
   width: 50%;
 }
 
-body .inscri-check {
-  margin-top: 100px;
+body .inscri-texte-2 {
+  font-family: "Poppins-Bold", Helvetica;
+  color: #ffffff;
+  font-weight: 700;
+  margin-top: 150px;
 }
 
 @media (max-width: 1000px) {

@@ -1,64 +1,39 @@
 <?php
-function incrementVisitorCount($pdo)
-{
-    
-    // Récupère la date actuelle
-    $dateActuelle = date("Y-m-d");
+session_start();
 
-    // Vérifie si une entrée pour la date actuelle existe déjà dans la base de données
-    $result = $pdo->query("SELECT * FROM visitorcount WHERE date = '$dateActuelle'");
+require_once 'dbConnect.php';
 
-    if ($result->rowCount() > 0) {
-        // Met à jour le compteur s'il y a déjà une entrée pour la date actuelle
-        $pdo->query("UPDATE visitorcount SET visitor_num = visitor_num + 1 WHERE date = '$dateActuelle'");
-    } else {
-        // Insère une nouvelle entrée pour la date actuelle si elle n'existe pas encore
-        $pdo->query("INSERT INTO visitorcount (date, visitor_num) VALUES ('$dateActuelle', 1)");
-        
-    }
-}
+// Vérifier si l'utilisateur a déjà été compté pendant cette session
+if (!isset($_SESSION['user_counted'])) {
+    // Créez une instance de la classe DBManager pour obtenir la connexion PDO
+    $pdoManager = new DBManager('nwsnight');
+    $pdo = $pdoManager->getPDO();
 
-function generateVisitorsCard($pdo)
-{
-    // Récupère la date actuelle
-    $dateActuelle = date("Y-m-d");
+    // Obtenez la date actuelle
+    $today = date('Y-m-d');
 
-    // Vérifie si une entrée pour la date actuelle existe déjà dans la base de données
-    $stmt = $pdo->prepare("SELECT * FROM visitorcount WHERE date = :date");
-    $stmt->bindParam(':date', $dateActuelle);
+    // Vérifiez si une entrée pour la date actuelle existe déjà dans la table
+    $stmt = $pdo->prepare("SELECT * FROM page_visits WHERE visit_date = :today");
+    $stmt->bindParam(':today', $today);
     $stmt->execute();
+    $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
-    if ($stmt->rowCount() > 0) {
-        // Met à jour le compteur s'il y a déjà une entrée pour la date actuelle
-        $pdo->query("UPDATE visitorcount SET visitor_num = visitor_num + 1 WHERE date = '$dateActuelle'");
+    if ($row) {
+        // Si l'entrée existe, mettez à jour le compteur
+        $visitorCount = $row['visitor_count'] + 1;
+        $stmt = $pdo->prepare("UPDATE page_visits SET visitor_count = :count WHERE visit_date = :today");
+        $stmt->bindParam(':count', $visitorCount);
+        $stmt->bindParam(':today', $today);
+        $stmt->execute();
     } else {
-        // Insère une nouvelle entrée pour la date actuelle si elle n'existe pas encore
-        $stmt = $pdo->prepare("INSERT INTO visitorcount (date, visitor_num) VALUES (:date, 1)");
-        $stmt->bindParam(':date', $dateActuelle);
+        // Sinon, insérez une nouvelle entrée pour la date actuelle
+        $stmt = $pdo->prepare("INSERT INTO page_visits (visit_date, visitor_count) VALUES (:today, 1)");
+        $stmt->bindParam(':today', $today);
         $stmt->execute();
     }
 
-    // Récupère le nombre de visiteurs pour la date actuelle
-    $result = $pdo->query("SELECT visitor_num FROM visitorcount WHERE date = '$dateActuelle'");
-    $row = $result->fetch(PDO::FETCH_ASSOC);
-    $nombreVisiteurs = $row['visitor_num'];
-
-    // Met à jour la variable de session avec le nombre de visiteurs
-    $_SESSION['nombreVisiteursQuotidiens'] = $nombreVisiteurs;
-
-    // Affiche le nombre de visiteurs dans la card KPI (si nécessaire)
-    echo '<div class="mb-6">';
-    echo '<p class="text-lg">Nombre de visiteurs aujourd\'hui : <span class="font-bold">' . $nombreVisiteurs . '</span></p>';
-    echo '</div>';
+    // Marquer l'utilisateur comme ayant été compté pendant cette session
+    $_SESSION['user_counted'] = true;
 }
 
-function getVisitorsCount($pdo)
-{
-    // Récupère le nombre de visiteurs pour la date actuelle
-    $dateActuelle = date("Y-m-d");
-    $result = $pdo->query("SELECT visitor_num FROM visitorcount WHERE date = '$dateActuelle'");
-    $row = $result->fetch(PDO::FETCH_ASSOC);
-
-    return $row['visitor_num'];
-}
 ?>

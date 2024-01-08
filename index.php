@@ -1,20 +1,7 @@
 <?php 
-session_start(); // Démarre la session
-
 require_once 'methodes/dbConnect.php';
 require_once 'methodes/visitorCounter.php';
-
-$pdoManager = new DBManager('nwsnight');
-$pdo = $pdoManager->getPDO();
-
-// Récupère le nombre de visiteurs pour la date actuelle (avant l'incrémentation)
-$nombreVisiteursQuotidiens = getVisitorsCount($pdo);
-
-// Incrémente le compteur de visiteurs seulement si la page actuelle est index.php
-if (basename($_SERVER["SCRIPT_FILENAME"]) == 'index.php') {
-    incrementVisitorCount($pdo);
-}
-
+require_once 'methodes/visitorLocation.php';
 ?>
 
 <!DOCTYPE html>
@@ -138,10 +125,8 @@ if (basename($_SERVER["SCRIPT_FILENAME"]) == 'index.php') {
                 <div class="inscri-texte">Poste</div>
                 <input type="text" class="inscri-input" name="job" required>
             </div>
-            <div>
-                <input type="checkbox" class="inscri-check" required>
-                <p class="inscri-texte">J'accepte la politique de confidentialité</p>
-            </div>
+            <input type="checkbox" class="inscri-check" required style="display: inline-block; margin-right: 10px;">
+            <p class="inscri-texte-2" style="display: inline-block;">J'accepte la politique de confidentialité</p>
 
 
             <div>
