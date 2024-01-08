@@ -24,16 +24,18 @@ class UserRegistration
             $company = isset($_POST["company"]) ? $_POST["company"] : null;
             $job = isset($_POST["job"]) ? $_POST["job"] : null;
 
+            $ipAddress = isset($_SERVER['REMOTE_ADDR']) ? $_SERVER['REMOTE_ADDR'] : null;
+
             // Vérifiez que les valeurs ne sont pas nulles avant d'insérer dans la base de données
             if ($firstname !== null && $lastname !== null && $tel !== null && $mail !== null && $company !== null && $job !== null) {
-                $this->insertUser($firstname, $lastname, $tel, $mail, $company, $job);
+                $this->insertUser($firstname, $lastname, $tel, $mail, $company, $job, $ipAddress);
             } else {
                 echo "Error: Les champs requis ne sont pas définis.";
             }
         }
     }
 
-    private function insertUser($firstname, $lastname, $tel, $mail, $company, $job)
+    private function insertUser($firstname, $lastname, $tel, $mail, $company, $job, $ipAddress)
     {
     
         $sql = "INSERT INTO registrationgasp (firstname, lastname, tel, mail, company, job) VALUES (?, ?, ?, ?, ?, ?)";
@@ -87,6 +89,8 @@ class UserRegistration
             echo 'Erreur lors de l\'envoi de l\'e-mail de confirmation.';
         }
     }
+
+
 }    
 $pdoManager = new DBManager('nwsnight');
 $pdo = $pdoManager->getPDO();

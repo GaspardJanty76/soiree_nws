@@ -1,3 +1,22 @@
+<?php 
+session_start(); // Démarre la session
+
+require_once 'methodes/dbConnect.php';
+require_once 'methodes/visitorCounter.php';
+
+$pdoManager = new DBManager('nwsnight');
+$pdo = $pdoManager->getPDO();
+
+// Récupère le nombre de visiteurs pour la date actuelle (avant l'incrémentation)
+$nombreVisiteursQuotidiens = getVisitorsCount($pdo);
+
+// Incrémente le compteur de visiteurs seulement si la page actuelle est index.php
+if (basename($_SERVER["SCRIPT_FILENAME"]) == 'index.php') {
+    incrementVisitorCount($pdo);
+}
+
+?>
+
 <!DOCTYPE html>
 <html>
   <head>
