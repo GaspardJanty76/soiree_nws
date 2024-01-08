@@ -2,6 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <link data-require="leaflet@0.7.3" data-semver="0.7.3" rel="stylesheet"
+        href="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+    <link rel="stylesheet" href="css/map.css" />
     <link rel="stylesheet" href="globals.css" />
     <link rel="stylesheet" href="css/styleguide.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -133,30 +136,42 @@
 
     <!-- CONTACT EN FOOTER -->
 
-    <!-- <div class="overlap-4">
-        <div class="rectangle-6"></div>
-        <div class="group-11">
-        <div class="text-wrapper-15">Contact</div>
-        <div class="frame">
-            <div class="frame-2">
-            <img class="icon-alternate-phone" src="img/icon-alternate-phone.png" />
-            <div class="text-wrapper-16">0606060606</div>
-            </div>
-            <div class="frame-3">
-            <img class="icon-envelope" src="img/icon-envelope.png" />
-            <div class="text-wrapper-17">ldna@gmail.com</div>
-            </div>
-            <div class="frame-4">
-            <img class="icon-alternate-map" src="img/icon-alternate-map-marker.png" />
-            <div class="text-wrapper-17">adresse</div>
+    <div id="block-map">
+        <div id="infos-map">
+            <div class="overlap-4">
+                <div class="rectangle-6"></div>
+                <div class="group-11">
+                <div class="text-wrapper-15">Contact</div>
+                <div class="frame">
+                    <div class="frame-2">
+                    <img class="icon-alternate-phone" src="img/icon-alternate-phone.png" />
+                    <div class="text-wrapper-16">0606060606</div>
+                    </div>
+                    <div class="frame-3">
+                    <img class="icon-envelope" src="img/icon-envelope.png" />
+                    <div class="text-wrapper-17">ldna@gmail.com</div>
+                    </div>
+                    <div class="frame-4">
+                    <img class="icon-alternate-map" src="img/icon-alternate-map-marker.png" />
+                    <div class="text-wrapper-17">adresse</div>
+                    </div>
+                </div>
+                </div>
             </div>
         </div>
         </div>
+        <div id="map"></div>
+        </div>
     </div>
-    </div>
-    <img class="bfet" src="img/b6fet-2.png" />
-    </div> -->
+
+
 
     <script src="js/index.js"></script>
-  </body>
+    <script data-require="jquery@*" data-semver="2.1.1"
+        src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script data-require="leaflet@0.7.3" data-semver="0.7.3"
+        src="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
 </html>
