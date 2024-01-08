@@ -4,87 +4,66 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit98079c486e51c021baa0bf30e0094442
+class ComposerStaticInit6a5c9a415bebb6e7406f497fca6a38fc
 {
     public static $files = array (
-        '2cffec82183ee1cea088009cef9a6fc3' => __DIR__ . '/..' . '/ezyang/htmlpurifier/library/HTMLPurifier.composer.php',
+        'e69f7f6ee287b969198c3c9d6777bd38' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/bootstrap.php',
+        '25072dd6e2470089de65ae7bf11d3109' => __DIR__ . '/..' . '/symfony/polyfill-php72/bootstrap.php',
+        'f598d06aa772fa33d905e87be6398fb1' => __DIR__ . '/..' . '/symfony/polyfill-intl-idn/bootstrap.php',
+        '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
     );
 
     public static $prefixLengthsPsr4 = array (
-        'Z' => 
+        'S' => 
         array (
-            'ZipStream\\' => 10,
+            'Symfony\\Polyfill\\Php72\\' => 23,
+            'Symfony\\Polyfill\\Intl\\Normalizer\\' => 33,
+            'Symfony\\Polyfill\\Intl\\Idn\\' => 26,
         ),
-        'P' => 
+        'E' => 
         array (
-            'Psr\\SimpleCache\\' => 16,
-            'Psr\\Http\\Message\\' => 17,
-            'Psr\\Http\\Client\\' => 16,
-            'PhpOffice\\PhpSpreadsheet\\' => 25,
+            'Egulias\\EmailValidator\\' => 23,
         ),
-        'M' => 
+        'D' => 
         array (
-            'Matrix\\' => 7,
-        ),
-        'C' => 
-        array (
-            'Complex\\' => 8,
+            'Doctrine\\Common\\Lexer\\' => 22,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'ZipStream\\' => 
+        'Symfony\\Polyfill\\Php72\\' => 
         array (
-            0 => __DIR__ . '/..' . '/maennchen/zipstream-php/src',
+            0 => __DIR__ . '/..' . '/symfony/polyfill-php72',
         ),
-        'Psr\\SimpleCache\\' => 
+        'Symfony\\Polyfill\\Intl\\Normalizer\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/simple-cache/src',
+            0 => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer',
         ),
-        'Psr\\Http\\Message\\' => 
+        'Symfony\\Polyfill\\Intl\\Idn\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-factory/src',
-            1 => __DIR__ . '/..' . '/psr/http-message/src',
+            0 => __DIR__ . '/..' . '/symfony/polyfill-intl-idn',
         ),
-        'Psr\\Http\\Client\\' => 
+        'Egulias\\EmailValidator\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-client/src',
+            0 => __DIR__ . '/..' . '/egulias/email-validator/src',
         ),
-        'PhpOffice\\PhpSpreadsheet\\' => 
+        'Doctrine\\Common\\Lexer\\' => 
         array (
-            0 => __DIR__ . '/..' . '/phpoffice/phpspreadsheet/src/PhpSpreadsheet',
-        ),
-        'Matrix\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/markbaker/matrix/classes/src',
-        ),
-        'Complex\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/markbaker/complex/classes/src',
-        ),
-    );
-
-    public static $prefixesPsr0 = array (
-        'H' => 
-        array (
-            'HTMLPurifier' => 
-            array (
-                0 => __DIR__ . '/..' . '/ezyang/htmlpurifier/library',
-            ),
+            0 => __DIR__ . '/..' . '/doctrine/lexer/lib/Doctrine/Common/Lexer',
         ),
     );
 
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'Normalizer' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/Resources/stubs/Normalizer.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit98079c486e51c021baa0bf30e0094442::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit98079c486e51c021baa0bf30e0094442::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit98079c486e51c021baa0bf30e0094442::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit98079c486e51c021baa0bf30e0094442::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit6a5c9a415bebb6e7406f497fca6a38fc::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit6a5c9a415bebb6e7406f497fca6a38fc::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit6a5c9a415bebb6e7406f497fca6a38fc::$classMap;
 
         }, null, ClassLoader::class);
     }

@@ -3,11 +3,13 @@ session_start();
 
 if (isset($_SESSION['username'])) {
     ?>
-        <nav>
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <div class="navbar">
             <a href="#">Inscriptions</a> 
-            <a href="">KPI</a>
-            <a href="methodes/adminUnAuth.php">deconnexion</a>
-        </nav>
+            <a href="kpi.php">KPI</a>
+            <a class="deco" href="methodes/adminUnAuth.php"><i class="fa-solid fa-right-to-bracket" style="color: #ffffff;"></i></a>
+        </div>
         <h1>Administration</h1>
         <button type="button" class="btn btn-primary calibri text-white fw-bold" onclick="exportToExcel()">Télécharger le tableau Excel</button>
     

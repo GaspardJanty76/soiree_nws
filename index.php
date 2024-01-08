@@ -42,11 +42,13 @@
     </div>
 
     <div class="block-1" id="LNDA">
-        <div class="block-rectangle"></div>
+        <div>
+            <img src="img/antenna-ohNCIiKVT1g-unsplash.jpg" class="block-rectangle" alt="">
+        </div>
         <div class="block-texte-titre">
             <div class="block-titre">La nuit de l ambassadeur</div>
             <p class="block-texte">
-                <strong>La Nuit des Ambassadeurs c’est quoi ?</strong><br><br>
+                <strong>La Nuit des Ambassadeurs c'est quoi ?</strong><br><br>
                 La Nuit des Ambassadeurs est un événement où la Normandie Web School ouvre ses portes aux entreprises et aux professionnels, 
                 offrant une opportunité unique de présenter notre école tout en encourageant les échanges entre les entreprises présentes. 
                 Au-delà d'une simple soirée, c'est un catalyseur d'opportunités, favorisant la création de nouvelles connexions et le développement de partenariats.<br><br>
@@ -54,13 +56,15 @@
                 constitue un moment où nous pouvons sincèrement remercier ceux qui ont contribué à la réussite de la Normandie Web School
             </p>
             <div class="block-bouton">
-                <a href="#" class="text-nav-input button">Inscription</a>
+                <a href="#Inscri" class="text-nav-input button">Inscription</a>
             </div>
         </div>
     </div>
 
     <div class="block-2" id="Info">
-        <div class="block-rectangle-2"></div>
+        <div>
+            <img src="img/antenna-ZDN-G1xBWHY-unsplash.jpg" class ="block-rectangle-2" alt="">
+        </div>
         <div class="block-texte-titre-2">
             <div class="block-titre-2">Informations</div>
             <p class="block-texte-2">
@@ -79,7 +83,7 @@
     <p class="inscri-titre" id="Inscri">Inscription</p>
 
     <div class="inscri-rectangle">
-        <form class="inscri-form" method="post" enctype="multipart/form-data" onsubmit="showPopup(); return false;">
+        <form class="inscri-form" action="methodes/registration.php" method="post" enctype="multipart/form-data">
             <div class="inscri-info-perso">
                 <i class="fa-solid fa-user"></i>
                 Informations personnelles
@@ -115,9 +119,11 @@
                 <div class="inscri-texte">Poste</div>
                 <input type="text" class="inscri-input" name="job" required>
             </div>
+            <div>
+                <input type="checkbox" class="inscri-check" required>
+                <p class="inscri-texte">J'accepte la politique de confidentialité</p>
+            </div>
 
-            <input type="checkbox" class="inscri-check" required>
-            <p class="inscri-texte">J'accepte la politique de confidentialité</p>
 
             <div>
                 <input class="text-nav-input button" type="submit" value="Valider l'inscription">

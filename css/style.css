@@ -569,3 +569,22 @@ body .bfet {
 body .orange-icone {
   color: #FCB900;
 }
+
+/* PAGE DE CONFIRMATION */
+
+body .confirm-rectangle {
+  font-family: var(--h-1-font-family);
+  margin-top: 100px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  background-color: #ffffff1a;
+  border-radius: 15px;
+  text-align: center;
+  color: #ffffff;
+}
+
+body .confirm-titre{
+  color: #FCB900;
+}

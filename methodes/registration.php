@@ -35,9 +35,8 @@ class UserRegistration
 
     private function insertUser($firstname, $lastname, $tel, $mail, $company, $job)
     {
-        $token = bin2hex(random_bytes(32));
     
-        $sql = "INSERT INTO registration (firstname, lastname, tel, mail, company, job, token) VALUES (?, ?, ?, ?, ?, ?, ?)";
+        $sql = "INSERT INTO registrationgasp (firstname, lastname, tel, mail, company, job) VALUES (?, ?, ?, ?, ?, ?)";
         $stmt = $this->pdo->prepare($sql);
         $stmt->bindParam(1, $firstname);
         $stmt->bindParam(2, $lastname);
@@ -45,20 +44,19 @@ class UserRegistration
         $stmt->bindParam(4, $mail);
         $stmt->bindParam(5, $company);
         $stmt->bindParam(6, $job);
-        $stmt->bindParam(7, $token);
     
         if ($stmt->execute()) {
             // Send confirmation email
-            $this->sendConfirmationEmail($mail, $token, $firstname);
+            $this->sendConfirmationEmail($mail, $firstname);
     
-            header('Location: ../index.php');
+            header('Location: ../confirmation.php');
             exit();
         } else {
             echo "Error: " . $stmt->errorInfo()[2];
         }
     }
     
-    private function sendConfirmationEmail($to, $token, $firstname)
+    private function sendConfirmationEmail($to, $firstname)
     {
         $subject = 'Confirmation d\'inscription à la Nuit des Ambassadeurs';
         $message = "Cher(e) $firstname, \n\n

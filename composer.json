@@ -1,22 +1,5 @@
 {
-<<<<<<< HEAD
     "require": {
-        "phpoffice/phpspreadsheet": "^1.29"
-=======
-    "name": "grego/testsoiree",
-    "autoload": {
-        "psr-4": {
-            "Grego\\Testsoiree\\": "src/"
-        }
-    },
-    "authors": [
-        {
-            "name": "2bleG",
-            "email": "2bleg.akagucci@gmail.com"
-        }
-    ],
-    "require": {
-        "swiftmailer/swiftmailer": "^6.3"
->>>>>>> 2101a81540401559128cb7d6ac8d6dbfee9dd0cc
+        "swiftmailer/swiftmailer": "6.0"
     }
 }
