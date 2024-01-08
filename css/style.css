@@ -300,14 +300,14 @@ body .inscri-rectangle {
   margin-left: 2.5%;
   margin-right: 2.5%;
   width: 90%;
-  height: 600px;
+  height: 650px;
   background-color: #ffffff1a;
   border-radius: 15px;
 }
 
 body .inscri-form {
   padding-top: 50px;
-  margin-left: 150px;
+  margin-left: 10%;
 }
 
 body .inscri-info-perso {
@@ -330,22 +330,67 @@ body .inscri-texte {
 
 body .inscri-1 {
   position: absolute;
-  height: 50px;
-  width: 50%;
+  height: 50px; 
+  width: 0%;
 }
 
 body .inscri-2 {
   position: absolute;
   height: 50px; 
-  padding-left: 50%;
+  margin-left: 50%;
+  width: 0%;
+}
+
+body .inscri-3 {
+  position: absolute;
+  height: 50px; 
+  margin-top: 100px;
+  width: 0%;
+}
+
+body .inscri-4 {
+  position: absolute;
+  height: 50px; 
+  margin-left: 50%;
+  margin-top: 100px;
+  width: 0%;
 }
 
 body .inscri-input {
   position: absolute;
-  width: 50%;
+  width: 398px;
   height: 50px;
+  top: 26px;
+  left: 0;
   background-color: #ffffff;
   border-radius: 15px;
+}
+
+body .inscri-info-entreprise {
+  margin-bottom: 25px;
+  margin-top: 250px;
+  font-family: "Poppins-Bold", Helvetica;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+body .inscri-5 {
+  position: absolute;
+  height: 50px;
+  width: 50%;
+}
+
+body .inscri-6 {
+  position: absolute;
+  height: 50px; 
+  margin-left: 50%;
+  width: 0%;
+  padding-left: 50%;
+}
+
+body .inscri-check {
+  margin-top: 100px;
 }
 
 @media (max-width: 1000px) {
