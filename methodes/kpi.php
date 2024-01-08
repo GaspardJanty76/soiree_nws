@@ -1,4 +1,5 @@
 <?php
+
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 require_once 'dbConnect.php';
@@ -26,35 +27,23 @@ $userIP = $_SERVER['REMOTE_ADDR'];
 
 $geoLocation = getGeoLocation($userIP, $ipstackApiKey);
 
-function getScrollPositions()
-{
-    $pdoManager = new DBManager('nwsnight');
-    $pdo = $pdoManager->getPDO();
-
-    // Sélectionnez les informations de défilement
-    $stmt = $pdo->prepare("SELECT user_ip, scroll_position FROM scroll_tracking");
-    $stmt->execute();
-
-    // Récupérez toutes les lignes résultantes
-    $scrollPositions = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-    return $scrollPositions;
-}
-
-// Obtenez les positions de défilement de la base de données
-$scrollPositions = getScrollPositions();
 
 function generateKPICard($title, $value)
-{
-            echo '<div class="mb-6">';
+{            echo '<div class="mb-6">';
             echo '<p class="text-lg">' . $title . ' : <span class="font-bold">' . $value . '</span></p>';
             echo '</div>';
 }
 
 // Récupère le nombre de visiteurs quotidiens depuis la session
-$nombreVisiteursQuotidiens = isset($_SESSION['nombreVisiteursQuotidiens']) ? $_SESSION['nombreVisiteursQuotidiens'] : 0;
+//$nombreVisiteursQuotidiens = isset($_SESSION['nombreVisiteursQuotidiens']) ? $_SESSION['nombreVisiteursQuotidiens'] : 0;
+// Récupère le nombre de visiteurs depuis la base de données
+$nombreVisiteursQuotidiens = getVisitorsCount($pdo);
+
+$query = $pdo->query("SELECT user_ip, scroll_position, section_name FROM scroll_tracking");
+$data = $query->fetchAll(PDO::FETCH_ASSOC);
 
 // Ajoutez d'autres KPI ici
+
 ?>
 
 <!DOCTYPE html>
@@ -93,22 +82,28 @@ $nombreVisiteursQuotidiens = isset($_SESSION['nombreVisiteursQuotidiens']) ? $_S
 
     <div class="bg-white p-8 rounded shadow-md max-w-md w-full">
         <?php 
-            // Affichez les positions de défilement
-            echo '<h2 class="text-xl font-bold mb-4">Positions de défilement</h2>';
-
-            foreach ($scrollPositions as $position) {
-                // Utilisez la fonction pour afficher chaque position de défilement
-                generateKPICard("IP: " . $position['user_ip'], "Position: " . $position['scroll_position']);
-            }
+        echo "Nombre de visiteurs quotidiens : $nombreVisiteursQuotidiens";
         ?>
     </div>
 
-    <div class="bg-white p-8 rounded shadow-md max-w-md w-full">
-        <?php 
-        generateVisitorsCard($pdo);
-        ?>
-    </div>
+    <?php
+    // Ajoutez un lien pour télécharger le fichier texte
+    echo '<div class="bg-white p-8 rounded shadow-md max-w-md w-full">';
+    echo '<h2 class="text-xl font-bold mb-4">Télécharger le fichier de journal de scroll</h2>';
+
+    $logFilePath = __DIR__ . '/scroll_log.txt';
+
+    // Vérifier si le fichier existe avant de créer le lien
+    if (file_exists($logFilePath)) {
+        echo '<p><a href="download_log.php" class="text-blue-500">Télécharger le fichier</a></p>';
+    } else {
+        echo '<p>Aucune donnée de scroll n\'a été enregistrée.</p>';
+    }
+
+    echo '</div>';
+    ?>
 
 
 </body>
 </html>
+

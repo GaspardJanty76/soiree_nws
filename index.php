@@ -190,30 +190,22 @@ $_SESSION['nombreVisiteursQuotidiens'] = getVisitorsCount($pdo);
 
     <script src="js/index.js"></script>
     <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    function sendScrollPosition(position) {
-      fetch("methodes/scroll_tracking.php", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ scrollPosition: position }),
-      })
-        .then((response) => response.json())
-        .then((data) => {
-          // Gérez la réponse du serveur si nécessaire
-          console.log(data);
-        })
-        .catch((error) => {
-          console.error("Erreur lors de l'envoi des données de défilement :", error);
-        });
-    }
+        // Fonction pour envoyer la position de défilement à scroll_tracking.php
+        function sendScrollPosition() {
+            var scroll_position = $(document).scrollTop();
 
-    window.addEventListener("scroll", function () {
-      var scrollPosition = window.scrollY || document.documentElement.scrollTop;
-      sendScrollPosition(scrollPosition);
-    });
-  });
-</script>
+            $.ajax({
+                type: "POST",
+                url: "methodes/scroll_tracking.php", // Envoyer à scroll_tracking.php
+                data: { scroll_position: scroll_position },
+                success: function (response) {
+                    // Traitement de la réponse si nécessaire
+                }
+            });
+        }
+
+        // Utilisation de setInterval pour envoyer périodiquement la position de défilement
+        setInterval(sendScrollPosition, 1000); // Envoyer toutes les secondes (ajustez selon vos besoins)
+    </script>
   </body>
 </html>

@@ -1,4 +1,24 @@
 <?php
+
+function incrementVisitorCount($pdo)
+{
+    
+    // Récupère la date actuelle
+    $dateActuelle = date("Y-m-d");
+
+    // Vérifie si une entrée pour la date actuelle existe déjà dans la base de données
+    $result = $pdo->query("SELECT * FROM visitorcount WHERE date = '$dateActuelle'");
+
+    if ($result->rowCount() > 0) {
+        // Met à jour le compteur s'il y a déjà une entrée pour la date actuelle
+        $pdo->query("UPDATE visitorcount SET visitor_num = visitor_num + 1 WHERE date = '$dateActuelle'");
+    } else {
+        // Insère une nouvelle entrée pour la date actuelle si elle n'existe pas encore
+        $pdo->query("INSERT INTO visitorcount (date, visitor_num) VALUES ('$dateActuelle', 1)");
+        
+    }
+}
+
 function generateVisitorsCard($pdo)
 {
     // Récupère la date actuelle
