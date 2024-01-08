@@ -406,15 +406,15 @@ body .inscri-check {
 
 body .overlap-4 {
   position: absolute;
-  width: 562px;
+  width: 30%;
   height: 457px;
   top: 2888px;
-  left: 942px;
+  right: 0;
 }
 
 body .rectangle-6 {
   position: absolute;
-  width: 397px;
+  width: 100%;
   height: 457px;
   top: 0;
   left: 0;
@@ -428,6 +428,25 @@ body .group-11 {
   height: 155px;
   top: 151px;
   left: 33px;
+}
+
+@media (max-width: 1000px) {
+  body .overlap-4 {
+    width: 95%;
+    top: 3800px;
+    left: 5%;
+    height: 300px;
+  }
+
+  body .rectangle-6 {
+    width: 95%;
+    height: 300px;
+  }
+
+  body .group-11 {
+    top: 30px;
+  }
+  
 }
 
 body .text-wrapper-15 {
