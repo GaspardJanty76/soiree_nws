@@ -3,12 +3,8 @@ session_start();
 
 if (isset($_SESSION['username'])) {
     ?>
-        <nav>
-            <a href="#">Inscriptions</a> 
-            <a href="">KPI</a>
-            <a href="methodes/adminUnAuth.php">deconnexion</a>
-        </nav>
         <h1>Administration</h1>
+        <a href="methodes/adminUnAuth.php">deconnexion</a>
         <button type="button" class="btn btn-primary calibri text-white fw-bold" onclick="exportToExcel()">Télécharger le tableau Excel</button>
     
         <script>

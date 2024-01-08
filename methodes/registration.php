@@ -1,12 +1,9 @@
 <?php
 require_once 'dbConnect.php';
 
-<<<<<<< HEAD
-=======
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
->>>>>>> 2101a81540401559128cb7d6ac8d6dbfee9dd0cc
 class UserRegistration
 {
     private $pdo;
@@ -38,13 +35,9 @@ class UserRegistration
 
     private function insertUser($firstname, $lastname, $tel, $mail, $company, $job)
     {
-<<<<<<< HEAD
-        $sql = "INSERT INTO registration (firstname, lastname, tel, mail, company, job) VALUES (?, ?, ?, ?, ?, ?)";
-=======
         $token = bin2hex(random_bytes(32));
     
         $sql = "INSERT INTO registration (firstname, lastname, tel, mail, company, job, token) VALUES (?, ?, ?, ?, ?, ?, ?)";
->>>>>>> 2101a81540401559128cb7d6ac8d6dbfee9dd0cc
         $stmt = $this->pdo->prepare($sql);
         $stmt->bindParam(1, $firstname);
         $stmt->bindParam(2, $lastname);
@@ -52,11 +45,6 @@ class UserRegistration
         $stmt->bindParam(4, $mail);
         $stmt->bindParam(5, $company);
         $stmt->bindParam(6, $job);
-<<<<<<< HEAD
-
-        if ($stmt->execute()) {
-            header('Location: ../index.php');;
-=======
         $stmt->bindParam(7, $token);
     
         if ($stmt->execute()) {
@@ -65,14 +53,10 @@ class UserRegistration
     
             header('Location: ../index.php');
             exit();
->>>>>>> 2101a81540401559128cb7d6ac8d6dbfee9dd0cc
         } else {
             echo "Error: " . $stmt->errorInfo()[2];
         }
     }
-<<<<<<< HEAD
-}
-=======
     
     private function sendConfirmationEmail($to, $token, $firstname)
     {
@@ -106,14 +90,9 @@ class UserRegistration
         }
     }
 }    
->>>>>>> 2101a81540401559128cb7d6ac8d6dbfee9dd0cc
 $pdoManager = new DBManager('nwsnight');
 $pdo = $pdoManager->getPDO();
 
 $userRegistration = new UserRegistration($pdo);
 $userRegistration->registerUser();
-<<<<<<< HEAD
 ?>
-=======
-?>
->>>>>>> 2101a81540401559128cb7d6ac8d6dbfee9dd0cc

@@ -1,4 +1,3 @@
-<?php include('methodes/visitorCounter.php'); ?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -6,14 +5,11 @@
     <link rel="stylesheet" href="globals.css" />
     <link rel="stylesheet" href="css/styleguide.css" />
     <link rel="stylesheet" href="css/style.css" />
-<<<<<<< HEAD
-=======
     <link rel="stylesheet" href="css/popup.css" />
     <link data-require="leaflet@0.7.3" data-semver="0.7.3" rel="stylesheet"
         href="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
     <link rel="stylesheet" href="css/map.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
->>>>>>> 2101a81540401559128cb7d6ac8d6dbfee9dd0cc
   </head>
   <body> 
   <div class="div" id="nav">
@@ -80,32 +76,6 @@
 
     <!-- INSCRIPTION -->
 
-<<<<<<< HEAD
-    <div class="text-wrapper-7">Inscription</div>
-    <form action="methodes/registration.php" method="post" enctype="multipart/form-data">
-        <div class="group-4">
-            <div class="text-wrapper-8">Nom</div>
-            <input type="text" class="overlap-group-4" name="lastname" required>
-        </div>
-        <div class="group-5">
-            <div class="text-wrapper-8">Téléphone</div>
-            <input type="text" class="overlap-group-4" name="tel" required>
-        </div>
-        <div class="group-6">
-            <div class="text-wrapper-8">Mail</div>
-            <input type="text" class="overlap-group-4" name="mail" required>
-        </div>
-        <div class="group-7">
-            <div class="text-wrapper-10">Prénom</div>
-            <input type="text" class="overlap-group-4" name="firstname" required>
-        </div>
-        <div class="group-8">
-            <div class="group-wrapper">
-                <div class="group-9">
-                    <div class="text-wrapper-8">Entreprise</div>
-                    <input type="text" class="overlap-group-4" name="company" required>
-                </div>
-=======
     <p class="inscri-titre" id="Inscri">Inscription</p>
 
     <div class="inscri-rectangle">
@@ -113,14 +83,8 @@
             <div class="inscri-info-perso">
                 <i class="fa-solid fa-user"></i>
                 Informations personnelles
->>>>>>> 2101a81540401559128cb7d6ac8d6dbfee9dd0cc
             </div>
 
-<<<<<<< HEAD
-            <!-- <div class="overlap-wrapper">
-                <input class="overlap-group-3" type="submit" value="Validé l'inscription">
-            </div> -->
-=======
             <div class="inscri-1">
                 <div class="inscri-texte">Nom</div>
                 <input type="text" class="inscri-input" name="lastname" required>
@@ -158,26 +122,11 @@
             <div>
                 <input class="text-nav-input button" type="submit" value="Valider l'inscription">
             </div>
->>>>>>> 3fc393258f3826c95c52795c590e342de8736876
         </form>
-        <div class="overlay" id="overlay">
-            <div class="popup">
-                <span class="close-btn" onclick="closePopup()">&times;</span>
-                <p>Confirmez votre participation à La Nuit des Ambassadeurs
-                    en cliquant sur le lien de confirmation dans votre boîte mail.</p>
-                <p>À bientôt !</p>
-            </div>
-        </div>
-        <div class="text-wrapper-12">Informations personnelles</div>
-        <div class="text-wrapper-13">Entreprise</div>
-        <img class="icon-user" src="img/image.png" />
-        <img class="img" src="img/icon-user.png" />
-        <input type="checkbox" class="rectangle-5" required>
-        <p class="text-wrapper-14">J'accepte la politique de confidentialité</p>
-        <div class="overlap-wrapper">
-            <input class="overlap-group-3" type="submit" value="Validé l'inscription">
-        </div>
-    </form>
+        
+    </div>
+
+    <!-- CONTACT EN FOOTER -->
 
     <div id="block-map">
         <div id="infos-map">
@@ -187,15 +136,15 @@
                         <div class="text-wrapper-15">Contact</div>
                             <div class="frame">
                                 <div class="frame-2">
-                                    <img class="icon-alternate-phone" src="img/icon-alternate-phone.png" />
+                                    <i class="orange-icone icon-alternate-phone fa-solid fa-phone"></i>
                                     <div class="text-wrapper-16">0606060606</div>
                                 </div>
                                 <div class="frame-3">
-                                    <img class="icon-envelope" src="img/icon-envelope.png" />
+                                    <i class="orange-icone icon-envelope fa-solid fa-envelope"></i>
                                     <div class="text-wrapper-17">ldna@gmail.com</div>
                                 </div>
                                 <div class="frame-4">
-                                    <img class="icon-alternate-map" src="img/icon-alternate-map-marker.png" />
+                                    <i class="orange-icone icon-alternate-map fa-solid fa-location-dot"></i>
                                     <div class="text-wrapper-17">adresse</div>
                                 </div>
                             </div>
@@ -208,15 +157,11 @@
     </div>
 
     <script src="js/index.js"></script>
-<<<<<<< HEAD
-    <script src="js/popup.js"></script>
-=======
 
     <script data-require="jquery@*" data-semver="2.1.1"
         src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script data-require="leaflet@0.7.3" data-semver="0.7.3"
         src="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
     <script src="js/script.js"></script>
->>>>>>> 2101a81540401559128cb7d6ac8d6dbfee9dd0cc
   </body>
 </html>
