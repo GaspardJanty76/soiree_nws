@@ -1,13 +1,14 @@
 <?php
 session_start();
 
-if (isset($_SESSION['username'])) {
+// if (isset($_SESSION['username'])) {
     ?>
-        <nav>
+        <link rel="stylesheet" href="css/admin.css">
+        <div class="navbar">
             <a href="#">Inscriptions</a> 
             <a href="">KPI</a>
             <a href="methodes/adminUnAuth.php">deconnexion</a>
-        </nav>
+        </div>
         <h1>Administration</h1>
         <button type="button" class="btn btn-primary calibri text-white fw-bold" onclick="exportToExcel()">Télécharger le tableau Excel</button>
     
@@ -39,8 +40,8 @@ if (isset($_SESSION['username'])) {
     <?php
     
 
-} else {
-    header("Location: connexion.php");
-    exit();
-}
+// } else {
+//     header("Location: connexion.php");
+//     exit();
+// }
 ?>
