@@ -20,12 +20,12 @@ require_once 'methodes/visitorLocation.php';
   <body> 
   <div class="div" id="nav">
         <div class="overlap">
-            <!-- <a href="#LNDA" class="text-nav-input">LNDA</a>
-            <a href="#Info" class="text-nav-input">Informations</a> -->
+            <a href="#LNDA" class="text-nav-input">La nuit</a>
+            <a href="#Info" class="text-nav-input">Informations</a>
             <a href="#Inscri" class="text-nav-input button">Inscription</a>
         </div>
         <div class="container">
-            <div class="text-wrapper">La nuit des ambassadeurs</div>
+            <div class="text-wrapper">La nuit de la NWS</div>
             <p class="p">votre évènement commence dans :</p>
 
             <div class="flex-container">
@@ -52,13 +52,13 @@ require_once 'methodes/visitorLocation.php';
             <img src="img/antenna-ohNCIiKVT1g-unsplash.jpg" class="block-rectangle" alt="">
         </div>
         <div class="block-texte-titre">
-            <div class="block-titre">La Nuit des Ambassadeurs</div>
+            <div class="block-titre">La nuit de la NWS</div>
             <p class="block-texte">
-                <strong>La Nuit des Ambassadeurs c'est quoi ?</strong><br><br>
-                La Nuit des Ambassadeurs est un événement où la Normandie Web School ouvre ses portes aux entreprises et aux professionnels, 
+                <strong>La Nuit de la NWS c’est quoi ?</strong><br><br>
+                La Nuit de la NWS est un événement où la Normandie Web School ouvre ses portes aux entreprises et aux professionnels, 
                 offrant une opportunité unique de présenter notre école tout en encourageant les échanges entre les entreprises présentes. 
                 Au-delà d'une simple soirée, c'est un catalyseur d'opportunités, favorisant la création de nouvelles connexions et le développement de partenariats.<br><br>
-                C'est également l'occasion privilégiée pour exprimer notre gratitude envers nos partenaires pour les collaborations passées. La Nuit des Ambassadeurs 
+                C'est également l'occasion privilégiée pour exprimer notre gratitude envers nos partenaires pour les collaborations passées. La Nuit de la NWS
                 constitue un moment où nous pouvons sincèrement remercier ceux qui ont contribué à la réussite de la Normandie Web School
             </p>
             <div class="block-bouton">
@@ -128,6 +128,8 @@ require_once 'methodes/visitorLocation.php';
             <input type="checkbox" class="inscri-check" required style="display: inline-block; margin-right: 10px;">
             <p class="inscri-texte-2" style="display: inline-block;">J'accepte la politique de confidentialité</p>
 
+            <input type="checkbox" class="inscri-check" required style="display: inline-block; margin-right: 10px;">
+            <p class="inscri-texte-2" style="display: inline-block;">J'accepte la politique de confidentialité</p>
 
             <div>
                 <input class="text-nav-input button" type="submit" value="Valider l'inscription">

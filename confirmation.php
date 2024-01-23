@@ -11,7 +11,7 @@
     <title>La Nuit des Ambassadeurs</title>
 </head>
 <body>
-<div class="confirm-rectangle">
+    <div class="confirm-rectangle">
         <h1 class="confirm-titre">Confirmation d'inscription à La Nuit des Ambassadeurs</h1>
         <h2>Félicitation </h2>
         <p>Votre inscription à la Nuit des Ambassadeurs de la Normandie Web School est maintenant confirmée !</p>
