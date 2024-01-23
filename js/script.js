@@ -3,7 +3,7 @@ var tileLayer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.p
 });
 
 var map = new L.Map('map', {
-  'center': [49.430682, 1.08063],
+  'center': [49.428701069635686, 1.065610984658815],
   'zoom': 15,
   'layers': [tileLayer]
 });
@@ -14,6 +14,6 @@ map.on('popupopen', function(openEvent){
   });
 });
 
-var marker = L.marker([49.430682, 1.08063])
+var marker = L.marker([49.428701069635686, 1.065610984658815])
   .addTo(map)
-  .bindPopup('NWS');
+  .bindPopup('Seine Innopolis');

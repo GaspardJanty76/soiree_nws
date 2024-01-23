@@ -20,8 +20,8 @@ require_once 'methodes/visitorLocation.php';
   <body> 
   <div class="div" id="nav">
         <div class="overlap">
-            <a href="#LNDA" class="text-nav-input">LNDA</a>
-            <a href="#Info" class="text-nav-input">Informations</a>
+            <!-- <a href="#LNDA" class="text-nav-input">LNDA</a>
+            <a href="#Info" class="text-nav-input">Informations</a> -->
             <a href="#Inscri" class="text-nav-input button">Inscription</a>
         </div>
         <div class="container">
@@ -52,7 +52,7 @@ require_once 'methodes/visitorLocation.php';
             <img src="img/antenna-ohNCIiKVT1g-unsplash.jpg" class="block-rectangle" alt="">
         </div>
         <div class="block-texte-titre">
-            <div class="block-titre">La nuit de l ambassadeur</div>
+            <div class="block-titre">La Nuit des Ambassadeurs</div>
             <p class="block-texte">
                 <strong>La Nuit des Ambassadeurs c'est quoi ?</strong><br><br>
                 La Nuit des Ambassadeurs est un événement où la Normandie Web School ouvre ses portes aux entreprises et aux professionnels, 
@@ -147,15 +147,15 @@ require_once 'methodes/visitorLocation.php';
                             <div class="frame">
                                 <div class="frame-2">
                                     <i class="orange-icone icon-alternate-phone fa-solid fa-phone"></i>
-                                    <div class="text-wrapper-16">0606060606</div>
+                                    <div class="text-wrapper-16">02 79 02 73 78</div>
                                 </div>
                                 <div class="frame-3">
                                     <i class="orange-icone icon-envelope fa-solid fa-envelope"></i>
-                                    <div class="text-wrapper-17">ldna@gmail.com</div>
+                                    <div class="text-wrapper-17">contact@normandiewebschool.fr</div>
                                 </div>
                                 <div class="frame-4">
                                     <i class="orange-icone icon-alternate-map fa-solid fa-location-dot"></i>
-                                    <div class="text-wrapper-17">adresse</div>
+                                    <div class="text-wrapper-17">72 rue de la République 76140 Le Petit-Quevilly</div>
                                 </div>
                             </div>
                         </div>

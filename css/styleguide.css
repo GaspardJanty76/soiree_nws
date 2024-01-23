@@ -1,7 +1,7 @@
 :root {
     --primary-background: rgba(37, 38, 39, 1);
-    --secondary: rgba(210, 52, 52, 1);
-    --primaryy: rgba(252, 185, 0, 1);
+    --secondary: rgba(252, 185, 0, 1);
+    --primaryy: #04061F;
     --h-1-font-family: "Poppins-Bold", Helvetica;
     --h-1-font-weight: 700;
     --h-1-font-size: 73px;
