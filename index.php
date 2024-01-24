@@ -2,7 +2,7 @@
 // require_once 'methodes/dbConnect.php';
 // require_once 'methodes/visitorCounter.php';
 // require_once 'methodes/visitorLocation.php';
-require_once 'methodes/contentDisplay.php';
+// require_once 'methodes/contentDisplay.php';
 ?>
 
 <!DOCTYPE html>
@@ -19,29 +19,29 @@ require_once 'methodes/contentDisplay.php';
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   </head>
   <body> 
-  <div class="div" id="nav">
-        <div class="container">
-            <div class="text-wrapper">La nuit de la NWS</div>
-            <p class="p">votre évènement commence dans :</p>
+    <div class="div" id="nav">
+            <div class="container">
+                <div class="text-wrapper">La nuit de la NWS</div>
+                <p class="p">votre évènement commence dans :</p>
 
-            <div class="flex-container">
-                <div class="timer-block">
-                    <div class="text-block-2" id="days">0</div>
-                    <div class="text-block-3">jours</div>
-                </div>
+                <div class="flex-container">
+                    <div class="timer-block">
+                        <div class="text-block-2" id="days">0</div>
+                        <div class="text-block-3">jours</div>
+                    </div>
 
-                <div class="timer-block">
-                    <div class="text-block-2" id="hours">0</div>
-                    <div class="text-block-3">heures</div>
-                </div>
+                    <div class="timer-block">
+                        <div class="text-block-2" id="hours">0</div>
+                        <div class="text-block-3">heures</div>
+                    </div>
 
-                <div class="timer-block">
-                    <div class="text-block-2" id="minutes">0</div>
-                    <div class="text-block-3">minutes</div>
+                    <div class="timer-block">
+                        <div class="text-block-2" id="minutes">0</div>
+                        <div class="text-block-3">minutes</div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
     <div class="cloud">
         <div class="word">
