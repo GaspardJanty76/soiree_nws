@@ -8,6 +8,7 @@ if (isset($_SESSION['username'])) {
         <div class="navbar">
             <a href="admin.php">Inscriptions</a> 
             <a href="#">KPI</a>
+            <a href="content.php">Contenu</a>
             <a class="deco" href="methodes/adminUnAuth.php"><i class="fa-solid fa-right-to-bracket" style="color: #ffffff;"></i></a>
         </div>
         <h1>KPI</h1>

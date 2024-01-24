@@ -2,6 +2,7 @@
 // require_once 'methodes/dbConnect.php';
 // require_once 'methodes/visitorCounter.php';
 // require_once 'methodes/visitorLocation.php';
+require_once 'methodes/contentDisplay.php';
 ?>
 
 <!DOCTYPE html>
@@ -54,14 +55,9 @@
             <img src="img/antenna-ZDN-G1xBWHY-unsplash.jpg" class ="block-rectangle-2" alt="">
         </div>
         <div class="block-texte-titre-2">
-            <div class="block-titre-2">Informations</div>
+            <div class="block-titre-2"><?php echo $title; ?></div>
             <p class="block-texte-2">
-                <strong>Objectifs</strong><br><br>
-                Au cœur de cette soirée, La Normandie Web School aspire à atteindre un objectif clair  : favoriser la création de liens significatifs 
-                et le développement de collaborations innovantes entre les acteurs du monde académique et professionnel. Nous croyons en l'importance 
-                de dépasser les frontières traditionnelles pour créer des opportunités concrètes.<br><br>
-                Participez à cette soirée, où chaque interaction contribue à esquisser un futur riche en collaborations fructueuses. Soyez acteur de cette 
-                expérience qui encourage la création de liens durables et le partage d'expertise. Rejoignez-nous dans cette aventure vers un futur collaboratif et innovant. 
+            <?php echo $text; ?> 
             </p>
         </div>
     </div>
