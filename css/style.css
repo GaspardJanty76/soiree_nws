@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(black, #04061F, black);
+  background: linear-gradient(black, #05083e, black);
   background-size: cover;
   height: 250vh;
   margin: 0;
@@ -111,7 +111,7 @@ body .flex-container {
 }
 
 body .timer-block {
-  background-color: #ffffff1a;
+  background-color: #1D1F35;
   border-radius: 0.9375rem;
   width: 13rem;
   height: 10rem;
@@ -164,7 +164,7 @@ body .text-block-3 {
   display: flex;
   position: absolute;
   top: 700px;
-  background-color: #ffffff1a;
+  background-color: #1D1F35;
   width: 100%;
   height: 350px;
   text-align: center;
@@ -224,7 +224,7 @@ body .block-rectangle-2 {
   width: 47.5%;
   margin-left: 50%;
   height: 450px;
-  background-color: #ffffff1a;
+  background-color: #1D1F35;
   border-radius: 15px;
 }
 
@@ -263,7 +263,7 @@ body .inscri-rectangle {
   margin-right: 2.5%;
   width: 90%;
   height: 650px;
-  background-color: #ffffff1a;
+  background-color: #1D1F35;
   border-radius: 15px;
 }
 
@@ -383,7 +383,7 @@ body .rectangle-6 {
   height: 457px;
   top: 0;
   left: 0;
-  background-color: #ffffff1a;
+  background-color: #1D1F35;
   border-radius: 15px;
 }
 
@@ -545,7 +545,7 @@ body .confirm-rectangle {
   padding-right: 15px;
   margin-left: 15px;
   margin-right: 15px;
-  background-color: #ffffff1a;
+  background-color: #1D1F35;
   border-radius: 15px;
   text-align: center;
   color: #ffffff;
