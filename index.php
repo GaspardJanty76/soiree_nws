@@ -43,8 +43,11 @@
     </div>
 
     <div class="cloud">
-
+        <div class="word">
+        </div>
     </div>
+
+    <script src="js/nuage.js"></script>
 
     <div class="block-2" id="Info">
         <div>
