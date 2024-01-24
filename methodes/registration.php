@@ -60,13 +60,20 @@ class UserRegistration
     
     private function sendConfirmationEmail($to, $firstname)
     {
-        $subject = 'Confirmation d\'inscription à la Nuit des Ambassadeurs';
+        $subject = 'Invitation à La nuit de la NWS';
         $message = "Cher(e) $firstname, \n\n
-        Nous vous confirmons votre inscription à la Nuit des Ambassadeurs de la Normandie Web School.\n\n
-        Cette soirée d'échanges entre l'école et les professionnels promet des opportunités de collaborations innovantes.\n\n
-        Nous attendons votre participation avec enthousiasme pour partager une soirée mémorable.\n\n
-        Cordialement,\n\n
-        La Normandie Web School";
+        C’est avec plaisir que nous vous invitons à la nuit de la NWS! \n\n
+
+        Professionnels du digital, partenaires historiques, anciens étudiants, nous vous proposons de partager cette soirée afin de vous remercier pour les projets menés ensemble, et vous annoncer les projets à venir. \n\n
+        Fête, challenges, convivialité. Au-delà d'une simple soirée, cet événement est un catalyseur d'opportunités, favorisant la création de nouvelles connexions, et le développement de partenariats. \n\n
+        Lieu :  \n
+        Là où l’école a fait ses premiers pas, nous nous retrouverons à Seine Innopolis \n
+        72 Rue de la République, Le Petit-Quevilly \n\n
+        Date :  \n
+        18 avril, 18h30  \n\n
+        Lien vers le site \n
+        Attention, inscrivez vite, le nombre de places est limité! \n\n
+        06 81 09 14 40";
     
         require '../vendor/autoload.php';
     
