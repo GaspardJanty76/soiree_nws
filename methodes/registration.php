@@ -71,7 +71,7 @@ class UserRegistration
         72 Rue de la République, Le Petit-Quevilly \n\n
         Date :  \n
         18 avril, 18h30  \n\n
-        Lien vers le site \n
+        http://51.178.29.201/soiree_nws/ \n
         Attention, inscrivez vite, le nombre de places est limité! \n\n
         06 81 09 14 40";
     
