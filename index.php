@@ -31,8 +31,8 @@
     <main class="index">
         <section class="hero-section">
             <div class="hero-header">
-                <h1>La nuit de la NWS</h1>
-                <p>votre évènement commence dans :</p>
+                <h1>"Logo" La nuit de la NWS</h1> 
+                <p>18 AVRIL 2024<br>votre évènement commence dans :</p>
             </div>
             <ul>
                 <li>
