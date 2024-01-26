@@ -152,18 +152,22 @@
                 <ul>
                     <li>
                         <i class="fa-solid fa-phone"></i>
-                        <p>02 79 02 73 78</p>
+                        <a href="tel:0279027378">02 79 02 73 78</a>
                     </li>
                     <li class="frame-3">
                         <i class="fa-solid fa-envelope"></i>
-                        <p>contact@normandiewebschool.fr</p>
+                        <a href="mailto:contact@normandiewebschool.fr">
+                            <p>contact@normandiewebschool.fr</p>
+                        </a>
                     </li>
                 </ul>
                 <h2>Lieu de l'évènement</h2>
                 <ul>
                     <li class="frame-4">
                         <i class="fa-solid fa-location-dot"></i>
-                        <p>72 Rue de la République, 76140 Le Petit-Quevilly</p>
+                        <a href="https://www.google.com/maps/place/72+Rue+de+la+République,+76140+Le+Petit-Quevilly" target="_blank">
+                            <p>72 Rue de la République, 76140 Le Petit-Quevilly</p>
+                        </a>                    
                     </li>
                 </ul>
             </div>

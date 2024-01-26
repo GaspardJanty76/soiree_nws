@@ -422,6 +422,36 @@
   font-size: medium;
 }
 
+.frame-3 a {
+  color: white;
+  text-decoration: none;
+  text-decoration: underline;
+}
+
+.frame-3 a:hover {
+  color: #d8d8d8;
+}
+
+.frame-4 a {
+  color: white;
+  text-decoration: none;
+  text-decoration: underline;
+}
+
+.frame-4 a:hover {
+  color: #d8d8d8;
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+  text-decoration: underline;
+}
+
+li a:hover {
+  color: #d8d8d8;
+}
+
 @media only screen and (max-width: 786px) {
   .index .contact-section {
     flex-direction: column-reverse;
