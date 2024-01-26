@@ -189,18 +189,18 @@
 
 /* Positionnement aléatoire */
 .word p:nth-child(1) { top: 50px; left: 5%; }
-.word p:nth-child(2) { top: 120px; left: 80%; }
+.word p:nth-child(2) { top: 270px; left: 88%; }
 .word p:nth-child(3) { top: 200px; left: 10%; }
 .word p:nth-child(4) { top: 80px; left: 90%; }
-.word p:nth-child(5) { top: 160px; left: 32%; }
+.word p:nth-child(5) { top: 50px; left: 32%; }
 .word p:nth-child(6) { top: 240px; left: 65%; }
-.word p:nth-child(7) { top: 60px; left: 25%; }
+.word p:nth-child(7) { top: 60px; left: 62%; }
 .word p:nth-child(8) { top: 180px; left: 75%; }
-.word p:nth-child(9) { top: 300px; left: 50px; }
-.word p:nth-child(10) { top: 220px; left: 300px; }
-.word p:nth-child(11) { top: 120px; left: 500px; }
-.word p:nth-child(12) { top: 260px; left: 400px; }
-.word p:nth-child(13) { top: 150px; left: 700px; }
+.word p:nth-child(9) { top: 300px; left: 40%; }
+.word p:nth-child(10) { top: 220px; left: 27%; }
+.word p:nth-child(11) { top: 120px; left: 20%; }
+.word p:nth-child(12) { top: 270px; left: 15%; }
+.word p:nth-child(13) { top: 150px; left: 45%; }
 
 /* TEXTE ET BLOCK INFO */
 
