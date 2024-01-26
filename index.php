@@ -120,11 +120,11 @@
                 </div>
                 <h3>
                     <i class="fa-solid fa-user"></i>
-                    Entreprise
+                    Entreprise / Organisation
                 </h3>
                 <div class="registration-form-part">
                     <div>
-                        <label class="inscri-texte">Entreprise
+                        <label class="inscri-texte">Entreprise / Organisation
                         </label>
                         <input type="text" name="company" required>
                     </div>
@@ -134,12 +134,12 @@
                         <input type="text" name="job" required>
                     </div>
                 </div>
-                <label class="label-custom">Je refuse d'être pris en photo
-                    <input type="checkbox">
+                <label class="label-custom">J'accepte d'être pris en photo
+                    <input type="checkbox" checked>
                     <span class="checkmark"></span>
 
                 </label>
-                <button type="submit">
+                <button type="submit" class="btn-inscription-2">
                     Valider l'inscription
                 </button>
             </form>
@@ -158,6 +158,9 @@
                         <i class="fa-solid fa-envelope"></i>
                         <p>ldna@gmail.com</p>
                     </li>
+                </ul>
+                <h2>Lieu de l'évènement</h2>
+                <ul>
                     <li class="frame-4">
                         <i class="fa-solid fa-location-dot"></i>
                         <p>adresse</p>

@@ -209,21 +209,24 @@ canvas {
   z-index: -1; /* Pour le placer derrière le reste du contenu */
 }
 
-h1,
-h2 {
+h1 {
   font-family: var(--font-family-poppins);
   font-weight: var(--font-weight-bold);
   letter-spacing: var(--letter-spacing-normal);
   line-height: var(--line-height-normal);
   font-style: var(--font-style-normal);
-}
 
-h1 {
   font-size: var(--font-size-large);
   color: var(--primary-color);
 }
 
 h2 {
+  font-family: var(--font-family-inter);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--letter-spacing-normal);
+  line-height: var(--line-height-normal);
+  font-style: var(--font-style-normal);
+
   font-size: var(--font-size-medium);
   color: var(--primary-color);
 }
