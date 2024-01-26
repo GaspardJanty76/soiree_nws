@@ -26,6 +26,7 @@
   <body> 
     <div class="div" id="nav">
         <div class="container">
+            <img src="img/logo_1.png" class ="block-rectangle-2" alt="">
             <div class="text-wrapper">La nuit de la NWS</div>
             <p class="p">votre évènement commence dans :</p>
 
@@ -57,8 +58,7 @@
 
     <div class="block-2" id="Info">
         <div>
-            <img src="img/antenna-ZDN-G1xBWHY-unsplash.jpg" class ="block-rectangle-2" alt="">
-        </div>
+6        </div>
         <div class="block-texte-titre-2">
             <div class="block-titre-2"><?php echo $title; ?></div>
             <p class="block-texte-2">
