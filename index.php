@@ -152,18 +152,18 @@
                 <ul>
                     <li>
                         <i class="fa-solid fa-phone"></i>
-                        <p>0606060606</p>
+                        <p>02 79 02 73 78</p>
                     </li>
                     <li class="frame-3">
                         <i class="fa-solid fa-envelope"></i>
-                        <p>ldna@gmail.com</p>
+                        <p>contact@normandiewebschool.fr</p>
                     </li>
                 </ul>
                 <h2>Lieu de l'évènement</h2>
                 <ul>
                     <li class="frame-4">
                         <i class="fa-solid fa-location-dot"></i>
-                        <p>adresse</p>
+                        <p>72 Rue de la République, 76140 Le Petit-Quevilly</p>
                     </li>
                 </ul>
             </div>
