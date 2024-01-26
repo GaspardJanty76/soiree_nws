@@ -12,129 +12,109 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fugaz+One&display=swap" rel="stylesheet">
-  </head>
-  <body> 
-    <div class="div" id="nav">
-        <div class="container">
-            <div>
-                <img src="img/logo_1.png" alt="">
+
+    <script src="js/index.js" defer></script>
+    <script data-require="jquery@*" data-semver="2.1.1"
+        src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js" defer></script>
+    <script data-require="leaflet@0.7.3" data-semver="0.7.3"
+        src="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js" defer></script>
+    <script src="js/script.js" defer></script>
+
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" defer></script>
+    <script src="http://threejs.org/examples/js/libs/stats.min.js" defer></script>
+
+</head>
+
+<body>
+    <canvas id="starCanvas"></canvas>
+    <script src="js/stars.js"></script>
+    <main class="index">
+        <section class="hero-section">
+            <div class="hero-header">
+                <h1>"Logo" La nuit de la NWS</h1> 
+                <p>18 AVRIL 2024<br>votre évènement commence dans :</p>
             </div>
-            <div class="text-wrapper">La nuit de la NWS</div>
-            <p class="p">votre évènement commence dans :</p>
+            <ul>
+                <li>
+                    <div id="days">0</div>
+                    <div>jours</div>
+                </li>
 
-            <div class="flex-container">
-                <div class="timer-block">
-                    <div class="text-block-2" id="days">0</div>
-                    <div class="text-block-3">jours</div>
-                </div>
+                <li>
+                    <div id="hours">0</div>
+                    <div>heures</div>
+                </li>
 
-                <div class="timer-block">
-                    <div class="text-block-2" id="hours">0</div>
-                    <div class="text-block-3">heures</div>
-                </div>
+                <li>
+                    <div id="minutes">0</div>
+                    <div>minutes</div>
+                </li>
+            </ul>
+            <a href="#Inscri">
+                <button>
+                    Inscription
+                </button>
+            </a>
+        </section>
 
-                <div class="timer-block">
-                    <div class="text-block-2" id="minutes">0</div>
-                    <div class="text-block-3">minutes</div>
-                </div>
+        <!-- NUAGE DE MOTS -->
+        <div class="cloud">
+            <div class="word">
+                <p>Conférences</p>
+                <p>Lots</p>
+                <p>Ateliers</p>
+                <p>Exposants</p>
+                <p>Icebreaker</p>
+                <p>Entreprises</p>
+                <p>Intervenants</p>
+                <p>Collaboration</p>
+                <p>Partenariats</p>
+                <p>Stratégies</p>
+                <p>Échanges</p>
+                <p>Tendances</p>
+                <p>Ambassadeurs</p>
             </div>
         </div>
-    </div>
 
-    <!-- NUAGE DE MOTS -->
-
-    <div class="cloud">
-        <div class="word">
-        </div>
-    </div>
-
-    <!-- BLOCK INFO -->
-
-    <div class="block-2" id="Info">
-        <div>
-            <img src="img/antenna-ZDN-G1xBWHY-unsplash.jpg" class ="block-rectangle-2" alt="">
-        </div>
-        <div class="block-texte-titre-2">
-            <div class="block-titre-2"><?php echo $title; ?></div>
-            <p class="block-texte-2">
-            <?php echo $text; ?> 
-            </p>
-        </div>
-    </div>
-
-    <!-- INSCRIPTION -->
-
-    <p class="inscri-titre" id="Inscri">Inscription</p>
-
-    <div class="inscri-rectangle">
-        <form class="inscri-form" action="methodes/registration.php" method="post" enctype="multipart/form-data">
-            <div class="inscri-info-perso">
-                <i class="fa-solid fa-user"></i>
-                Informations personnelles
+        <!-- BLOCK INFORMATION -->
+        <section class="information" id="Info">
+            <div class="block-rectangle-2">
+                <img src="img/antenna-ZDN-G1xBWHY-unsplash.jpg" class ="block-rectangle-2" alt="">
             </div>
+            <div class="information-content">
+                <h2><?php echo $title; ?></h2>
+                <p><?php echo $text; ?></p>
+            </div>
+        </section>
 
-            <div class="inscri-1">
-                <div class="inscri-texte">Nom</div>
-                <input type="text" class="inscri-input" name="lastname" required>
-            </div>
-            <div class="inscri-2">
-                <div class="inscri-texte">Prénom</div>
-                <input type="text" class="inscri-input" name="firstname" required>
-            </div>
-            <div class="inscri-3">
-                <div class="inscri-texte">Téléphone</div>
-                <input type="text" class="inscri-input" name="tel" required>
-            </div>
-            <div class="inscri-4">
-                <div class="inscri-texte">Mail</div>
-                <input type="text" class="inscri-input" name="mail" required>
-            </div>
+        <!-- INSCRIPTION -->
+        <section class="registration-section">
+            <h2 id="Inscri">Inscription</h2>
+            <form method="post" enctype="multipart/form-data" onsubmit="showPopup(); return false;">
+                <h3>
+                    <i class="fa-solid fa-user"></i>
+                    Informations personnelles
+                </h3>
+                <div class="registration-form-part">
+                    <div class="registration-form-section">
+                        <div>
+                            <label for="lastname">Nom</label>
+                            <input type="text" name="lastname" required>
+                        </div>
+                        <div>
+                            <label for="firstname">Prénom</label>
+                            <input type="text" name="firstname" required>
+                        </div>
+                    </div>
+                    <div class="registration-form-section">
+                        <div>
+                            <label for="tel">Téléphone</label>
+                            <input type="text" name="tel" required>
+                        </div>
 
-            <div class="inscri-info-entreprise">
-                <i class="fa-solid fa-user"></i>
-                Entreprise
-            </div>
-
-            <div class="inscri-5">
-                <div class="inscri-texte">Entreprise</div>
-                <input type="text" class="inscri-input" name="company" required>
-            </div>
-            <div class="inscri-6">
-                <div class="inscri-texte">Poste</div>
-                <input type="text" class="inscri-input" name="job" required>
-            </div>
-            <input type="checkbox" class="inscri-check" required style="display: inline-block; margin-right: 10px;">
-            <p class="inscri-texte-2" style="display: inline-block;">J'accepte la politique de confidentialité</p>
-
-            <div>
-                <input class="text-nav-input button" type="submit" value="Valider l'inscription">
-            </div>
-        </form>
-        
-    </div>
-
-    <!-- CONTACT EN FOOTER -->
-
-    <div id="block-map">
-        <div id="infos-map">
-            <div class="overlap-4">
-                <div class="rectangle-6"></div>
-                    <div class="group-11">
-                        <div class="text-wrapper-15">Contact</div>
-                            <div class="frame">
-                                <div class="frame-2">
-                                    <i class="orange-icone icon-alternate-phone fa-solid fa-phone"></i>
-                                    <div class="text-wrapper-16">02 79 02 73 78</div>
-                                </div>
-                                <div class="frame-3">
-                                    <i class="orange-icone icon-envelope fa-solid fa-envelope"></i>
-                                    <div class="text-wrapper-17">contact@normandiewebschool.fr</div>
-                                </div>
-                                <div class="frame-4">
-                                    <i class="orange-icone icon-alternate-map fa-solid fa-location-dot"></i>
-                                    <div class="text-wrapper-17">72 rue de la République 76140 Le Petit-Quevilly</div>
-                                </div>
-                            </div>
+                        <div>
+                            <label for="mail">Mail</label>
+                            <input type="text" name="mail" required>
                         </div>
                     </div>
                 </div>
