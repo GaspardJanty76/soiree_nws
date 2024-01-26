@@ -24,7 +24,7 @@ body .div {
 
 body .text-nav-input {
   color: #fff;
-  font-family: var(--h-1-font-family);
+  font-family: var(--h-2-font-family);
   text-decoration: none;
   padding: 5px 10px;
   margin-right: 10px;
@@ -123,7 +123,7 @@ body .timer-block {
 body .text-block-2 {
   color: #FCB900;
   margin-top: 20px;
-  font-family: var(--h-1-font-family);
+  font-family: var(--h-2-font-family);
   font-size: 3.75rem;
   font-style: normal;
   font-weight: 700;
