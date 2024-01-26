@@ -7,110 +7,6 @@
         href="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
     <link rel="stylesheet" href="./css/global.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-<<<<<<< HEAD
-
-    <script src="js/index.js" defer></script>
-    <script data-require="jquery@*" data-semver="2.1.1"
-        src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js" defer></script>
-    <script data-require="leaflet@0.7.3" data-semver="0.7.3"
-        src="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js" defer></script>
-    <script src="js/script.js" defer></script>
-
-    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" defer></script>
-    <script src="http://threejs.org/examples/js/libs/stats.min.js" defer></script>
-
-</head>
-
-<body>
-    <canvas id="starCanvas"></canvas>
-    <script src="js/stars.js"></script>
-    <main class="index">
-        <section class="hero-section">
-            <div class="hero-header">
-                <h1>La nuit de la NWS</h1>
-                <p>votre évènement commence dans :</p>
-            </div>
-            <ul>
-                <li>
-                    <div id="days">0</div>
-                    <div>jours</div>
-                </li>
-
-                <li>
-                    <div id="hours">0</div>
-                    <div>heures</div>
-                </li>
-
-                <li>
-                    <div id="minutes">0</div>
-                    <div>minutes</div>
-                </li>
-            </ul>
-            <a href="#Inscri">
-                <button>
-                    Inscription
-                </button>
-            </a>
-        </section>
-
-        <div class="cloud">
-            <div class="word">
-            </div>
-        </div>
-
-        <script src="js/nuage.js"></script>
-
-        <section class="information" id="Info">
-            <div class="block-rectangle-2"></div>
-            <div class="information-content">
-                <h2>Informations</h2>
-                <p>
-                    Au cœur de cette soirée, La Normandie Web School aspire à atteindre un objectif clair :
-                    favoriser la
-                    création de liens significatifs
-                    et le développement de collaborations innovantes entre les acteurs du monde académique et
-                    professionnel.
-                    Nous croyons en l'importance
-                    de dépasser les frontières traditionnelles pour créer des opportunités concrètes.<br><br>
-                    Participez à cette soirée, où chaque interaction contribue à esquisser un futur riche en
-                    collaborations
-                    fructueuses. Soyez acteur de cette
-                    expérience qui encourage la création de liens durables et le partage d'expertise. Rejoignez-nous
-                    dans
-                    cette aventure vers un futur collaboratif et innovant.
-                </p>
-            </div>
-        </section>
-
-        <!-- INSCRIPTION -->
-        <section class="registration-section">
-            <h2 id="Inscri">Inscription</h2>
-            <form method="post" enctype="multipart/form-data" onsubmit="showPopup(); return false;">
-                <h3>
-                    <i class="fa-solid fa-user"></i>
-                    Informations personnelles
-                </h3>
-                <div class="registration-form-part">
-                    <div class="registration-form-section">
-                        <div>
-                            <label for="lastname">Nom</label>
-                            <input type="text" name="lastname" required>
-                        </div>
-                        <div>
-                            <label for="firstname">Prénom</label>
-                            <input type="text" name="firstname" required>
-                        </div>
-                    </div>
-                    <div class="registration-form-section">
-                        <div>
-                            <label for="tel">Téléphone</label>
-                            <input type="text" name="tel" required>
-                        </div>
-
-                        <div>
-                            <label for="mail">Mail</label>
-                            <input type="text" name="mail" required>
-=======
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -239,7 +135,6 @@
                                     <div class="text-wrapper-17">72 rue de la République 76140 Le Petit-Quevilly</div>
                                 </div>
                             </div>
->>>>>>> origin/main
                         </div>
                     </div>
                 </div>

@@ -16,15 +16,12 @@ session_start();
 
 <body>
     <main>
-        <div class="navbar">
-            <ul>
-                <li>
-                    <a href="#">Inscriptions</a>
-                    <a href="">KPI</a>
-                    <a href="methodes/adminUnAuth.php">deconnexion</a>
-                </li>
-            </ul>
-        </div>
+    <div class="navbar">
+        <a href="#">Inscriptions</a>
+        <a href="kpi.php">KPI</a>
+        <a href="content.php">Contenu</a>
+        <a class="deco" href="methodes/adminUnAuth.php"><i class="fa-solid fa-right-to-bracket"style="color: #ffffff;"></i></a>
+    </div>
         <h1>Administration</h1>
         <button type="button" class="btn btn-primary calibri text-white fw-bold" onclick="exportToExcel()">Télécharger
             le
