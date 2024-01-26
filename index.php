@@ -120,7 +120,9 @@
   <body> 
     <div class="div" id="nav">
         <div class="container">
-            <img src="img/logo_1.png" class ="block-rectangle-2" alt="">
+            <div>
+                <img src="img/logo_1.png" alt="">
+            </div>
             <div class="text-wrapper">La nuit de la NWS</div>
             <p class="p">votre évènement commence dans :</p>
 
@@ -143,16 +145,19 @@
         </div>
     </div>
 
+    <!-- NUAGE DE MOTS -->
+
     <div class="cloud">
         <div class="word">
         </div>
     </div>
 
-    <script src="js/nuage.js"></script>
+    <!-- BLOCK INFO -->
 
     <div class="block-2" id="Info">
         <div>
-6        </div>
+            <img src="img/antenna-ZDN-G1xBWHY-unsplash.jpg" class ="block-rectangle-2" alt="">
+        </div>
         <div class="block-texte-titre-2">
             <div class="block-titre-2"><?php echo $title; ?></div>
             <p class="block-texte-2">
