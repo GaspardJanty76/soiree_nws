@@ -32,7 +32,7 @@
         <section class="hero-section">
             <div class="hero-header">
                 <h1>"Logo" La nuit de la NWS</h1> 
-                <p>18 AVRIL 2024<br>votre évènement commence dans :</p>
+                <p>18 AVRIL 2024 jeudi 18h30<br>votre évènement commence dans :</p>
             </div>
             <ul>
                 <li>
@@ -52,7 +52,7 @@
             </ul>
             <a href="#Inscri">
                 <button>
-                    Inscription
+                    Je m'inscris
                 </button>
             </a>
         </section>

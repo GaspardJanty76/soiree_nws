@@ -272,7 +272,7 @@ button {
   background-color: var(--secondary-color);
   background-image: none;
   border: 1px solid var(--secondary-color);
-  border-radius: 4px;
+  border-radius: 15px;
   box-shadow: var(--primary-background) 4px 4px 0 0,
     var(--secondary-color) 4px 4px 0 1px;
   box-sizing: border-box;
@@ -280,12 +280,13 @@ button {
   cursor: pointer;
   display: inline-block;
   font-family: ITCAvantGardeStd-Bk, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 21px;
   font-weight: 400;
   line-height: 20px;
   margin: 0 5px 10px 0;
   overflow: visible;
-  padding: 14px 42px;
+  width: 300px;
+  height: 75px;
   text-align: center;
   text-transform: none;
   touch-action: manipulation;
