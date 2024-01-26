@@ -1,0 +1,351 @@
+@import url("admin.css");
+@import url("connexion.css");
+@import url("styleguide.css");
+@import url("inscription.css");
+@import url("index.css");
+@import url("particle.css");
+
+:root {
+  --primary-background: #04061f;
+  --tertiary-color: #1b1d34;
+  --secondary-color: #0047ab;
+  --primary-color: #fcb900;
+  --white-color: #f5f5f5;
+
+  --font-family-poppins: "Poppins-Bold", Helvetica, sans-serif;
+  --font-family-inter: "Inter-Regular", Helvetica, sans-serif;
+
+  --font-weight-bold: 700;
+  --font-weight-normal: 400;
+
+  --font-size-large: 60px;
+  --font-size-medium: 34px;
+  --font-size-base: 27px;
+  --font-size-small: 24px;
+  --font-size-extrasmall: 20px;
+
+  --letter-spacing-normal: 0px;
+  --line-height-normal: normal;
+  --font-style-normal: normal;
+}
+
+/*custom font*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+/* =============================================================================
+   HTML5 CSS Reset Minified - Eric Meyer
+   ========================================================================== */
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+body {
+  line-height: 1;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+nav ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+}
+mark {
+  background-color: var(--primary-color);
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+del {
+  text-decoration: line-through;
+}
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid var(--primary-color);
+  margin: 1em 0;
+  padding: 0;
+}
+input,
+select {
+  vertical-align: middle;
+}
+li {
+  list-style: none;
+}
+
+/*basic reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: montserrat, arial, verdana;
+  color: var(--white-color);
+  overflow-x: hidden;
+  width: 100vw;
+  min-height: 100vh;
+  height: auto;
+}
+
+canvas {
+  position: fixed; /* ou 'absolute' selon votre mise en page */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Pour le placer derrière le reste du contenu */
+}
+
+h1,
+h2 {
+  font-family: var(--font-family-poppins);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--letter-spacing-normal);
+  line-height: var(--line-height-normal);
+  font-style: var(--font-style-normal);
+}
+
+h1 {
+  font-size: var(--font-size-large);
+  color: var(--primary-color);
+}
+
+h2 {
+  font-size: var(--font-size-medium);
+  color: var(--primary-color);
+}
+
+h3 {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-small);
+  font-style: var(--font-style-normal);
+}
+
+p {
+  font-family: var(--font-family-inter);
+  font-weight: var(--font-weight-normal);
+  font-size: var(--font-size-small);
+  letter-spacing: var(--letter-spacing-normal);
+  line-height: var(--line-height-normal);
+  font-style: var(--font-style-normal);
+}
+
+@media only screen and (max-width: 786px) {
+  h1 {
+    font-size: var(--font-size-medium);
+  }
+
+  h2 {
+    font-size: var(--font-size-base);
+  }
+
+  h3 {
+    font-size: var(--font-size-extrasmall);
+  }
+  p {
+    font-size: var(--font-size-extrasmall);
+  }
+}
+ul {
+  list-style: none;
+}
+
+li {
+  text-decoration: none;
+}
+
+button {
+  appearance: button;
+  background-color: var(--secondary-color);
+  background-image: none;
+  border: 1px solid var(--secondary-color);
+  border-radius: 4px;
+  box-shadow: var(--primary-background) 4px 4px 0 0,
+    var(--secondary-color) 4px 4px 0 1px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: ITCAvantGardeStd-Bk, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0 5px 10px 0;
+  overflow: visible;
+  padding: 14px 42px;
+  text-align: center;
+  text-transform: none;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+button > a {
+  color: var(--white-color);
+}
+
+button:focus {
+  text-decoration: none;
+}
+
+button:hover {
+  text-decoration: none;
+}
+
+button:active {
+  box-shadow: rgba(0, 0, 0, 0.125) 0 3px 5px inset;
+  outline: 0;
+}
+
+button:not([disabled]):active {
+  box-shadow: var(--primary-background) 2px 2px 0 0,
+    var(--primary-background) 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  button {
+    padding: 12px 50px;
+  }
+}
+/* 
+::-webkit-scrollbar {
+  width: 12px;
+  display: block;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--primary-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 20px;
+  border: 3px solid var(--primary-background);
+}
+
+@media only screen and (max-width: 786px) {
+  ::-webkit-scrollbar {
+    display: none;
+    width: 0;
+  }
+} */
+::-webkit-scrollbar {
+  display: none;
+  width: 0;
+}

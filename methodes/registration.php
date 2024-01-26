@@ -24,21 +24,20 @@ class UserRegistration
             $company = isset($_POST["company"]) ? $_POST["company"] : null;
             $job = isset($_POST["job"]) ? $_POST["job"] : null;
 
-            $ipAddress = isset($_SERVER['REMOTE_ADDR']) ? $_SERVER['REMOTE_ADDR'] : null;
-
             // Vérifiez que les valeurs ne sont pas nulles avant d'insérer dans la base de données
             if ($firstname !== null && $lastname !== null && $tel !== null && $mail !== null && $company !== null && $job !== null) {
-                $this->insertUser($firstname, $lastname, $tel, $mail, $company, $job, $ipAddress);
+                $this->insertUser($firstname, $lastname, $tel, $mail, $company, $job);
             } else {
                 echo "Error: Les champs requis ne sont pas définis.";
             }
         }
     }
 
-    private function insertUser($firstname, $lastname, $tel, $mail, $company, $job, $ipAddress)
+    private function insertUser($firstname, $lastname, $tel, $mail, $company, $job)
     {
+        $token = bin2hex(random_bytes(32));
     
-        $sql = "INSERT INTO registrationgasp (firstname, lastname, tel, mail, company, job, registration_date) VALUES (?, ?, ?, ?, ?, ?, NOW())";
+        $sql = "INSERT INTO registration (firstname, lastname, tel, mail, company, job, token) VALUES (?, ?, ?, ?, ?, ?, ?)";
         $stmt = $this->pdo->prepare($sql);
         $stmt->bindParam(1, $firstname);
         $stmt->bindParam(2, $lastname);
@@ -46,19 +45,20 @@ class UserRegistration
         $stmt->bindParam(4, $mail);
         $stmt->bindParam(5, $company);
         $stmt->bindParam(6, $job);
+        $stmt->bindParam(7, $token);
     
         if ($stmt->execute()) {
             // Send confirmation email
-            $this->sendConfirmationEmail($mail, $firstname);
+            $this->sendConfirmationEmail($mail, $token, $firstname);
     
-            header('Location: ../confirmation.php');
+            header('Location: ../index.php');
             exit();
         } else {
             echo "Error: " . $stmt->errorInfo()[2];
         }
     }
     
-    private function sendConfirmationEmail($to, $firstname)
+    private function sendConfirmationEmail($to, $token, $firstname)
     {
         $subject = 'Confirmation d\'inscription à la Nuit des Ambassadeurs';
         $message = "Cher(e) $firstname, \n\n
@@ -89,8 +89,6 @@ class UserRegistration
             echo 'Erreur lors de l\'envoi de l\'e-mail de confirmation.';
         }
     }
-
-
 }    
 $pdoManager = new DBManager('nwsnight');
 $pdo = $pdoManager->getPDO();

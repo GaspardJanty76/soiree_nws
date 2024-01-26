@@ -1,0 +1,413 @@
+.index {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  padding: 0 0 2rem;
+}
+@media only screen and (max-width: 786px) {
+  .index {
+    padding: 0;
+  }
+}
+/* COMPTE A REBOUR */
+.index .hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  height: 100vh;
+}
+
+.index p {
+  font-size: medium;
+}
+
+.index .hero-section .hero-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.index .hero-section .hero-header p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: larger;
+}
+
+.index .hero-section ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.index .hero-section li {
+  background-color: var(--tertiary-color);
+  border-radius: 0.9375rem;
+  width: 13rem;
+  height: 10rem;
+  text-align: center;
+  margin-inline: 2rem;
+}
+
+.index .hero-section li > div:nth-child(1) {
+  color: var(--primary-color);
+  margin-top: 20px;
+  font-family: var(--h-1-font-family);
+  font-size: 3.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.index .hero-section li > div:nth-child(2) {
+  color: var(--white-color);
+  text-align: center;
+  height: 2.25rem;
+  flex-shrink: 0;
+  font-family: var(--h-2-font-family);
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@media only screen and (max-width: 786px) {
+  .index .hero-section {
+    height: auto;
+    padding: 2rem 0;
+    gap: 2rem;
+    width: 95%;
+  }
+  .index .hero-section .hero-header {
+    gap: 0.5rem;
+  }
+
+  .index .hero-section h1 {
+    text-align: center;
+  }
+
+  .index .hero-section ul {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .index .hero-section li {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 13rem;
+    height: 7rem;
+  }
+  .index .hero-section li > div:nth-child(1) {
+    font-size: 2.2rem;
+    margin-top: -5px;
+  }
+  .index .hero-section li > div:nth-child(2) {
+    font-size: 1.4rem;
+  }
+  .index .hero-section a {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+  }
+  .index .hero-section button {
+    width: 80%;
+  }
+}
+
+/* TEXTE ET BLOCK INFO */
+
+.index .information {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  height: auto;
+  padding: 2rem 4rem;
+  gap: 4rem;
+  width: 95%;
+}
+
+.index .information .information-content {
+  width: 47.5%;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.index .block-rectangle-2 {
+  width: 47.5%;
+  height: 350px;
+  background-color: var(--tertiary-color);
+  border-radius: 15px;
+}
+
+@media only screen and (max-width: 786px) {
+  .index .information {
+    padding: 0 2rem;
+    flex-direction: column-reverse;
+    width: 100%;
+    gap: 2rem;
+  }
+  .index .information .information-content {
+    width: 95%;
+  }
+  .index .block-rectangle-2 {
+    width: 95%;
+  }
+}
+
+/* FORM INSCRIPTION */
+.index .registration-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  gap: 2rem;
+  width: 50%;
+}
+
+.index .registration-section h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.index .registration-section form {
+  display: flex;
+  background-color: var(--tertiary-color);
+  border-radius: 15px;
+  padding: 2.5rem 4rem;
+  flex-direction: column;
+  gap: 2rem;
+  width: 95%;
+}
+
+.index .registration-section form h3 {
+  display: flex;
+  gap: 1rem;
+}
+
+.index .registration-section form i {
+  color: var(--primary-color);
+}
+
+.index .registration-section form .registration-form-part {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.index .registration-section form .registration-form-section {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  width: 100%;
+}
+
+.index .registration-section form div {
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+
+.index .registration-section form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.index .registration-section form input {
+  background-color: var(--white-color);
+  border: none;
+  color: var(--tertiary-color);
+  font-size: 0.875rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  padding: 0.625rem;
+  box-sizing: border-box;
+}
+
+.index .registration-section form input:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  border-color: var(--primary-background);
+  box-shadow: 0 0 0 2px var(--primary-background);
+}
+
+.label-custom {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.label-custom input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: var(--white-color);
+}
+
+.label-custom:hover input ~ .checkmark {
+  background-color: var(--white-color);
+}
+
+.label-custom input:checked ~ .checkmark {
+  background-color: var(--primary-color);
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.label-custom input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.label-custom .checkmark:after {
+  left: 7px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid var(--primary-background);
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+@media only screen and (max-width: 1086px) {
+  .index .registration-section {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 786px) {
+  .index .registration-section {
+    width: 100%;
+    padding: 2rem 0;
+  }
+
+  .index .registration-section form {
+    border-radius: 0;
+    padding: 1.5rem;
+    width: 100%;
+  }
+}
+
+/* FOOTER ET CONTACT */
+.index .contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+
+  padding: 4rem;
+  gap: 4rem;
+  width: 95%;
+}
+
+#map {
+  height: 40vh;
+  width: 60%;
+  border-radius: 15px;
+}
+
+.index .contact-content {
+  display: flex;
+  height: 100%;
+  gap: 1rem;
+  width: 40%;
+  background-color: var(--tertiary-color);
+  padding: 2rem 4rem;
+  border-radius: 15px;
+  flex-direction: column;
+}
+
+.index .contact-content ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.index .contact-content li {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.index .contact-content i {
+  color: var(--primary-color);
+  font-size: medium;
+}
+
+@media only screen and (max-width: 786px) {
+  .index .contact-section {
+    flex-direction: column-reverse;
+    width: 100%;
+    gap: 2rem;
+    padding: 0;
+    height: 100%;
+  }
+
+  .index .contact-content {
+    width: 100%;
+    border-radius: 0;
+    padding: 2rem;
+    gap: 1.5rem;
+  }
+
+  #map {
+    width: 80%;
+  }
+}
+
+/* PAGE DE CONFIRMATION */
+
+.index .confirm-rectangle {
+  font-family: var(--h-1-font-family);
+  margin-top: 100px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  background-color: var(--tertiary-color);
+  border-radius: 15px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.index .confirm-titre {
+  color: #fcb900;
+}

@@ -1,154 +1,167 @@
-<?php 
-// require_once 'methodes/dbConnect.php';
-// require_once 'methodes/visitorCounter.php';
-// require_once 'methodes/visitorLocation.php';
-// require_once 'methodes/contentDisplay.php';
-?>
-
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="globals.css" />
-    <link rel="stylesheet" href="css/styleguide.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/popup.css" />
     <link data-require="leaflet@0.7.3" data-semver="0.7.3" rel="stylesheet"
         href="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
-    <link rel="stylesheet" href="css/map.css"/>
+    <link rel="stylesheet" href="./css/global.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  </head>
-  <body> 
-    <div class="div" id="nav">
-            <div class="container">
-                <div class="text-wrapper">La nuit de la NWS</div>
-                <p class="p">votre évènement commence dans :</p>
 
-                <div class="flex-container">
-                    <div class="timer-block">
-                        <div class="text-block-2" id="days">0</div>
-                        <div class="text-block-3">jours</div>
+    <script src="js/index.js" defer></script>
+    <script data-require="jquery@*" data-semver="2.1.1"
+        src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js" defer></script>
+    <script data-require="leaflet@0.7.3" data-semver="0.7.3"
+        src="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js" defer></script>
+    <script src="js/script.js" defer></script>
+
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" defer></script>
+    <script src="http://threejs.org/examples/js/libs/stats.min.js" defer></script>
+
+</head>
+
+<body>
+    <canvas id="starCanvas"></canvas>
+    <script src="js/stars.js"></script>
+    <main class="index">
+        <section class="hero-section">
+            <div class="hero-header">
+                <h1>La nuit de la NWS</h1>
+                <p>votre évènement commence dans :</p>
+            </div>
+            <ul>
+                <li>
+                    <div id="days">0</div>
+                    <div>jours</div>
+                </li>
+
+                <li>
+                    <div id="hours">0</div>
+                    <div>heures</div>
+                </li>
+
+                <li>
+                    <div id="minutes">0</div>
+                    <div>minutes</div>
+                </li>
+            </ul>
+            <a href="#Inscri">
+                <button>
+                    Inscription
+                </button>
+            </a>
+        </section>
+
+        <div class="cloud">
+            <div class="word">
+            </div>
+        </div>
+
+        <script src="js/nuage.js"></script>
+
+        <section class="information" id="Info">
+            <div class="block-rectangle-2"></div>
+            <div class="information-content">
+                <h2>Informations</h2>
+                <p>
+                    Au cœur de cette soirée, La Normandie Web School aspire à atteindre un objectif clair :
+                    favoriser la
+                    création de liens significatifs
+                    et le développement de collaborations innovantes entre les acteurs du monde académique et
+                    professionnel.
+                    Nous croyons en l'importance
+                    de dépasser les frontières traditionnelles pour créer des opportunités concrètes.<br><br>
+                    Participez à cette soirée, où chaque interaction contribue à esquisser un futur riche en
+                    collaborations
+                    fructueuses. Soyez acteur de cette
+                    expérience qui encourage la création de liens durables et le partage d'expertise. Rejoignez-nous
+                    dans
+                    cette aventure vers un futur collaboratif et innovant.
+                </p>
+            </div>
+        </section>
+
+        <!-- INSCRIPTION -->
+        <section class="registration-section">
+            <h2 id="Inscri">Inscription</h2>
+            <form method="post" enctype="multipart/form-data" onsubmit="showPopup(); return false;">
+                <h3>
+                    <i class="fa-solid fa-user"></i>
+                    Informations personnelles
+                </h3>
+                <div class="registration-form-part">
+                    <div class="registration-form-section">
+                        <div>
+                            <label for="lastname">Nom</label>
+                            <input type="text" name="lastname" required>
+                        </div>
+                        <div>
+                            <label for="firstname">Prénom</label>
+                            <input type="text" name="firstname" required>
+                        </div>
                     </div>
+                    <div class="registration-form-section">
+                        <div>
+                            <label for="tel">Téléphone</label>
+                            <input type="text" name="tel" required>
+                        </div>
 
-                    <div class="timer-block">
-                        <div class="text-block-2" id="hours">0</div>
-                        <div class="text-block-3">heures</div>
-                    </div>
-
-                    <div class="timer-block">
-                        <div class="text-block-2" id="minutes">0</div>
-                        <div class="text-block-3">minutes</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    <div class="cloud">
-        <div class="word">
-        </div>
-    </div>
-
-    <script src="js/nuage.js"></script>
-
-    <div class="block-2" id="Info">
-        <div>
-            <img src="img/antenna-ZDN-G1xBWHY-unsplash.jpg" class ="block-rectangle-2" alt="">
-        </div>
-        <div class="block-texte-titre-2">
-            <div class="block-titre-2"><?php echo $title; ?></div>
-            <p class="block-texte-2">
-            <?php echo $text; ?> 
-            </p>
-        </div>
-    </div>
-
-    <!-- INSCRIPTION -->
-
-    <p class="inscri-titre" id="Inscri">Inscription</p>
-
-    <div class="inscri-rectangle">
-        <form class="inscri-form" action="methodes/registration.php" method="post" enctype="multipart/form-data">
-            <div class="inscri-info-perso">
-                <i class="fa-solid fa-user"></i>
-                Informations personnelles
-            </div>
-
-            <div class="inscri-1">
-                <div class="inscri-texte">Nom</div>
-                <input type="text" class="inscri-input" name="lastname" required>
-            </div>
-            <div class="inscri-2">
-                <div class="inscri-texte">Prénom</div>
-                <input type="text" class="inscri-input" name="firstname" required>
-            </div>
-            <div class="inscri-3">
-                <div class="inscri-texte">Téléphone</div>
-                <input type="text" class="inscri-input" name="tel" required>
-            </div>
-            <div class="inscri-4">
-                <div class="inscri-texte">Mail</div>
-                <input type="text" class="inscri-input" name="mail" required>
-            </div>
-
-            <div class="inscri-info-entreprise">
-                <i class="fa-solid fa-user"></i>
-                Entreprise
-            </div>
-
-            <div class="inscri-5">
-                <div class="inscri-texte">Entreprise</div>
-                <input type="text" class="inscri-input" name="company" required>
-            </div>
-            <div class="inscri-6">
-                <div class="inscri-texte">Poste</div>
-                <input type="text" class="inscri-input" name="job" required>
-            </div>
-            <input type="checkbox" class="inscri-check" required style="display: inline-block; margin-right: 10px;">
-            <p class="inscri-texte-2" style="display: inline-block;">J'accepte la politique de confidentialité</p>
-
-            <div>
-                <input class="text-nav-input button" type="submit" value="Valider l'inscription">
-            </div>
-        </form>
-        
-    </div>
-
-    <!-- CONTACT EN FOOTER -->
-
-    <div id="block-map">
-        <div id="infos-map">
-            <div class="overlap-4">
-                <div class="rectangle-6"></div>
-                    <div class="group-11">
-                        <div class="text-wrapper-15">Contact</div>
-                            <div class="frame">
-                                <div class="frame-2">
-                                    <i class="orange-icone icon-alternate-phone fa-solid fa-phone"></i>
-                                    <div class="text-wrapper-16">02 79 02 73 78</div>
-                                </div>
-                                <div class="frame-3">
-                                    <i class="orange-icone icon-envelope fa-solid fa-envelope"></i>
-                                    <div class="text-wrapper-17">contact@normandiewebschool.fr</div>
-                                </div>
-                                <div class="frame-4">
-                                    <i class="orange-icone icon-alternate-map fa-solid fa-location-dot"></i>
-                                    <div class="text-wrapper-17">72 rue de la République 76140 Le Petit-Quevilly</div>
-                                </div>
-                            </div>
+                        <div>
+                            <label for="mail">Mail</label>
+                            <input type="text" name="mail" required>
                         </div>
                     </div>
                 </div>
+                <h3>
+                    <i class="fa-solid fa-user"></i>
+                    Entreprise
+                </h3>
+                <div class="registration-form-part">
+                    <div>
+                        <label class="inscri-texte">Entreprise
+                        </label>
+                        <input type="text" name="company" required>
+                    </div>
+                    <div>
+                        <label for="job">Poste
+                        </label>
+                        <input type="text" name="job" required>
+                    </div>
+                </div>
+                <label class="label-custom">Je refuse d'être pris en photo
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+
+                </label>
+                <button type="submit">
+                    Valider l'inscription
+                </button>
+            </form>
+        </section>
+        <!-- CONTACT EN FOOTER -->
+
+        <section class="contact-section">
+            <div class="contact-content">
+                <h2>Contact</h2>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <p>0606060606</p>
+                    </li>
+                    <li class="frame-3">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>ldna@gmail.com</p>
+                    </li>
+                    <li class="frame-4">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>adresse</p>
+                    </li>
+                </ul>
             </div>
             <div id="map"></div>
-        </div>
-    </div>
+        </section>
+    </main>
 
-    <script src="js/index.js"></script>
+</body>
 
-    <script data-require="jquery@*" data-semver="2.1.1"
-        src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script data-require="leaflet@0.7.3" data-semver="0.7.3"
-        src="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
-    <script src="js/script.js"></script>
-  </body>
 </html>

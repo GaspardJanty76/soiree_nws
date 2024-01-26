@@ -1,9 +1,22 @@
 {
+<<<<<<< HEAD
     "require": {
-        "swiftmailer/swiftmailer": "6.0",
-        "phpoffice/phpspreadsheet": "^1.29",
-        "endroid/qrcode": "^5.0",
-        "simplesoftwareio/simple-qrcode": "^4.2",
-        "bacon/bacon-qr-code": "^2.0"
+        "phpoffice/phpspreadsheet": "^1.29"
+=======
+    "name": "grego/testsoiree",
+    "autoload": {
+        "psr-4": {
+            "Grego\\Testsoiree\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "2bleG",
+            "email": "2bleg.akagucci@gmail.com"
+        }
+    ],
+    "require": {
+        "swiftmailer/swiftmailer": "^6.3"
+>>>>>>> 2101a81540401559128cb7d6ac8d6dbfee9dd0cc
     }
 }

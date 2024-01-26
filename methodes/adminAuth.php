@@ -9,7 +9,7 @@ class Authentification {
     }
 
     public function verifierAuthentification($pseudo, $mot_de_passe) {
-        $sql = "SELECT * FROM auth WHERE auth = :pseudo";
+        $sql = "SELECT * FROM oauth WHERE auth = :pseudo";
         $requete = $this->pdo->prepare($sql);
         $requete->bindParam(':pseudo', $pseudo);
         $requete->execute();

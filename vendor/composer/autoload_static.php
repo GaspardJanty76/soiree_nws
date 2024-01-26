@@ -4,27 +4,16 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit6a5c9a415bebb6e7406f497fca6a38fc
+class ComposerStaticInit98079c486e51c021baa0bf30e0094442
 {
     public static $files = array (
-        'e69f7f6ee287b969198c3c9d6777bd38' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/bootstrap.php',
-        '25072dd6e2470089de65ae7bf11d3109' => __DIR__ . '/..' . '/symfony/polyfill-php72/bootstrap.php',
-        'f598d06aa772fa33d905e87be6398fb1' => __DIR__ . '/..' . '/symfony/polyfill-intl-idn/bootstrap.php',
         '2cffec82183ee1cea088009cef9a6fc3' => __DIR__ . '/..' . '/ezyang/htmlpurifier/library/HTMLPurifier.composer.php',
-        '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
     );
 
     public static $prefixLengthsPsr4 = array (
         'Z' => 
         array (
             'ZipStream\\' => 10,
-        ),
-        'S' => 
-        array (
-            'Symfony\\Polyfill\\Php72\\' => 23,
-            'Symfony\\Polyfill\\Intl\\Normalizer\\' => 33,
-            'Symfony\\Polyfill\\Intl\\Idn\\' => 26,
-            'SimpleSoftwareIO\\QrCode\\' => 24,
         ),
         'P' => 
         array (
@@ -37,23 +26,9 @@ class ComposerStaticInit6a5c9a415bebb6e7406f497fca6a38fc
         array (
             'Matrix\\' => 7,
         ),
-        'E' => 
-        array (
-            'Endroid\\QrCode\\' => 15,
-            'Egulias\\EmailValidator\\' => 23,
-        ),
-        'D' => 
-        array (
-            'Doctrine\\Common\\Lexer\\' => 22,
-            'DASPRiD\\Enum\\' => 13,
-        ),
         'C' => 
         array (
             'Complex\\' => 8,
-        ),
-        'B' => 
-        array (
-            'BaconQrCode\\' => 12,
         ),
     );
 
@@ -61,22 +36,6 @@ class ComposerStaticInit6a5c9a415bebb6e7406f497fca6a38fc
         'ZipStream\\' => 
         array (
             0 => __DIR__ . '/..' . '/maennchen/zipstream-php/src',
-        ),
-        'Symfony\\Polyfill\\Php72\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/symfony/polyfill-php72',
-        ),
-        'Symfony\\Polyfill\\Intl\\Normalizer\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer',
-        ),
-        'Symfony\\Polyfill\\Intl\\Idn\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/symfony/polyfill-intl-idn',
-        ),
-        'SimpleSoftwareIO\\QrCode\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/simplesoftwareio/simple-qrcode/src',
         ),
         'Psr\\SimpleCache\\' => 
         array (
@@ -99,29 +58,9 @@ class ComposerStaticInit6a5c9a415bebb6e7406f497fca6a38fc
         array (
             0 => __DIR__ . '/..' . '/markbaker/matrix/classes/src',
         ),
-        'Endroid\\QrCode\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/endroid/qrcode/src',
-        ),
-        'Egulias\\EmailValidator\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/egulias/email-validator/src',
-        ),
-        'Doctrine\\Common\\Lexer\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/doctrine/lexer/lib/Doctrine/Common/Lexer',
-        ),
-        'DASPRiD\\Enum\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/dasprid/enum/src',
-        ),
         'Complex\\' => 
         array (
             0 => __DIR__ . '/..' . '/markbaker/complex/classes/src',
-        ),
-        'BaconQrCode\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/bacon/bacon-qr-code/src',
         ),
     );
 
@@ -137,16 +76,15 @@ class ComposerStaticInit6a5c9a415bebb6e7406f497fca6a38fc
 
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
-        'Normalizer' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/Resources/stubs/Normalizer.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit6a5c9a415bebb6e7406f497fca6a38fc::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit6a5c9a415bebb6e7406f497fca6a38fc::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit6a5c9a415bebb6e7406f497fca6a38fc::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit6a5c9a415bebb6e7406f497fca6a38fc::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit98079c486e51c021baa0bf30e0094442::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit98079c486e51c021baa0bf30e0094442::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit98079c486e51c021baa0bf30e0094442::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit98079c486e51c021baa0bf30e0094442::$classMap;
 
         }, null, ClassLoader::class);
     }

@@ -25,7 +25,7 @@ class UserManagement
         $passwordHash = password_hash($password, PASSWORD_BCRYPT);
 
         // Requête SQL pour insérer un nouvel utilisateur dans la table 'oauth'
-        $sql = "INSERT INTO auth (auth, password) VALUES (?, ?)";
+        $sql = "INSERT INTO oauth (auth, password) VALUES (?, ?)";
         $stmt = $this->pdo->prepare($sql);
 
         // Exécution de la requête avec les valeurs fournies
