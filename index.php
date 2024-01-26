@@ -60,6 +60,19 @@
         <!-- NUAGE DE MOTS -->
         <div class="cloud">
             <div class="word">
+                <p>Conférences</p>
+                <p>Lots</p>
+                <p>Ateliers</p>
+                <p>Exposants</p>
+                <p>Icebreaker</p>
+                <p>Entreprises</p>
+                <p>Intervenants</p>
+                <p>Collaboration</p>
+                <p>Partenariats</p>
+                <p>Stratégies</p>
+                <p>Échanges</p>
+                <p>Tendances</p>
+                <p>Ambassadeurs</p>
             </div>
         </div>
 
