@@ -4,6 +4,7 @@
 @import url("inscription.css");
 @import url("index.css");
 @import url("particle.css");
+@import url("effect.css");
 
 :root {
   --primary-background: #04061f;

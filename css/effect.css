@@ -1,0 +1,40 @@
+.underline-effect {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+	p {
+		line-height: 1.4;
+	}
+	
+	.highlight {
+		display: inline-block;
+		color: #ffffff;
+		transition: color 250ms, text-shadow 250ms;
+		text-decoration: none;
+		position: relative;
+		z-index: 0;
+
+		&::after {
+			position: absolute;
+			z-index: -1;
+			bottom: -1px;
+			left: 50%;
+			transform: translateX(-50%);
+			content: '';
+			width: 100%;
+			height: 3px;
+			background-color: #fcb900;
+			transition: all 250ms;
+		}
+
+		&:hover {
+			color: #04061f;
+
+			&::after {
+				height: 105%;
+				width: 105%;
+			}	
+		}
+	}
+}

@@ -30,9 +30,10 @@
     <script src="js/stars.js"></script>
     <main class="index">
         <section class="hero-section">
-            <div class="hero-header">
+            <div class="hero-header underline-effect">
                 <h1>"Logo" La nuit de la NWS</h1> 
-                <p>18 AVRIL 2024 jeudi 18h30<br>votre évènement commence dans :</p>
+                <p><a class="highlight" href="#Info"><span>18 AVRIL 2024 jeudi 18h30</span></a></p>
+                <p>votre évènement commence dans :</p>
             </div>
             <ul>
                 <li>
