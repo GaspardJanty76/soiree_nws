@@ -10,7 +10,9 @@
     padding: 0;
   }
 }
+
 /* COMPTE A REBOUR */
+
 .index .hero-section {
   display: flex;
   flex-direction: column;
@@ -28,7 +30,17 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 2rem;
+}
+
+.index .hero-section .hero-header .header-content {
+  display: flex;
+  align-items: center;
+}
+
+.index .hero-section .hero-header h1 {
+  margin: 0; /* Supprimer la marge par défaut du titre h1 */
 }
 
 .index .hero-section .hero-header p {
@@ -39,6 +51,19 @@
   font-style: normal;
   font-weight: 700;
   font-size: larger;
+}
+
+.index .hero-section .hero-header .img-titre {
+  height: 150px;
+  width: 150px;
+}
+
+.index .hero-section .hero-header .img-left {
+  margin-right: 10px; /* Ajuster la marge entre l'image de gauche et le titre */
+}
+
+.index .hero-section .hero-header .img-right {
+  margin-left: 10px; /* Ajuster la marge entre l'image de droite et le titre */
 }
 
 .index .hero-section ul {

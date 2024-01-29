@@ -31,7 +31,11 @@
     <main class="index">
         <section class="hero-section">
             <div class="hero-header underline-effect">
-                <h1>"Logo" La nuit de la NWS</h1> 
+                <div class="header-content">
+                    <img src="img/logo_1.png" class="img-titre img-left" alt="">
+                    <h1>La nuit de la NWS</h1>
+                    <img src="img/logo_nws.png" class="img-titre img-right" alt="">
+                </div>
                 <p><a class="highlight" href="#Info"><span>18 AVRIL 2024 jeudi 18h30</span></a></p>
                 <p>votre évènement commence dans :</p>
             </div>
