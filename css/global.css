@@ -300,6 +300,13 @@ button {
   white-space: nowrap;
 }
 
+button:hover {
+  text-decoration: none;
+  transform: translate(4px, 4px);
+  box-shadow: rgba(0, 0, 0, 0.125) 4px 4px 0 0, rgba(0, 0, 0, 0.125) 3px 3px 0 0, rgba(0, 0, 0, 0.125) 2px 2px 0 0, rgba(0, 0, 0, 0.125) 1px 1px 0 0, rgba(0, 0, 0, 0.125) 0 0 0 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
 button > a {
   color: var(--white-color);
 }
