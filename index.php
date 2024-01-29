@@ -2,7 +2,7 @@
 // require_once 'methodes/dbConnect.php';
 // require_once 'methodes/visitorCounter.php';
 // require_once 'methodes/visitorLocation.php';
-require_once 'methodes/contentDisplay.php';
+// require_once 'methodes/contentDisplay.php';
 ?>
 
 <!DOCTYPE html>
@@ -12,7 +12,7 @@ require_once 'methodes/contentDisplay.php';
     <meta charset="utf-8" />
     <link data-require="leaflet@0.7.3" data-semver="0.7.3" rel="stylesheet"
         href="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
-    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/global.css"dgb:  />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,7 +43,7 @@ require_once 'methodes/contentDisplay.php';
                     <h1>La nuit de la NWS</h1>
                     <img src="img/logo_nws.png" class="img-titre img-right" alt="">
                 </div>
-                <p><a class="highlight" href="#Info"><span>18 AVRIL 2024 jeudi 18h30</span></a></p>
+                <p><a class="highlight" href="#Info"><span>Jeudi 18 AVRIL 2024 à 18h30</span></a></p>
                 <p>votre évènement commence dans :</p>
             </div>
             <ul>

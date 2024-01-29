@@ -40,7 +40,7 @@
 }
 
 .index .hero-section .hero-header h1 {
-  margin: 0; /* Supprimer la marge par défaut du titre h1 */
+  margin: 0;
 }
 
 .index .hero-section .hero-header p {
@@ -54,16 +54,16 @@
 }
 
 .index .hero-section .hero-header .img-titre {
-  height: 150px;
-  width: 150px;
+  height: 100px;
+  width: 100px;
 }
 
 .index .hero-section .hero-header .img-left {
-  margin-right: 10px; /* Ajuster la marge entre l'image de gauche et le titre */
+  margin-right: 25px;
 }
 
 .index .hero-section .hero-header .img-right {
-  margin-left: 10px; /* Ajuster la marge entre l'image de droite et le titre */
+  margin-left: 25px;
 }
 
 .index .hero-section ul {
