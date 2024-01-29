@@ -151,8 +151,20 @@
 
 /* NUAGE DE MOTS */
 
+@keyframes pulseOpacity {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .cloud {
-  background-color: var(--tertiary-color);
+  /* background-color: var(--tertiary-color); */
   width: 100%;
   height: 350px;
   margin-bottom: 100px;
@@ -163,71 +175,85 @@
 .word p {
   position: absolute;
   font-size: 20px;
+  font-family: var(--font-family-poppins);
 }
 
 .word p:nth-child(1) { 
   top: 50px; 
   left: 5%; 
+  animation: pulseOpacity 6s infinite;
 }
 .word p:nth-child(2) { 
   top: 270px; 
   left: 88%; 
   font-size: 27px; 
+  animation: pulseOpacity 6.5s infinite;
 }
 .word p:nth-child(3) { 
   top: 200px; 
   left: 10%; 
   font-size: 29px; 
+  animation: pulseOpacity 7s infinite;
 }
 .word p:nth-child(4) { 
   top: 80px; 
   left: 90%; 
   font-size: 31px; 
+  animation: pulseOpacity 7.5s infinite;
 }
 .word p:nth-child(5) { 
   top: 50px; 
   left: 32%; 
   font-size: 33px; 
+  animation: pulseOpacity 8s infinite;
 }
 .word p:nth-child(6) { 
   top: 240px; 
   left: 65%; 
   font-size: 35px; 
+  animation: pulseOpacity 8.5s infinite;
 }
 .word p:nth-child(7) { 
   top: 60px; 
   left: 62%; 
   font-size: 30px; 
+  animation: pulseOpacity 9s infinite;
 }
 .word p:nth-child(8) { 
   top: 180px; 
   left: 75%; 
   font-size: 31px; 
+  animation: pulseOpacity 9.25s infinite;
 }
 .word p:nth-child(9) { 
   top: 300px; 
   left: 40%; 
   font-size: 29px; 
+  animation: pulseOpacity 6.75s infinite;
 }
 .word p:nth-child(10) { 
   top: 220px; 
   left: 27%; 
   font-size: 27px; 
+  animation: pulseOpacity 6.25s infinite;
 }
 .word p:nth-child(11) { 
   top: 120px; 
   left: 20%; 
   font-size: 25px; 
+  animation: pulseOpacity 7.75s infinite;
 }
 .word p:nth-child(12) { 
   top: 270px; 
   left: 15%; 
   font-size: 29px; 
+  animation: pulseOpacity 7.25s infinite;
 }
 .word p:nth-child(13) { 
   top: 150px; 
   left: 45%; 
-  font-size: 33px; 
+  font-size: 33px;  
+  animation: pulseOpacity 8.75s infinite;
 }
 
 @media only screen and (max-width: 786px) {

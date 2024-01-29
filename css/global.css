@@ -307,6 +307,12 @@ button:hover {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+button:not(:hover) {
+  text-decoration: none;
+  transform: translate(0, 0);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
 button > a {
   color: var(--white-color);
 }

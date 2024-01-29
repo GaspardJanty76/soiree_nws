@@ -61,10 +61,15 @@
                     <div id="minutes">0</div>
                     <div>minutes</div>
                 </li>
+
+                <li>
+                    <div id="seconds">0</div>
+                    <div>secondes</div>
+                </li>
             </ul>
             <a href="#Inscri">
                 <button>
-                    Je m'inscris
+                    <strong>Je m'inscris</strong>
                 </button>
             </a>
         </section>
