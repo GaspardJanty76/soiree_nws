@@ -1,0 +1,26 @@
+#map {
+  height: 458px;
+  width: 55.5%;
+  position: absolute;
+  top: 2887px;
+  left: 101px;
+  border-radius: 15px;
+}
+
+#block-map {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+}
+
+@media (max-width: 1000px) {
+  #map {
+    width: 90%;
+    top: 3300px;
+    left: 5%;
+  }
+  #block-map {
+    flex-direction: column;
+  }
+}

@@ -1,3 +1,10 @@
+<?php 
+// require_once 'methodes/dbConnect.php';
+// require_once 'methodes/visitorCounter.php';
+// require_once 'methodes/visitorLocation.php';
+require_once 'methodes/contentDisplay.php';
+?>
+
 <!DOCTYPE html>
 <html>
 
