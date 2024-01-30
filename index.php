@@ -151,8 +151,14 @@ require_once 'methodes/contentDisplay.php';
                         <input type="text" name="job" required>
                     </div>
                 </div>
+<<<<<<< refs/remotes/origin/main
                 <label class="label-custom">Je consens à être pris en photo
                     <input type="checkbox" name="photoConsent" checked>
+=======
+                <label class="label-custom">
+                    <p>J'accepte d'être pris en photo</p>
+                    <input type="checkbox" checked>
+>>>>>>> v6.1
                     <span class="checkmark"></span>
                 </label>
 
@@ -163,7 +169,7 @@ require_once 'methodes/contentDisplay.php';
                 </button>
             </form>
         </section>
-        <!-- CONTACT EN FOOTER -->
+        <!-- CONTACT -->
 
         <section class="contact-section">
             <div class="contact-content">
@@ -191,6 +197,34 @@ require_once 'methodes/contentDisplay.php';
                 </ul>
             </div>
             <div id="map"></div>
+        </section>
+
+        <!-- FOOTER -->
+
+        <section class="footer">
+            <div class="footer-text">
+                <p>
+                    <img src="img/logo_nws.png" class="footer-logo">
+                    <a>Notre site : </a>
+                    <a class="footer-link" href="https://normandiewebschool.fr/" target="_blank">
+                        https://normandiewebschool.fr
+                    </a>
+                </p>
+                <p>
+                    <img src="img/logo_2.png" class="footer-logo">
+                    <a>Linkedin : </a>
+                    <a class="footer-link" href="https://www.linkedin.com/school/normandiewebschool/" target="_blank">
+                        www.linkedin.com/school/normandiewebschool
+                    </a>
+                </p>
+                <p>
+                    <img src="img/logo_3.png" class="footer-logo">
+                    <a>Instagram : </a>
+                    <a class="footer-link" href="https://www.instagram.com/nws_rouen/" target="_blank">
+                        www.instagram.com/nws_rouen
+                    </a>
+                </p>
+            </div>
         </section>
     </main>
 
