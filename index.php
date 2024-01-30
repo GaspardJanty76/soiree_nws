@@ -2,7 +2,7 @@
 // require_once 'methodes/dbConnect.php';
 // require_once 'methodes/visitorCounter.php';
 // require_once 'methodes/visitorLocation.php';
-// require_once 'methodes/contentDisplay.php';
+require_once 'methodes/contentDisplay.php';
 ?>
 
 <!DOCTYPE html>
@@ -43,7 +43,7 @@
                     <h1>La nuit de la NWS</h1>
                     <img src="img/logo_nws.png" class="img-titre img-right" alt="">
                 </div>
-                <p><a class="highlight" href="#Info"><span>Jeudi 18 AVRIL 2024 à 18h30</span></a></p>
+                <p><a class="highlight" href="#Info"><span>Jeudi 18 AVRIL 2024 à partir 18h30</span></a></p>
                 <p>votre évènement commence dans :</p>
             </div>
             <ul>
@@ -107,7 +107,7 @@
         <!-- INSCRIPTION -->
         <section class="registration-section">
             <h2 id="Inscri">Inscription</h2>
-            <form method="post" enctype="multipart/form-data" onsubmit="showPopup(); return false;">
+            <form method="post" action="methodes/registration.php" enctype="multipart/form-data">
                 <h3>
                     <i class="fa-solid fa-user"></i>
                     Informations personnelles
@@ -151,9 +151,11 @@
                         <input type="text" name="job" required>
                     </div>
                 </div>
-                <label class="label-custom">J'accepte d'être pris en photo
-                    <input type="checkbox" checked>
+                <label class="label-custom">Je consens à être pris en photo
+                    <input type="checkbox" name="photoConsent" checked>
                     <span class="checkmark"></span>
+                </label>
+
 
                 </label>
                 <button type="submit" class="btn-inscription-2">

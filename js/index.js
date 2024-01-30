@@ -12,7 +12,7 @@ var countdownInterval = setInterval(function() {
     document.getElementById("days").innerHTML = days;
     document.getElementById("hours").innerHTML = hours;
     document.getElementById("minutes").innerHTML = minutes;
-    document.getElementById("seconds").innerHTML = seconds; // Utilisez "seconds" au lieu de "secondes"
+    document.getElementById("seconds").innerHTML = seconds;
 
     if (distance < 0) {
         clearInterval(countdownInterval);
