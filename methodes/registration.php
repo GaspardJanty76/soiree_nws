@@ -40,7 +40,10 @@ class UserRegistration
 
     private function insertUser($firstname, $lastname, $tel, $mail, $company, $job)
     {
-        $sql = "INSERT INTO registrationgasp (firstname, lastname, tel, mail, company, job, registration_date) VALUES (?, ?, ?, ?, ?, ?, NOW())";
+        // Ajoutez la logique pour déterminer la valeur de photoConsent
+        $photoConsent = isset($_POST["photoConsent"]) ? 0 : 1;
+
+        $sql = "INSERT INTO registrationgasp (firstname, lastname, tel, mail, company, job, photo, registration_date) VALUES (?, ?, ?, ?, ?, ?, ?, NOW())";
         $stmt = $this->pdo->prepare($sql);
         $stmt->bindParam(1, $firstname);
         $stmt->bindParam(2, $lastname);
@@ -48,12 +51,14 @@ class UserRegistration
         $stmt->bindParam(4, $mail);
         $stmt->bindParam(5, $company);
         $stmt->bindParam(6, $job);
+        $stmt->bindParam(7, $photoConsent);
 
         if ($stmt->execute()) {
             // Send confirmation email
             $this->sendConfirmationEmail($mail, $firstname);
 
             header('Location: ../confirmation.php');
+            $this->generateQRCode($firstname, $lastname);
             exit();
         } else {
             echo "Error: " . $stmt->errorInfo()[2];
@@ -64,7 +69,7 @@ class UserRegistration
     {
         $subject = 'Confirmation d\'inscription à la Nuit de la NWS';
         $message = "Cher(e) $firstname,
-        Nous vous confirmons votre inscription à la Nuit des Ambassadeurs de la Normandie Web School.
+        Nous vous confirmons votre inscription à la Nuit de la Normandie Web School.
 
         Cette soirée d'échanges entre l'école et les professionnels promet des opportunités de collaborations innovantes.
         
@@ -90,7 +95,7 @@ class UserRegistration
         $mailer = new Swift_Mailer($transport);
     
         $message = (new Swift_Message($subject))
-        ->setFrom(['noreply@nws.com' => 'NWS-La nuit de l\'ambassadeur'])
+        ->setFrom(['noreply@nws.com' => 'NWS-La nuit de la NWS'])
         ->setTo([$to])
         ->setBody($message);
     

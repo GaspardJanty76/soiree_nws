@@ -1,4 +1,3 @@
-
 <?php
 require 'dbConnect.php';
 require '../vendor/autoload.php';
@@ -35,55 +34,45 @@ $sheetRegistrations->setCellValue('A2', $registrationCount);
 $sheetRegistrations->setCellValue('B2', $registrationPercentage . '%');
 $sheetRegistrations->setCellValue('C2', $totalVisits);
 
-$sheetVisits = $spreadsheet->createSheet();
-$sheetVisits->setTitle('Visites');
-$sheetVisits->setCellValue('A1', 'Date de visite');
-$sheetVisits->setCellValue('B1', 'Nombre de visiteurs');
+// Export des informations de la table page_visits
+$stmt = $pdo->query("SELECT * FROM page_visits");
+$pageVisitsData = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-// Requête SQL pour obtenir les données des visites
-$sqlVisits = "SELECT * FROM page_visits";
-$stmtVisits = $pdo->prepare($sqlVisits);
-$stmtVisits->execute();
-$resultVisits = $stmtVisits->fetchAll(PDO::FETCH_ASSOC);
+$sheetPageVisits = $spreadsheet->createSheet();
+$sheetPageVisits->setTitle('Visites');
+$sheetPageVisits->setCellValue('A1', 'ID');
+$sheetPageVisits->setCellValue('B1', 'Date de visite');
+$sheetPageVisits->setCellValue('C1', 'Nombre de visiteurs');
 
-$rowVisits = 2; // Commencez à la deuxième ligne du fichier Excel
-
-foreach ($resultVisits as $dataVisits) {
-    $sheetVisits->setCellValue('A' . $rowVisits, $dataVisits['visit_date']);
-    $sheetVisits->setCellValue('B' . $rowVisits, $dataVisits['visitor_count']);
-    $rowVisits++;
+foreach ($pageVisitsData as $rowIndex => $row) {
+    $sheetPageVisits->fromArray(array_values($row), 'A' . ($rowIndex + 2));
 }
 
-// Feuille "Localisation"
-$sheetLocation = $spreadsheet->createSheet();
-$sheetLocation->setTitle('Localisation');
-$sheetLocation->setCellValue('A1', 'Adresse IP');
-$sheetLocation->setCellValue('B1', 'Localisation');
+// Export des informations de la table visitor_locations
+$stmt = $pdo->query("SELECT ip_address, location FROM visitor_locations");
+$visitorLocationsData = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-// Requête SQL pour obtenir les données des localisations
-$sqlLocation = "SELECT * FROM visitor_locations";
-$stmtLocation = $pdo->prepare($sqlLocation);
-$stmtLocation->execute();
-$resultLocation = $stmtLocation->fetchAll(PDO::FETCH_ASSOC);
+$sheetVisitorLocations = $spreadsheet->createSheet();
+$sheetVisitorLocations->setTitle('Localisations');
+$sheetVisitorLocations->setCellValue('A1', 'Adresse IP');
+$sheetVisitorLocations->setCellValue('B1', 'Emplacement');
 
-$rowLocation = 2; // Commencez à la deuxième ligne du fichier Excel
-
-foreach ($resultLocation as $dataLocation) {
-    $sheetLocation->setCellValue('A' . $rowLocation, $dataLocation['ip_address']);
-    $sheetLocation->setCellValue('B' . $rowLocation, $dataLocation['location']);
-    $rowLocation++;
+foreach ($visitorLocationsData as $rowIndex => $row) {
+    $sheetVisitorLocations->fromArray(array_values($row), 'A' . ($rowIndex + 2));
 }
 
 // Nom du fichier Excel
-$filename = 'export_data.xlsx';
+$filename = 'export_kpi.xlsx';
 
 // Créez l'objet Writer pour Excel
-$writer = \PhpOffice\PhpSpreadsheet\IOFactory::createWriter($spreadsheet, 'Xlsx');
+$writer = new Xlsx($spreadsheet);
 
 // Définissez le type de réponse pour le navigateur
 header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
 header('Content-Disposition: attachment;filename="' . $filename . '"');
 header('Cache-Control: max-age=0');
 
+// Enregistrez le fichier Excel dans la sortie du script
 $writer->save('php://output');
+exit();
 ?>
