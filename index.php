@@ -2,7 +2,7 @@
 // require_once 'methodes/dbConnect.php';
 // require_once 'methodes/visitorCounter.php';
 // require_once 'methodes/visitorLocation.php';
-require_once 'methodes/contentDisplay.php';
+// require_once 'methodes/contentDisplay.php';
 ?>
 
 <!DOCTYPE html>
@@ -96,7 +96,7 @@ require_once 'methodes/contentDisplay.php';
         <!-- BLOCK INFORMATION -->
         <section class="information" id="Info">
             <div class="block-rectangle-2">
-                <img src="img/antenna-ZDN-G1xBWHY-unsplash.jpg" class ="block-rectangle-2" alt="">
+                <img src="img/ambiance.jpg" class ="block-rectangle-2" alt="">
             </div>
             <div class="information-content">
                 <h2><?php echo $title; ?></h2>
@@ -151,14 +151,9 @@ require_once 'methodes/contentDisplay.php';
                         <input type="text" name="job" required>
                     </div>
                 </div>
-<<<<<<< refs/remotes/origin/main
-                <label class="label-custom">Je consens à être pris en photo
-                    <input type="checkbox" name="photoConsent" checked>
-=======
                 <label class="label-custom">
-                    <p>J'accepte d'être pris en photo</p>
-                    <input type="checkbox" checked>
->>>>>>> v6.1
+                    <p>Je consens à être pris en photo</p>
+                    <input type="checkbox" name="photoConsent" checked>
                     <span class="checkmark"></span>
                 </label>
 

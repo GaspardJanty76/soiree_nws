@@ -601,7 +601,7 @@ li a:hover {
   .index .contact-content {
     width: 100%;
     border-radius: 0;
-    padding: 2rem;
+    padding: 2rem 2rem;
     gap: 1.5rem;
   }
 
