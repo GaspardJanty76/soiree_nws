@@ -642,33 +642,12 @@ li a:hover {
   align-items: center;
 }
 
-.footer-text {
-  text-align: center;
-  color: #fcb900;
-  font: var(--h-2-font-family);
-  line-height: 1.5; /* Add your preferred line spacing here */
-}
-
-.footer-text p {
-  margin: 10px 0; /* Adjust the spacing between paragraphs */
-}
-
-.footer-link {
-  color: #ffffff;
-  text-decoration: none;
-  text-decoration: underline;
-  /* display: flex; */
-  align-items: center;
+.footer-img {
   justify-content: center;
 }
 
-.footer-link:hover {
-  color: #cbcbcb;
-  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
 .footer-logo {
-  width: 20px; /* Adjust the width of the logos */
-  height: auto;
-  margin-right: 5px; /* Adjust the spacing between logo and text */
+  margin: 15px 15px;
+  width: 75px;
+  height: 75px;
 }

@@ -197,28 +197,19 @@
         <!-- FOOTER -->
 
         <section class="footer">
-            <div class="footer-text">
-                <p>
+            <div class="footer-img">
+                <a href="https://normandiewebschool.fr/" target="_blank">
                     <img src="img/logo_nws.png" class="footer-logo">
-                    <a>Notre site : </a>
-                    <a class="footer-link" href="https://normandiewebschool.fr/" target="_blank">
-                        https://normandiewebschool.fr
-                    </a>
-                </p>
-                <p>
+                </a>
+                <a href="https://www.linkedin.com/school/normandiewebschool/" target="_blank">
                     <img src="img/logo_2.png" class="footer-logo">
-                    <a>Linkedin : </a>
-                    <a class="footer-link" href="https://www.linkedin.com/school/normandiewebschool/" target="_blank">
-                        www.linkedin.com/school/normandiewebschool
-                    </a>
-                </p>
-                <p>
+                </a>
+                <a href="https://www.instagram.com/nws_rouen/" target="_blank">
                     <img src="img/logo_3.png" class="footer-logo">
-                    <a>Instagram : </a>
-                    <a class="footer-link" href="https://www.instagram.com/nws_rouen/" target="_blank">
-                        www.instagram.com/nws_rouen
-                    </a>
-                </p>
+                </a>
+                <a href="https://www.facebook.com/normandiewebschool/?locale=fr_FR" target="_blank">
+                    <img src="img/logo_4.svg" class="footer-logo">
+                </a>
             </div>
         </section>
     </main>
