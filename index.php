@@ -43,7 +43,9 @@
                     <h1>La nuit de la NWS</h1>
                     <img src="img/logo_nws.png" class="img-titre img-right" alt="">
                 </div>
-                <p><a class="highlight" href="#Info"><span>Jeudi 18 AVRIL 2024 à partir 18h30</span></a></p>
+                <p>
+                    <a class="highlight" href="#Info"><span>Jeudi 18 AVRIL 2024 à partir 18h30</span></a>
+                </p>
                 <p>votre évènement commence dans :</p>
             </div>
             <ul>
@@ -95,9 +97,9 @@
 
         <!-- BLOCK INFORMATION -->
         <section class="information" id="Info">
-            <div class="block-rectangle-2">
+            <!-- <div class="block-rectangle-2"> -->
                 <img src="img/ambiance.jpg" class ="block-rectangle-2" alt="">
-            </div>
+            <!-- </div> -->
             <div class="information-content">
                 <h2><?php echo $title; ?></h2>
                 <p><?php echo $text; ?></p>
