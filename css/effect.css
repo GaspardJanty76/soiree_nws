@@ -5,10 +5,15 @@
 	
 	p {
 		line-height: 1.4;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 	
 	.highlight {
-		display: inline-block;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		color: #ffffff;
 		transition: color 250ms, text-shadow 250ms;
 		text-decoration: none;
