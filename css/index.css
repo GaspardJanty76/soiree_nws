@@ -5,7 +5,7 @@
   width: 100vw;
   padding: 0 0 2rem;
 }
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 1000px) {
   .index {
     padding: 0;
   }
@@ -104,7 +104,7 @@
   line-height: normal;
 }
 
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 1000px) {
   .index .hero-section {
     height: auto;
     padding: 2rem 0;
@@ -164,7 +164,7 @@
 }
 
 .cloud {
-  /* background-color: var(--tertiary-color); */
+  display: flex;
   width: 100%;
   height: 350px;
   margin-bottom: 100px;
@@ -197,7 +197,7 @@
 }
 .word p:nth-child(4) { 
   top: 80px; 
-  left: 90%; 
+  left: 85%; 
   font-size: 31px; 
   animation: pulseOpacity 7.5s infinite;
 }
@@ -256,33 +256,36 @@
   animation: pulseOpacity 8.75s infinite;
 }
 
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 1000px) {
   .word p:nth-child(2) { 
     font-size: 22px; 
-    top: 150px; 
-    left: 10%; 
+    top: 240px; 
+    left: 50%; 
   }
   .word p:nth-child(3) { 
-    font-size: 24px; 
+    font-size: 24px;
+    left: 10%;
   }
   .word p:nth-child(4) { 
     font-size: 26px; 
     top: 100px; 
-    left: 50%; 
+    left: 55%; 
   }
   .word p:nth-child(5) { 
     font-size: 28px; 
   }
   .word p:nth-child(6) { 
     font-size: 30px; 
+    left: 75%;
   }
   .word p:nth-child(7) { 
     font-size: 28px; 
+    left: 70%;
   }
   .word p:nth-child(8) { 
     font-size: 26px; 
     top: 200px; 
-    left: 55%;
+    left: 60%;
   }
   .word p:nth-child(9) { 
     font-size: 24px; 
@@ -324,13 +327,14 @@
 }
 
 .index .block-rectangle-2 {
-  width: 100%;
+  width: 50%;
   height: 100%;
-  background-color: var(--tertiary-color);
+  max-width: 1000px;
   border-radius: 15px;
+  z-index: 0;
 }
 
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 1000px) {
   .index .information {
     padding: 0 2rem;
     flex-direction: column-reverse;
@@ -499,7 +503,7 @@
   }
 }
 
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 1000px) {
   .index .registration-section {
     width: 100%;
     padding: 2rem 0;
@@ -588,7 +592,7 @@ li a:hover {
   color: #d8d8d8;
 }
 
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 1000px) {
   .index .contact-section {
     flex-direction: column-reverse;
     width: 100%;
@@ -600,7 +604,7 @@ li a:hover {
   .index .contact-content {
     width: 100%;
     border-radius: 0;
-    padding: 2rem;
+    padding: 2rem 2rem;
     gap: 1.5rem;
   }
 
@@ -626,4 +630,27 @@ li a:hover {
 
 .index .confirm-titre {
   color: #fcb900;
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: var(--tertiary-color);
+  bottom: 0;
+  margin-top: 50px;
+  width: 100%;
+  min-height: 250px; /* Adjust the height based on your logo size */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-img {
+  justify-content: center;
+}
+
+.footer-logo {
+  margin: 15px 15px;
+  width: 75px;
+  height: 75px;
 }

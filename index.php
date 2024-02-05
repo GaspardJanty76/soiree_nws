@@ -2,7 +2,7 @@
 // require_once 'methodes/dbConnect.php';
 // require_once 'methodes/visitorCounter.php';
 // require_once 'methodes/visitorLocation.php';
-require_once 'methodes/contentDisplay.php';
+// require_once 'methodes/contentDisplay.php';
 ?>
 
 <!DOCTYPE html>
@@ -43,7 +43,9 @@ require_once 'methodes/contentDisplay.php';
                     <h1>La nuit de la NWS</h1>
                     <img src="img/logo_nws.png" class="img-titre img-right" alt="">
                 </div>
-                <p><a class="highlight" href="#Info"><span>Jeudi 18 AVRIL 2024 à partir 18h30</span></a></p>
+                <p>
+                    <a class="highlight" href="#Info"><span>Jeudi 18 AVRIL 2024 à partir 18h30</span></a>
+                </p>
                 <p>votre évènement commence dans :</p>
             </div>
             <ul>
@@ -95,9 +97,9 @@ require_once 'methodes/contentDisplay.php';
 
         <!-- BLOCK INFORMATION -->
         <section class="information" id="Info">
-            <div class="block-rectangle-2">
-                <img src="img/antenna-ZDN-G1xBWHY-unsplash.jpg" class ="block-rectangle-2" alt="">
-            </div>
+            <!-- <div class="block-rectangle-2"> -->
+                <img src="img/ambiance.jpg" class ="block-rectangle-2" alt="">
+            <!-- </div> -->
             <div class="information-content">
                 <h2><?php echo $title; ?></h2>
                 <p><?php echo $text; ?></p>
@@ -151,7 +153,8 @@ require_once 'methodes/contentDisplay.php';
                         <input type="text" name="job" required>
                     </div>
                 </div>
-                <label class="label-custom">Je consens à être pris en photo
+                <label class="label-custom">
+                    <p>Je consens à être pris en photo</p>
                     <input type="checkbox" name="photoConsent" checked>
                     <span class="checkmark"></span>
                 </label>
@@ -163,7 +166,7 @@ require_once 'methodes/contentDisplay.php';
                 </button>
             </form>
         </section>
-        <!-- CONTACT EN FOOTER -->
+        <!-- CONTACT -->
 
         <section class="contact-section">
             <div class="contact-content">
@@ -191,6 +194,25 @@ require_once 'methodes/contentDisplay.php';
                 </ul>
             </div>
             <div id="map"></div>
+        </section>
+
+        <!-- FOOTER -->
+
+        <section class="footer">
+            <div class="footer-img">
+                <a href="https://normandiewebschool.fr/" target="_blank">
+                    <img src="img/logo_nws.png" class="footer-logo">
+                </a>
+                <a href="https://www.linkedin.com/school/normandiewebschool/" target="_blank">
+                    <img src="img/logo_2.png" class="footer-logo">
+                </a>
+                <a href="https://www.instagram.com/nws_rouen/" target="_blank">
+                    <img src="img/logo_3.png" class="footer-logo">
+                </a>
+                <a href="https://www.facebook.com/normandiewebschool/?locale=fr_FR" target="_blank">
+                    <img src="img/logo_4.svg" class="footer-logo">
+                </a>
+            </div>
         </section>
     </main>
 
