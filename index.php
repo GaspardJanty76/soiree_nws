@@ -58,7 +58,6 @@
                     <div id="hours">0</div>
                     <div>heures</div>
                 </li>
-
                 <li>
                     <div id="minutes">0</div>
                     <div>minutes</div>
