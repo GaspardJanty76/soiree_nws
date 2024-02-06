@@ -496,6 +496,15 @@
   transform: rotate(45deg);
 }
 
+.label-icone {
+  margin-top: -30px;
+}
+
+.label-icone i {
+  font-size: 20px;
+  color: white;
+}
+
 @media only screen and (max-width: 1086px) {
   .index .registration-section {
     width: 75%;

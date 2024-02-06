@@ -14,6 +14,7 @@
         href="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
     <link rel="stylesheet" href="./css/global.css"dgb:  />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -151,15 +152,33 @@
                         </label>
                         <input type="text" name="job" required>
                     </div>
+
+                    <!-- NOUVEAU CHAMP LINKEDIN FACULTATIF -->
+                    <div>
+                        <label for="">Identifiant linkedin *
+                        </label>
+                        <input type="text" name="linkedin" required>
+                    </div>
                 </div>
+
                 <label class="label-custom">
-                    <p>Je consens à être pris en photo</p>
                     <input type="checkbox" name="photoConsent" checked>
                     <span class="checkmark"></span>
+                    <p>Je consens à être pris en photo</p>
                 </label>
 
+                <div class="label-icone">
+                    <span class="popover-trigger" tabindex="0">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </span>
 
-                </label>
+                    <div class="custom-popover">
+                        Mentions légales RGPD : ce formulaire permet de vous inscrire à La nuits de la NWS.
+                        La base légale est l'article 6.1.a du RGPD (consentement - car cette inscription est facultative). Les destinataires des données sont le responsable de traitement, ses services internes en charge des réponses, le sous-traitant opérant la gestion du serveur web, ainsi que toute personne légalement autorisée. La durée de traitement des données est jusqu'au retrait du consentement qui peut être retiré à tout moment.
+                        Vous disposez du droit de demander au responsable du traitement l'accès aux données à caractère personnel, la rectification ou l'effacement de celles-ci, ou une limitation du traitement relatif à la personne concernée, ou du droit de s'opposer au traitement et du droit à la portabilité des données. Le responsable du traitement est la Normandie Web School, 22 Pl. Henri Gadeau de Kerville, 76100 Rouen. Vous avez également le droit d'introduire une réclamation auprès d'une autorité de contrôle.
+                    </div>
+                </div>
+
                 <button type="submit" class="btn-inscription-2">
                     Valider l'inscription
                 </button>
@@ -214,7 +233,6 @@
             </div>
         </section>
     </main>
-
 </body>
 
 </html>
