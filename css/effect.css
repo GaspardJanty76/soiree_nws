@@ -43,3 +43,28 @@
 		}
 	}
 }
+
+
+
+.popover-trigger {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.custom-popover {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+	color: #04061f;
+	max-width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+	z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.popover-trigger:hover + .custom-popover,
+.popover-trigger:focus + .custom-popover {
+    display: block;
+}

@@ -19,3 +19,31 @@ var countdownInterval = setInterval(function() {
         document.getElementById("countdown").innerHTML = "EXPIRED";
     }
 }, 1000);
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const popoverTriggers = document.querySelectorAll('.popover-trigger');
+
+    popoverTriggers.forEach(trigger => {
+        trigger.addEventListener('mouseover', function() {
+            const popover = this.nextElementSibling;
+            popover.style.display = 'block';
+        });
+
+        trigger.addEventListener('mouseout', function() {
+            const popover = this.nextElementSibling;
+            popover.style.display = 'none';
+        });
+
+        trigger.addEventListener('focus', function() {
+            const popover = this.nextElementSibling;
+            popover.style.display = 'block';
+        });
+
+        trigger.addEventListener('blur', function() {
+            const popover = this.nextElementSibling;
+            popover.style.display = 'none';
+        });
+    });
+});
