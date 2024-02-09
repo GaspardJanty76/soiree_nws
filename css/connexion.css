@@ -1,10 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
 
 .titre-connexion {
   color: #fcb900;
   margin-top: 20px;
-  font-family: "Roboto", sans-serif;
-  font-size: 2rem;
+  font-family: "Fugaz One", sans-serif;
+  font-size: 2.5rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -22,7 +23,7 @@
 .form {
   position: relative;
   z-index: 1;
-  background: #515152;
+  background: #1b1d34;
   max-width: 360px;
   margin: 0 auto 100px;
   padding: 45px;
@@ -45,10 +46,10 @@
 
 .btn-cnx {
   color: #f2f2f2;
-  background-color: #fcb900;
+  background-color: #0047ab;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .btn-cnx:hover {
-  background-color: #cf9800;
+  background-color: #013d92;
 }
