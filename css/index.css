@@ -647,18 +647,31 @@ li a:hover {
   bottom: 0;
   margin-top: 50px;
   width: 100%;
-  min-height: 250px; /* Adjust the height based on your logo size */
+  min-height: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .footer-img {
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-img > div {
+  margin-top: 20px;
+  margin-bottom: 20px; 
 }
 
 .footer-logo {
-  margin: 15px 15px;
-  width: 75px;
-  height: 75px;
+  margin: 15px;
+  height: 50px;
+}
+
+.footer p {
+  color: #fcb900;
+  font-weight: 700;
+  font-size: 25px;
+  text-align: center;
 }

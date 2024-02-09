@@ -173,7 +173,7 @@
                     </span>
 
                     <div class="custom-popover">
-                        Mentions légales RGPD : ce formulaire permet de vous inscrire à La nuits de la NWS.
+                        Mentions légales RGPD : ce formulaire permet de vous inscrire à La nuits de la NWS.<br>
                         La base légale est l'article 6.1.a du RGPD (consentement - car cette inscription est facultative). Les destinataires des données sont le responsable de traitement, ses services internes en charge des réponses, le sous-traitant opérant la gestion du serveur web, ainsi que toute personne légalement autorisée. La durée de traitement des données est jusqu'au retrait du consentement qui peut être retiré à tout moment.
                         Vous disposez du droit de demander au responsable du traitement l'accès aux données à caractère personnel, la rectification ou l'effacement de celles-ci, ou une limitation du traitement relatif à la personne concernée, ou du droit de s'opposer au traitement et du droit à la portabilité des données. Le responsable du traitement est la Normandie Web School, 22 Pl. Henri Gadeau de Kerville, 76100 Rouen. Vous avez également le droit d'introduire une réclamation auprès d'une autorité de contrôle.
                     </div>
@@ -218,18 +218,40 @@
 
         <section class="footer">
             <div class="footer-img">
-                <a href="https://normandiewebschool.fr/" target="_blank">
-                    <img src="img/logo_nws.png" class="footer-logo">
-                </a>
-                <a href="https://www.linkedin.com/school/normandiewebschool/" target="_blank">
-                    <img src="img/logo_2.png" class="footer-logo">
-                </a>
-                <a href="https://www.instagram.com/nws_rouen/" target="_blank">
-                    <img src="img/logo_3.png" class="footer-logo">
-                </a>
-                <a href="https://www.facebook.com/normandiewebschool/?locale=fr_FR" target="_blank">
-                    <img src="img/logo_4.svg" class="footer-logo">
-                </a>
+                <div>
+                    <p>Nos réseaux :</p>
+                    <a href="https://normandiewebschool.fr/" target="_blank">
+                        <img src="img/logo_nws.png" class="footer-logo">
+                    </a>
+                    <a href="https://www.linkedin.com/school/normandiewebschool/" target="_blank">
+                        <img src="img/logo_2.png" class="footer-logo">
+                    </a>
+                    <a href="https://www.instagram.com/nws_rouen/" target="_blank">
+                        <img src="img/logo_3.png" class="footer-logo">
+                    </a>
+                    <a href="https://www.facebook.com/normandiewebschool/?locale=fr_FR" target="_blank">
+                        <img src="img/logo_4.svg" class="footer-logo">
+                    </a>
+                </div>
+
+                <div>
+                    <p>Nos partenaires :</p>
+                    <a href="https://www.nwx.fr/" target="_blank">
+                        <img src="img/logo_5.png" class="footer-logo">
+                    </a>
+                    <a href="https://komeo.fr/" target="_blank">
+                        <img src="img/logo_6.png" class="footer-logo">
+                    </a>
+                    <a href="https://ocean-communication.com/" target="_blank">
+                        <img src="img/logo_7.png" class="footer-logo">
+                    </a>
+                    <a href="https://www.devolis.com/" target="_blank">
+                        <img src="img/logo_8.png" class="footer-logo">
+                    </a>
+                    <a href="https://www.lemasonn.com/" target="_blank">
+                        <img src="img/logo_9.png" class="footer-logo">
+                    </a>
+                </div>
             </div>
         </section>
     </main>
