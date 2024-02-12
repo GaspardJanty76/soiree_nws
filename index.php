@@ -134,7 +134,7 @@
         <section class="registration-section">
             <h2 id="Inscri">Inscription</h2>
             <?php
-            if ($valeur_actuelle == 1) {
+            // if ($valeur_actuelle == 1) {
             ?>
                 <form method="post" action="methodes/registration.php" enctype="multipart/form-data">
                     <h3>
@@ -211,13 +211,13 @@
                     </button>
                 </form>
                 <?php
-        } else {
+        // } else {
         ?>
                     <h3>
                         Les inscriptions sont closes
                     </h3>
         <?php
-        }
+        // }
         ?>
         </section>
         <!-- CONTACT -->
