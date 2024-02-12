@@ -1,6 +1,6 @@
 <?php
 // Inclure le fichier de connexion à la base de données
-require 'dbConnect.php';
+require_once 'dbConnect.php';
 
 // Créer une instance de la classe DBManager avec le nom de la base de données
 $pdoManager = new DBManager('nwsnight');

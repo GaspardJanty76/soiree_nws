@@ -1,8 +1,8 @@
 <?php 
-// require_once 'methodes/dbConnect.php';
-// require_once 'methodes/visitorCounter.php';
-// require_once 'methodes/visitorLocation.php';
-// require_once 'methodes/contentDisplay.php';
+require_once 'methodes/dbConnect.php';
+require_once 'methodes/visitorCounter.php';
+require_once 'methodes/visitorLocation.php';
+require_once 'methodes/contentDisplay.php';
 ?>
 
 <!DOCTYPE html>
@@ -76,8 +76,19 @@
             </a>
         </section>
 
-        <!-- NUAGE DE MOTS -->
-        <div class="cloud">
+        <!-- BLOCK INFORMATION -->
+        <section class="information" id="Info">
+            <!-- <div class="block-rectangle-2"> -->
+                <img src="img/ambiance.jpg" class ="block-rectangle-2" alt="">
+            <!-- </div> -->
+            <div class="information-content">
+                <h2><?php echo $title; ?></h2>
+                <p><?php echo $text; ?></p>
+            </div>
+        </section>
+
+                <!-- NUAGE DE MOTS -->
+                <div class="cloud">
             <div class="word">
                 <p>Conférences</p>
                 <p>Lots</p>
@@ -95,17 +106,6 @@
             </div>
         </div>
 
-        <!-- BLOCK INFORMATION -->
-        <section class="information" id="Info">
-            <!-- <div class="block-rectangle-2"> -->
-                <img src="img/ambiance.jpg" class ="block-rectangle-2" alt="">
-            <!-- </div> -->
-            <div class="information-content">
-                <h2><?php echo $title; ?></h2>
-                <p><?php echo $text; ?></p>
-            </div>
-        </section>
-
         <!-- INSCRIPTION -->
         <section class="registration-section">
             <h2 id="Inscri">Inscription</h2>
@@ -117,22 +117,22 @@
                 <div class="registration-form-part">
                     <div class="registration-form-section">
                         <div>
-                            <label for="lastname">Nom</label>
+                            <label for="lastname">Nom *</label>
                             <input type="text" name="lastname" required>
                         </div>
                         <div>
-                            <label for="firstname">Prénom</label>
+                            <label for="firstname">Prénom *</label>
                             <input type="text" name="firstname" required>
                         </div>
                     </div>
                     <div class="registration-form-section">
                         <div>
-                            <label for="tel">Téléphone</label>
+                            <label for="tel">Téléphone *</label>
                             <input type="text" name="tel" required>
                         </div>
 
                         <div>
-                            <label for="mail">Mail</label>
+                            <label for="mail">Mail *</label>
                             <input type="text" name="mail" required>
                         </div>
                     </div>
@@ -143,19 +143,19 @@
                 </h3>
                 <div class="registration-form-part">
                     <div>
-                        <label class="inscri-texte">Entreprise / Organisation
+                        <label class="inscri-texte">Entreprise / Organisation *
                         </label>
                         <input type="text" name="company" required>
                     </div>
                     <div>
-                        <label for="job">Poste
+                        <label for="job">Poste *
                         </label>
                         <input type="text" name="job" required>
                     </div>
 
                     <!-- NOUVEAU CHAMP LINKEDIN FACULTATIF -->
                     <div>
-                        <label for="">Identifiant linkedin *
+                        <label for="">Identifiant linkedin (optionnel) 
                         </label>
                         <input type="text" name="linkedin" required>
                     </div>
