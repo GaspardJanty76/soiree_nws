@@ -23,10 +23,6 @@ if (isset($_SESSION['username'])) {
         </script>
 
         <form action="methodes/closing.php" method="post">
-            <label>
-                <input type="checkbox" name="fermeture" value="1"> Fermeture
-            </label>
-            <br>
             <input type="submit" value="Submit">
         </form>
         <div class="container tableau">

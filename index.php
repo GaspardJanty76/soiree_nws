@@ -3,6 +3,7 @@ require_once 'methodes/dbConnect.php';
 require_once 'methodes/visitorCounter.php';
 require_once 'methodes/visitorLocation.php';
 require_once 'methodes/contentDisplay.php';
+require_once 'methodes/closingInfo.php';
 ?>
 
 <!DOCTYPE html>
@@ -109,80 +110,92 @@ require_once 'methodes/contentDisplay.php';
         <!-- INSCRIPTION -->
         <section class="registration-section">
             <h2 id="Inscri">Inscription</h2>
-            <form method="post" action="methodes/registration.php" enctype="multipart/form-data">
-                <h3>
-                    <i class="fa-solid fa-user"></i>
-                    Informations personnelles
-                </h3>
-                <div class="registration-form-part">
-                    <div class="registration-form-section">
+            <?php
+            if ($valeur_actuelle == 1) {
+            ?>
+                <form method="post" action="methodes/registration.php" enctype="multipart/form-data">
+                    <h3>
+                        <i class="fa-solid fa-user"></i>
+                        Informations personnelles
+                    </h3>
+                    <div class="registration-form-part">
+                        <div class="registration-form-section">
+                            <div>
+                                <label for="lastname">Nom *</label>
+                                <input type="text" name="lastname" required>
+                            </div>
+                            <div>
+                                <label for="firstname">Prénom *</label>
+                                <input type="text" name="firstname" required>
+                            </div>
+                        </div>
+                        <div class="registration-form-section">
+                            <div>
+                                <label for="tel">Téléphone *</label>
+                                <input type="text" name="tel" required>
+                            </div>
+
+                            <div>
+                                <label for="mail">Mail *</label>
+                                <input type="text" name="mail" required>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>
+                        <i class="fa-solid fa-user"></i>
+                        Entreprise / Organisation
+                    </h3>
+                    <div class="registration-form-part">
                         <div>
-                            <label for="lastname">Nom *</label>
-                            <input type="text" name="lastname" required>
+                            <label class="inscri-texte">Entreprise / Organisation *
+                            </label>
+                            <input type="text" name="company" required>
                         </div>
                         <div>
-                            <label for="firstname">Prénom *</label>
-                            <input type="text" name="firstname" required>
+                            <label for="job">Poste *
+                            </label>
+                            <input type="text" name="job" required>
                         </div>
-                    </div>
-                    <div class="registration-form-section">
+
+                        <!-- NOUVEAU CHAMP LINKEDIN FACULTATIF -->
                         <div>
-                            <label for="tel">Téléphone *</label>
-                            <input type="text" name="tel" required>
-                        </div>
-
-                        <div>
-                            <label for="mail">Mail *</label>
-                            <input type="text" name="mail" required>
+                            <label for="">Identifiant linkedin (optionnel) 
+                            </label>
+                            <input type="text" name="linkedin" required>
                         </div>
                     </div>
-                </div>
-                <h3>
-                    <i class="fa-solid fa-user"></i>
-                    Entreprise / Organisation
-                </h3>
-                <div class="registration-form-part">
-                    <div>
-                        <label class="inscri-texte">Entreprise / Organisation *
-                        </label>
-                        <input type="text" name="company" required>
+
+                    <label class="label-custom">
+                        <input type="checkbox" name="photoConsent" checked>
+                        <span class="checkmark"></span>
+                        <p>Je consens à être pris en photo</p>
+                    </label>
+
+                    <div class="label-icone">
+                        <span class="popover-trigger" tabindex="0">
+                            <i class="fa-solid fa-circle-info"></i>
+                        </span>
+
+                        <div class="custom-popover">
+                            Mentions légales RGPD : ce formulaire permet de vous inscrire à La nuits de la NWS.<br>
+                            La base légale est l'article 6.1.a du RGPD (consentement - car cette inscription est facultative). Les destinataires des données sont le responsable de traitement, ses services internes en charge des réponses, le sous-traitant opérant la gestion du serveur web, ainsi que toute personne légalement autorisée. La durée de traitement des données est jusqu'au retrait du consentement qui peut être retiré à tout moment.
+                            Vous disposez du droit de demander au responsable du traitement l'accès aux données à caractère personnel, la rectification ou l'effacement de celles-ci, ou une limitation du traitement relatif à la personne concernée, ou du droit de s'opposer au traitement et du droit à la portabilité des données. Le responsable du traitement est la Normandie Web School, 22 Pl. Henri Gadeau de Kerville, 76100 Rouen. Vous avez également le droit d'introduire une réclamation auprès d'une autorité de contrôle.
+                        </div>
                     </div>
-                    <div>
-                        <label for="job">Poste *
-                        </label>
-                        <input type="text" name="job" required>
-                    </div>
 
-                    <!-- NOUVEAU CHAMP LINKEDIN FACULTATIF -->
-                    <div>
-                        <label for="">Identifiant linkedin (optionnel) 
-                        </label>
-                        <input type="text" name="linkedin" required>
-                    </div>
-                </div>
-
-                <label class="label-custom">
-                    <input type="checkbox" name="photoConsent" checked>
-                    <span class="checkmark"></span>
-                    <p>Je consens à être pris en photo</p>
-                </label>
-
-                <div class="label-icone">
-                    <span class="popover-trigger" tabindex="0">
-                        <i class="fa-solid fa-circle-info"></i>
-                    </span>
-
-                    <div class="custom-popover">
-                        Mentions légales RGPD : ce formulaire permet de vous inscrire à La nuits de la NWS.<br>
-                        La base légale est l'article 6.1.a du RGPD (consentement - car cette inscription est facultative). Les destinataires des données sont le responsable de traitement, ses services internes en charge des réponses, le sous-traitant opérant la gestion du serveur web, ainsi que toute personne légalement autorisée. La durée de traitement des données est jusqu'au retrait du consentement qui peut être retiré à tout moment.
-                        Vous disposez du droit de demander au responsable du traitement l'accès aux données à caractère personnel, la rectification ou l'effacement de celles-ci, ou une limitation du traitement relatif à la personne concernée, ou du droit de s'opposer au traitement et du droit à la portabilité des données. Le responsable du traitement est la Normandie Web School, 22 Pl. Henri Gadeau de Kerville, 76100 Rouen. Vous avez également le droit d'introduire une réclamation auprès d'une autorité de contrôle.
-                    </div>
-                </div>
-
-                <button type="submit" class="btn-inscription-2">
-                    Valider l'inscription
-                </button>
-            </form>
+                    <button type="submit" class="btn-inscription-2">
+                        Valider l'inscription
+                    </button>
+                </form>
+                <?php
+        } else {
+        ?>
+                    <h3>
+                        Les inscriptions sont closes
+                    </h3>
+        <?php
+        }
+        ?>
         </section>
         <!-- CONTACT -->
 
