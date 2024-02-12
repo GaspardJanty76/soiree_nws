@@ -1,9 +1,9 @@
 <?php 
-require_once 'methodes/dbConnect.php';
-require_once 'methodes/visitorCounter.php';
-require_once 'methodes/visitorLocation.php';
-require_once 'methodes/contentDisplay.php';
-require_once 'methodes/closingInfo.php';
+// require_once 'methodes/dbConnect.php';
+// require_once 'methodes/visitorCounter.php';
+// require_once 'methodes/visitorLocation.php';
+// require_once 'methodes/contentDisplay.php';
+// require_once 'methodes/closingInfo.php';
 ?>
 
 <!DOCTYPE html>
@@ -88,8 +88,8 @@ require_once 'methodes/closingInfo.php';
             </div>
         </section>
 
-                <!-- NUAGE DE MOTS -->
-                <div class="cloud">
+        <!-- NUAGE DE MOTS -->
+        <div class="cloud">
             <div class="word">
                 <p>Conférences</p>
                 <p>Lots</p>
@@ -104,6 +104,29 @@ require_once 'methodes/closingInfo.php';
                 <p>Échanges</p>
                 <p>Tendances</p>
                 <p>Ambassadeurs</p>
+            </div>
+        </div>
+
+        <!-- PARTENAIRES LISTES -->
+            
+        <div class="partenaires">
+            <h2>Nos partenaires :</h2>
+            <div class="partenaires-logos">
+                <a href="https://www.nwx.fr/" target="_blank">
+                    <img src="img/logo_5.png" class="partenaire-logo">
+                </a>
+                <a href="https://komeocreation.fr/" target="_blank">
+                    <img src="img/logo_6.png" class="partenaire-logo">
+                </a>
+                <a href="https://ocean-communication.com/" target="_blank">
+                    <img src="img/logo_7.png" class="partenaire-logo">
+                </a>
+                <a href="https://www.devolis.com/" target="_blank">
+                    <img src="img/logo_8.png" class="partenaire-logo">
+                </a>
+                <a href="https://www.lemasonn.com/" target="_blank">
+                    <img src="img/logo_9.png" class="partenaire-logo">
+                </a>
             </div>
         </div>
 
@@ -252,7 +275,7 @@ require_once 'methodes/closingInfo.php';
                     <a href="https://www.nwx.fr/" target="_blank">
                         <img src="img/logo_5.png" class="footer-logo">
                     </a>
-                    <a href="https://komeo.fr/" target="_blank">
+                    <a href="https://komeocreation.fr/" target="_blank">
                         <img src="img/logo_6.png" class="footer-logo">
                     </a>
                     <a href="https://ocean-communication.com/" target="_blank">

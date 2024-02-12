@@ -348,7 +348,36 @@
   }
 }
 
+/* PARTENAIRES LISTE */
+
+.partenaires {
+  background-color: var(--tertiary-color);
+  bottom: 0;
+  margin-bottom: 50px;
+  width: 100%;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.partenaires-logos {
+  display: flex;
+  gap: 4rem;
+  margin-top: 30px;
+}
+
+.partenaire-logo {
+  height: 4rem;
+}
+
+h2 {
+  text-align: center;
+}
+
 /* FORM INSCRIPTION */
+
 .index .registration-section {
   display: flex;
   flex-direction: column;
