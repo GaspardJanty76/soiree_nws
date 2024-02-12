@@ -269,25 +269,6 @@
                         <img src="img/logo_4.svg" class="footer-logo">
                     </a>
                 </div>
-
-                <div>
-                    <p>Nos partenaires :</p>
-                    <a href="https://www.nwx.fr/" target="_blank">
-                        <img src="img/logo_5.png" class="footer-logo">
-                    </a>
-                    <a href="https://komeocreation.fr/" target="_blank">
-                        <img src="img/logo_6.png" class="footer-logo">
-                    </a>
-                    <a href="https://ocean-communication.com/" target="_blank">
-                        <img src="img/logo_7.png" class="footer-logo">
-                    </a>
-                    <a href="https://www.devolis.com/" target="_blank">
-                        <img src="img/logo_8.png" class="footer-logo">
-                    </a>
-                    <a href="https://www.lemasonn.com/" target="_blank">
-                        <img src="img/logo_9.png" class="footer-logo">
-                    </a>
-                </div>
             </div>
         </section>
     </main>
