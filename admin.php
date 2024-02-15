@@ -1,7 +1,4 @@
 <?php
-session_start();
-
-if (isset($_SESSION['username'])) {
     ?>
         <link rel="stylesheet" href="css/admin.css">
         <link rel="stylesheet" href="css/global.css">
@@ -47,8 +44,5 @@ if (isset($_SESSION['username'])) {
     <?php
     
 
-} else {
-    header("Location: connexion.php");
-    exit();
- }
+
 ?>

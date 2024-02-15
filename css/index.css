@@ -371,7 +371,13 @@
 }
 
 .partenaire-logo {
-  height: 4rem;
+  height: 2.5rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  .partenaire-logo {
+    height: 1.5rem;
+  }
 }
 
 h2 {
@@ -469,6 +475,7 @@ h2 {
 
 .index .registration-section form input:focus {
   outline: 2px solid #fcb900;
+  transition: none;
   outline-offset: 2px;
   border-color: var(--primary-background);
   box-shadow: 0 0 0 2px var(--primary-background);

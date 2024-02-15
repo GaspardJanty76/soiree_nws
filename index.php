@@ -127,6 +127,15 @@
                 <a href="https://www.lemasonn.com/" target="_blank">
                     <img src="img/logo_9.png" class="partenaire-logo">
                 </a>
+                <a href="https://nachos.fr/" target="_blank">
+                    <img src="img/logo_10.svg" class="partenaire-logo">
+                </a>
+                <a href="https://www.wearecitizens.fr/" target="_blank">
+                    <img src="img/logo_11.png" class="partenaire-logo">
+                </a>
+                <a href="https://www.ftel.fr/" target="_blank">
+                    <img src="img/logo_12.png" class="partenaire-logo">
+                </a>
             </div>
         </div>
 
