@@ -371,13 +371,7 @@
 }
 
 .partenaire-logo {
-  height: 2.5rem;
-}
-
-@media only screen and (max-width: 1000px) {
-  .partenaire-logo {
-    height: 1.5rem;
-  }
+  height: 3rem;
 }
 
 h2 {
