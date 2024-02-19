@@ -127,6 +127,8 @@
                 <a href="https://www.lemasonn.com/" target="_blank">
                     <img src="img/logo_9.png" class="partenaire-logo">
                 </a>
+            </div>
+            <div class="partenaires-logos">
                 <a href="https://nachos.fr/" target="_blank">
                     <img src="img/logo_10.svg" class="partenaire-logo">
                 </a>
@@ -135,6 +137,12 @@
                 </a>
                 <a href="https://www.ftel.fr/" target="_blank">
                     <img src="img/logo_12.png" class="partenaire-logo">
+                </a>
+                <a href="https://numeric-emploi.org/" target="_blank">
+                    <img src="img/logo_13.png" class="partenaire-logo">
+                </a>
+                <a href="https://www.groupedigit.com/" target="_blank">
+                    <img src="img/logo_14.png" class="partenaire-logo">
                 </a>
             </div>
         </div>
