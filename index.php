@@ -272,7 +272,7 @@
         <section class="footer">
             <div class="footer-img">
                 <div>
-                    <p>Nos réseaux :</p>
+                    <p>Ou nous contacter :</p>
                     <a href="https://normandiewebschool.fr/" target="_blank">
                         <img src="img/logo_nws.png" class="footer-logo">
                     </a>

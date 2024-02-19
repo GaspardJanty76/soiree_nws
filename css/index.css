@@ -707,10 +707,11 @@ li a:hover {
 
 .footer-logo {
   margin: 15px;
-  height: 4.5rem;
+  height: 3.5rem;
 }
 
 .footer p {
+  margin-bottom: 15px;
   color: #fcb900;
   font-weight: 700;
   font-size: 25px;
