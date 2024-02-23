@@ -1,4 +1,4 @@
-var countdownDate = new Date(2024, 4, 18, 0, 0, 0).getTime();
+var countdownDate = new Date(2024, 4, 18, 17, 30, 0).getTime();
 
 var countdownInterval = setInterval(function() {
     var now = new Date().getTime();

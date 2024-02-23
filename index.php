@@ -48,7 +48,7 @@
                 <p>
                     <a class="highlight" href="#Info"><span>Jeudi 18 AVRIL 2024 à partir 18h30</span></a>
                 </p>
-                <p>votre évènement commence dans :</p>
+                <p>Votre évènement commence dans :</p>
             </div>
             <ul>
                 <li>
