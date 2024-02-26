@@ -43,7 +43,7 @@ require_once 'methodes/closingInfo.php';
                 <div class="header-content">
                     <img src="img/logo_1.webp" class="img-titre img-left" alt="">
                     <h1>La nuit de la NWS</h1>
-                    <img src="img/logo_nws.webp" class="img-titre img-right" alt="">
+                    <img src="img/logo_nws.png" class="img-titre img-right" alt="">
                 </div>
                 <p>
                     <a class="highlight" href="#Info"><span>Jeudi 18 AVRIL 2024 à partir 18h30</span></a>
@@ -110,7 +110,7 @@ require_once 'methodes/closingInfo.php';
         <!-- PARTENAIRES LISTES -->
             
         <div class="partenaires">
-            <h2>Nos partenaires :</h2>
+            <h2>Nos partenaires</h2>
             <div class="partenaires-logos">
                 <a href="https://www.nwx.fr/" target="_blank">
                     <img src="img/logo_5.webp" class="partenaire-logo">
@@ -270,7 +270,7 @@ require_once 'methodes/closingInfo.php';
         <section class="footer">
             <div class="footer-img">
                 <div>
-                    <p>Ou nous contacter :</p>
+                    <p>Nos réseaux</p>
                     <a href="https://normandiewebschool.fr/" target="_blank">
                         <img src="img/logo_nws.webp" class="footer-logo">
                     </a>

@@ -660,7 +660,12 @@ li a:hover {
   #map {
     width: 80%;
   }
+<<<<<<< Updated upstream
   .contact-content li{
+=======
+
+  .contact-content li {
+>>>>>>> Stashed changes
     justify-content: center;
   }
 }

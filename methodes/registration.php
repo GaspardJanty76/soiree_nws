@@ -73,7 +73,7 @@ class UserRegistration
 
         Cette soirée d'échanges entre l'école et les professionnels promet des opportunités de collaborations innovantes.
         
-        Nous attendons votre participation avec enthousiasme pour partager une soirée mémorable.
+        Nous attendons votre venu avec enthousiasme pour partager une soirée mémorable.
         
         Lieu : 
         Là où l'école a fait ses premiers pas, nous nous retrouverons à Seine Innopolis
@@ -85,9 +85,7 @@ class UserRegistration
         Cordialement,
         
         La Normandie Web School";
-    
-    
-
+        
         $transport = (new Swift_SmtpTransport('smtp.gmail.com', 587, 'tls'))
             ->setUsername('partenairesnws@normandiewebschool.fr')
             ->setPassword('oBLPejhBnatRTAHkRxGG');
