@@ -14,7 +14,7 @@
     <div class="confirm-rectangle">
         <h1 class="confirm-titre">Confirmation d'inscription à La Nuit de la NWS</h1>
         <h2>Félicitation </h2>
-        <p>Votre inscription à la Nuit de la NWS de la Normandie Web School est maintenant confirmée !</p>
+        <p>Votre inscription à la Nuit de la NWS est maintenant confirmée !</p>
         <p>Date et Lieu :</p>
         <p>28 avril  à partir de 18h30 </p>
         <p>72 Rue de la République, 76140</p>

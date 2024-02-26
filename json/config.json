@@ -1,7 +1,7 @@
 {
-    "host": "localhost",
-    "port" : "8888",
-    "username": "root",
-    "password": "1597",
+    "host": "51.178.29.201",
+    "port" : "3306",
+    "username": "westboy",
+    "password": "GefundensieDarf@99",
     "database": "nwsnight"
 }

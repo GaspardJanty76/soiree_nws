@@ -660,7 +660,11 @@ li a:hover {
   #map {
     width: 80%;
   }
+  .contact-content li{
+    justify-content: center;
+  }
 }
+
 
 /* PAGE DE CONFIRMATION */
 
@@ -716,4 +720,12 @@ li a:hover {
   font-weight: 700;
   font-size: 25px;
   text-align: center;
+}
+
+.credits{
+  max-height: 1px;
+}
+
+.credits p{
+  color:#fcb90063;
 }

@@ -17,3 +17,103 @@
   background-color: #4a4a4a;
   color: rgb(255, 255, 255);
 }
+
+
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.btn-primary {
+  margin-bottom: 11px;
+  background-color: #0059ff;
+  border-color: #0059ff;
+  font-size: 18px;
+  padding: 10px 20px; /* Espacement intérieur */
+}
+
+.btn-primary:hover {
+  background-color: #2c76ff;
+  border-color: #2c76ff;
+}
+
+.tableau {
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.custom-button-open {
+  margin-bottom: 11px;
+  background-color: #4CAF50; /* Couleur verte */
+  color: #fff; /* Couleur du texte blanc */
+  border: none; /* Supprimer la bordure */
+  padding: 10px 20px; /* Espacement intérieur */
+  font-size: 18px; /* Taille de la police */
+  border-radius: 5px; /* Bordure arrondie */
+  cursor: pointer; /* Curseur pointeur au survol */
+  transition: background-color 0.3s; /* Transition douce pour le changement de couleur */
+}
+
+.custom-button-open:hover {
+  background-color: #45a049; /* Nouvelle couleur verte au survol */
+}
+
+.custom-button-close {
+  margin-bottom: 11px;
+  background-color: #e02323; /* Couleur verte */
+  color: #fff; /* Couleur du texte blanc */
+  border: none; /* Supprimer la bordure */
+  padding: 10px 20px; /* Espacement intérieur */
+  font-size: 18px; /* Taille de la police */
+  border-radius: 5px; /* Bordure arrondie */
+  cursor: pointer; /* Curseur pointeur au survol */
+  transition: background-color 0.3s; /* Transition douce pour le changement de couleur */
+}
+
+.custom-button-close:hover {
+  background-color: #e33f3f; /* Nouvelle couleur verte au survol */
+}
+
+.button-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+p{
+  font-size: 18px;
+  font-family: "Poppins-Bold", Helvetica;;
+}
+
+p.closerc{
+  color: #ff0000;
+  font-weight: bold;
+}
+p.open{
+  color: #0061fd;
+  font-weight: bold;
+}
