@@ -1,9 +1,9 @@
 <?php 
-// require_once 'methodes/dbConnect.php';
-// require_once 'methodes/visitorCounter.php';
-// require_once 'methodes/visitorLocation.php';
-// require_once 'methodes/contentDisplay.php';
-// require_once 'methodes/closingInfo.php';
+require_once 'methodes/dbConnect.php';
+require_once 'methodes/visitorCounter.php';
+require_once 'methodes/visitorLocation.php';
+require_once 'methodes/contentDisplay.php';
+require_once 'methodes/closingInfo.php';
 ?>
 
 <!DOCTYPE html>
@@ -41,14 +41,14 @@
         <section class="hero-section">
             <div class="hero-header underline-effect">
                 <div class="header-content">
-                    <img src="img/logo_1.png" class="img-titre img-left" alt="">
+                    <img src="img/logo_1.webp" class="img-titre img-left" alt="">
                     <h1>La nuit de la NWS</h1>
                     <img src="img/logo_nws.png" class="img-titre img-right" alt="">
                 </div>
                 <p>
                     <a class="highlight" href="#Info"><span>Jeudi 18 AVRIL 2024 à partir 18h30</span></a>
                 </p>
-                <p>votre évènement commence dans :</p>
+                <p>Votre évènement commence dans :</p>
             </div>
             <ul>
                 <li>
@@ -80,7 +80,7 @@
         <!-- BLOCK INFORMATION -->
         <section class="information" id="Info">
             <!-- <div class="block-rectangle-2"> -->
-                <img src="img/ambiance.jpg" class ="block-rectangle-2" alt="">
+                <img src="img/Ambiance.webp" class ="block-rectangle-2" alt="">
             <!-- </div> -->
             <div class="information-content">
                 <h2><?php echo $title; ?></h2>
@@ -110,22 +110,39 @@
         <!-- PARTENAIRES LISTES -->
             
         <div class="partenaires">
-            <h2>Nos partenaires :</h2>
+            <h2>Nos partenaires</h2>
             <div class="partenaires-logos">
                 <a href="https://www.nwx.fr/" target="_blank">
-                    <img src="img/logo_5.png" class="partenaire-logo">
+                    <img src="img/logo_5.webp" class="partenaire-logo">
                 </a>
                 <a href="https://komeocreation.fr/" target="_blank">
-                    <img src="img/logo_6.png" class="partenaire-logo">
+                    <img src="img/logo_6.webp" class="partenaire-logo">
                 </a>
                 <a href="https://ocean-communication.com/" target="_blank">
-                    <img src="img/logo_7.png" class="partenaire-logo">
+                    <img src="img/logo_7.webp" class="partenaire-logo">
                 </a>
                 <a href="https://www.devolis.com/" target="_blank">
-                    <img src="img/logo_8.png" class="partenaire-logo">
+                    <img src="img/logo_8.webp" class="partenaire-logo">
                 </a>
                 <a href="https://www.lemasonn.com/" target="_blank">
-                    <img src="img/logo_9.png" class="partenaire-logo">
+                    <img src="img/logo_9.webp" class="partenaire-logo">
+                </a>
+            </div>
+            <div class="partenaires-logos">
+                <a href="https://nachos.fr/" target="_blank">
+                    <img src="img/logo_10.svg" class="partenaire-logo">
+                </a>
+                <a href="https://www.wearecitizens.fr/" target="_blank">
+                    <img src="img/logo_11.png" class="partenaire-logo">
+                </a>
+                <a href="https://www.ftel.fr/" target="_blank">
+                    <img src="img/logo_12.png" class="partenaire-logo">
+                </a>
+                <a href="https://numeric-emploi.org/" target="_blank">
+                    <img src="img/logo_13.png" class="partenaire-logo">
+                </a>
+                <a href="https://www.groupedigit.com/" target="_blank">
+                    <img src="img/logo_14.png" class="partenaire-logo">
                 </a>
             </div>
         </div>
@@ -184,7 +201,7 @@
                         <div>
                             <label for="">Identifiant linkedin (optionnel) 
                             </label>
-                            <input type="text" name="linkedin" required>
+                            <input type="text" name="linkedin">
                         </div>
                     </div>
 
@@ -200,9 +217,7 @@
                         </span>
 
                         <div class="custom-popover">
-                            Mentions légales RGPD : ce formulaire permet de vous inscrire à La nuits de la NWS.<br>
-                            La base légale est l'article 6.1.a du RGPD (consentement - car cette inscription est facultative). Les destinataires des données sont le responsable de traitement, ses services internes en charge des réponses, le sous-traitant opérant la gestion du serveur web, ainsi que toute personne légalement autorisée. La durée de traitement des données est jusqu'au retrait du consentement qui peut être retiré à tout moment.
-                            Vous disposez du droit de demander au responsable du traitement l'accès aux données à caractère personnel, la rectification ou l'effacement de celles-ci, ou une limitation du traitement relatif à la personne concernée, ou du droit de s'opposer au traitement et du droit à la portabilité des données. Le responsable du traitement est la Normandie Web School, 22 Pl. Henri Gadeau de Kerville, 76100 Rouen. Vous avez également le droit d'introduire une réclamation auprès d'une autorité de contrôle.
+                            L'article 226-1 du code pénal punit d'un an d'emprisonnement et 45 000 € d'amende le fait de porter atteinte à l'intimité de la vie privée d'autrui en fixant, enregistrant ou transmettant, sans le consentement de celle-ci, l'image d'une personne se trouvant dans un lieu privé.
                         </div>
                     </div>
 
@@ -255,15 +270,15 @@
         <section class="footer">
             <div class="footer-img">
                 <div>
-                    <p>Nos réseaux :</p>
+                    <p>Nos réseaux</p>
                     <a href="https://normandiewebschool.fr/" target="_blank">
-                        <img src="img/logo_nws.png" class="footer-logo">
+                        <img src="img/logo_nws.webp" class="footer-logo">
                     </a>
                     <a href="https://www.linkedin.com/school/normandiewebschool/" target="_blank">
-                        <img src="img/logo_2.png" class="footer-logo">
+                        <img src="img/logo_2.webp" class="footer-logo">
                     </a>
                     <a href="https://www.instagram.com/nws_rouen/" target="_blank">
-                        <img src="img/logo_3.png" class="footer-logo">
+                        <img src="img/logo_3.webp" class="footer-logo">
                     </a>
                     <a href="https://www.facebook.com/normandiewebschool/?locale=fr_FR" target="_blank">
                         <img src="img/logo_4.svg" class="footer-logo">
@@ -271,6 +286,9 @@
                 </div>
             </div>
         </section>
+        <div class="credits">
+            <p>Site développé par les étudiants de la NWS</p>
+        </div>
     </main>
 </body>
 

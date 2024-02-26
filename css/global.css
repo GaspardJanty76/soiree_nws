@@ -37,6 +37,13 @@
    HTML5 CSS Reset Minified - Eric Meyer
    ========================================================================== */
 
+*{
+transition: all 300ms ease;
+} 
+html {
+scroll-behavior: smooth;
+}
+
 html,
 body,
 div,

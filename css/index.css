@@ -166,7 +166,8 @@
   display: flex;
   width: 100%;
   height: 350px;
-  margin-bottom: 100px;
+  margin-top: 150px;
+  margin-bottom: 200px;
   text-align: center;
   position: relative;
 }
@@ -309,6 +310,7 @@
 
 .index .information {
   display: flex;
+  margin-top: 150px;
   flex-direction: row-reverse;
   align-items: center;
   height: auto;
@@ -353,7 +355,7 @@
 .partenaires {
   background-color: var(--tertiary-color);
   bottom: 0;
-  margin-bottom: 50px;
+  margin-bottom: 150px;
   width: 100%;
   min-height: 250px;
   display: flex;
@@ -369,17 +371,22 @@
 }
 
 .partenaire-logo {
-  height: 4rem;
+  height: 3rem;
 }
 
 h2 {
   text-align: center;
 }
 
+.partenaire-logo:hover {
+  transform: scale(1.1);
+}
+
 /* FORM INSCRIPTION */
 
 .index .registration-section {
   display: flex;
+  margin-bottom: 150px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -450,6 +457,10 @@ h2 {
   box-sizing: border-box;
 }
 
+.index .registration-section form input:hover {
+  background-color: #cdcdcd;
+}
+
 .btn-inscription-2 {
   font-size: 16px;
   width: 100%;
@@ -457,7 +468,8 @@ h2 {
 }
 
 .index .registration-section form input:focus {
-  outline: 2px solid transparent;
+  outline: 2px solid #fcb900;
+  transition: none;
   outline-offset: 2px;
   border-color: var(--primary-background);
   box-shadow: 0 0 0 2px var(--primary-background);
@@ -553,13 +565,13 @@ h2 {
   }
 }
 
-/* FOOTER ET CONTACT */
+/* CONTACT */
 .index .contact-section {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row-reverse;
-
+  margin-bottom: 100px;
   padding: 4rem;
   gap: 4rem;
   width: 95%;
@@ -648,7 +660,16 @@ li a:hover {
   #map {
     width: 80%;
   }
+<<<<<<< Updated upstream
+  .contact-content li{
+=======
+
+  .contact-content li {
+>>>>>>> Stashed changes
+    justify-content: center;
+  }
 }
+
 
 /* PAGE DE CONFIRMATION */
 
@@ -695,12 +716,21 @@ li a:hover {
 
 .footer-logo {
   margin: 15px;
-  height: 4.5rem;
+  height: 3.5rem;
 }
 
 .footer p {
+  margin-bottom: 15px;
   color: #fcb900;
   font-weight: 700;
   font-size: 25px;
   text-align: center;
+}
+
+.credits{
+  max-height: 1px;
+}
+
+.credits p{
+  color:#fcb90063;
 }
