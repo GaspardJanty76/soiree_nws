@@ -119,7 +119,7 @@ require_once 'methodes/closingInfo.php';
                     <img src="img/logo_6.webp" class="partenaire-logo">
                 </a>
                 <a href="https://ocean-communication.com/" target="_blank">
-                    <img src="img/logo_7.webp" class="partenaire-logo">
+                    <img src="img/logo_7.png" class="partenaire-logo">
                 </a>
                 <a href="https://www.devolis.com/" target="_blank">
                     <img src="img/logo_8.webp" class="partenaire-logo">
@@ -133,7 +133,7 @@ require_once 'methodes/closingInfo.php';
                     <img src="img/logo_10.svg" class="partenaire-logo">
                 </a>
                 <a href="https://www.wearecitizens.fr/" target="_blank">
-                    <img src="img/logo_11.png" class="partenaire-logo">
+                    <img src="https://www.wearecitizens.fr/assets/64c26a3f45ca643867069901/2023/11/29/09/43/43/logo-blanc.min3.png" class="partenaire-logo citizens">
                 </a>
                 <a href="https://www.ftel.fr/" target="_blank">
                     <img src="img/logo_12.png" class="partenaire-logo">
@@ -272,7 +272,7 @@ require_once 'methodes/closingInfo.php';
                 <div>
                     <p>Nos réseaux</p>
                     <a href="https://normandiewebschool.fr/" target="_blank">
-                        <img src="img/logo_nws.webp" class="footer-logo">
+                        <img src="img/logo_nws.png" class="footer-logo">
                     </a>
                     <a href="https://www.linkedin.com/school/normandiewebschool/" target="_blank">
                         <img src="img/logo_2.webp" class="footer-logo">

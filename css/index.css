@@ -374,6 +374,10 @@
   height: 3rem;
 }
 
+.citizens {
+  height: 4rem;
+}
+
 h2 {
   text-align: center;
 }
@@ -660,12 +664,8 @@ li a:hover {
   #map {
     width: 80%;
   }
-<<<<<<< Updated upstream
-  .contact-content li{
-=======
 
   .contact-content li {
->>>>>>> Stashed changes
     justify-content: center;
   }
 }
