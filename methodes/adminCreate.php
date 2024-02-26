@@ -7,6 +7,9 @@ $pdoManager = new DBManager('nwsnight');
 // Récupération de l'objet PDO
 $pdo = $pdoManager->getPDO();
 
+error_reporting(0);
+ini_set('display_errors', 0);
+
 // Définition de la classe UserManagement
 class UserManagement
 {

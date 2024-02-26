@@ -1,4 +1,7 @@
 <?php 
+error_reporting(0);
+ini_set('display_errors', 0);
+
 require_once 'methodes/dbConnect.php';
 require_once 'methodes/visitorCounter.php';
 require_once 'methodes/visitorLocation.php';
@@ -31,7 +34,8 @@ require_once 'methodes/closingInfo.php';
 
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" defer></script>
     <script src="http://threejs.org/examples/js/libs/stats.min.js" defer></script>
-
+    <link rel="shortcut icon" href="img/logo_1.webp" type="image/x-icon">
+    <title>La Nuit de la NWS - Inscription</title>
 </head>
 
 <body>
@@ -185,7 +189,7 @@ require_once 'methodes/closingInfo.php';
                         </div>
                     </div>
                     <h3>
-                        <i class="fa-solid fa-user"></i>
+                        <i class="fa-solid fa-briefcase" style="color: #fcb900;"></i>
                         Entreprise / Organisation
                     </h3>
                     <div class="registration-form-part">
@@ -254,13 +258,17 @@ require_once 'methodes/closingInfo.php';
                             <p>contact@normandiewebschool.fr</p>
                         </a>
                     </li>
+                    <li>
+                        <i class="fa-brands fa-linkedin" style="color: #fcb900;"></i>
+                        <a href="https://www.linkedin.com/in/bleuenn-garry/">Bleuenn Garry</a>
+                    </li>
                 </ul>
                 <h2>Lieu de l'évènement</h2>
                 <ul>
                     <li class="frame-4">
                         <i class="fa-solid fa-location-dot"></i>
                         <a href="https://www.google.com/maps/place/72+Rue+de+la+République,+76140+Le+Petit-Quevilly" target="_blank">
-                            <p>72 Rue de la République, 76140 Le Petit-Quevilly</p>
+                            <p>Seine Innopolis - 72 Rue de la République, 76140 Le Petit-Quevilly</p>
                         </a>                    
                     </li>
                 </ul>

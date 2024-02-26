@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/popup.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <title>La Nuit de la NWS</title>
+    <link rel="shortcut icon" href="img/logo_1.webp" type="image/x-icon">
+    <title>La Nuit de la NWS - Confirmation</title>
 </head>
 <body>
     <div class="confirm-rectangle">
