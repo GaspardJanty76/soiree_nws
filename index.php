@@ -127,6 +127,9 @@ require_once 'methodes/closingInfo.php';
                 <a href="https://www.lemasonn.com/" target="_blank">
                     <img src="img/logo_9.webp" class="partenaire-logo">
                 </a>
+                <a href="https://www.metropole-rouen-normandie.fr/" target="_blank">
+                    <img src="img/logo_15.png" class="partenaire-logo metropole">
+                </a>
             </div>
             <div class="partenaires-logos">
                 <a href="https://nachos.fr/" target="_blank">
