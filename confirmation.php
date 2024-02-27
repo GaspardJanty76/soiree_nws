@@ -16,7 +16,7 @@
         <h2>Félicitation </h2>
         <p>Votre inscription à la Nuit de la NWS est maintenant confirmée !</p>
         <p>Date et Lieu :</p>
-        <p>28 avril  à partir de 18h30 </p>
+        <p>18 avril  à partir de 18h30 </p>
         <p>72 Rue de la République, 76140</p>
         <p>La Nuit de la NWS est une occasion unique de connecter l'école et les entreprises du secteur.<br>Préparez vous à des échanges stimulants et à des opportunités de collaboration.</p>
         <p>Nous avons hâte de vous accueillir pour une soirée enrichissante !</p>
