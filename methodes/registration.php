@@ -76,14 +76,13 @@ class UserRegistration
         Nous vous confirmons votre inscription à la Nuit de la NWS.<br>
         <br>
         Cette soirée d'échanges entre l'école et les professionnels promet des opportunités de collaborations innovantes.<br>
-        <br>
         Nous attendons votre venu avec enthousiasme pour partager une soirée mémorable.<br>
         <br>
-        Lieu : <br>
+        <strong>Lieu : </strong><br>
         Là où l'école a fait ses premiers pas, nous nous retrouverons à Seine Innopolis<br>
         72 Rue de la République, Le Petit-Quevilly<br>
         <br>
-        Date : <br>
+        <strong>Date : </strong><br>
         18 avril, 18h30<br>
         <br>
         Cordialement,<br>
