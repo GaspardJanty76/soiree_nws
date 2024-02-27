@@ -71,6 +71,7 @@ if (isset($_SESSION['username'])) {
                             <th>Email</th>
                             <th>Entreprise</th>
                             <th>Poste</th>
+                            <th>Supprimer</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -82,7 +83,7 @@ if (isset($_SESSION['username'])) {
     </body>
     </html>
 
-    <?php
+<?php
 } else {
     header("Location: connexion.php");
     exit();

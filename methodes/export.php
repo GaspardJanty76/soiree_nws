@@ -17,7 +17,6 @@ $sheet->setCellValue('F1', 'Poste');
 $sheet->setCellValue('G1', 'Date d\'inscription');
 $sheet->setCellValue('H1', 'Photo');
 
-
 $sql = "SELECT * FROM registrationgasp";
 $stmt = $pdo->prepare($sql);
 $stmt->execute();
