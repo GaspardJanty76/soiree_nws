@@ -119,7 +119,7 @@ require_once 'methodes/closingInfo.php';
                     <img src="img/logo_6.webp" class="partenaire-logo">
                 </a>
                 <a href="https://ocean-communication.com/" target="_blank">
-                    <img src="img/logo_7.png" class="partenaire-logo">
+                    <img src="img/logo_7.webp" class="partenaire-logo citizens">
                 </a>
                 <a href="https://www.devolis.com/" target="_blank">
                     <img src="img/logo_8.webp" class="partenaire-logo">

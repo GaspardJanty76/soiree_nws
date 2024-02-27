@@ -366,6 +366,7 @@
 
 .partenaires-logos {
   display: flex;
+  align-items: center;
   gap: 4rem;
   margin-top: 30px;
 }
