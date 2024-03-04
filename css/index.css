@@ -555,6 +555,11 @@ h2 {
   color: white;
 }
 
+.inscription-ferme {
+  display: flex;
+  text-align: center;
+}
+
 @media only screen and (max-width: 1086px) {
   .index .registration-section {
     width: 75%;

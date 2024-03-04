@@ -79,11 +79,12 @@ class UserRegistration
         Nous attendons votre venu avec enthousiasme pour partager une soirée mémorable.<br>
         <br>
         <strong>Lieu : </strong><br>
-        Là où l'école a fait ses premiers pas, nous nous retrouverons à Seine Innopolis<br>
+        Là où l'école a fait ses premiers pas, nous nous retrouverons à Seine Innopolis
         72 Rue de la République, Le Petit-Quevilly<br>
         <br>
         <strong>Date : </strong><br>
         18 avril, 18h30<br>
+        En cas d'annulation de votre participation , le nombre de places étant limité,  veuillez contacter Bleuenn GARRY à l'adresse b.garry@normandiewebschool.fr pour annuler votre inscription.<br>
         <br>
         Cordialement,<br>
         <br>

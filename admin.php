@@ -2,6 +2,24 @@
 require_once 'methodes/closingInfo.php';
 session_start();
 
+require_once 'methodes/dbConnect.php';
+$pdoManager = new DBManager('nwsnight');
+$pdo = $pdoManager->getPDO();
+try {
+    // Requête SQL pour compter le nombre de personnes inscrites
+    $sql_count = "SELECT COUNT(*) AS total FROM registrationgasp WHERE suppr != 1 OR suppr IS NULL";
+    // Préparation de la requête SQL
+    $stmt_count = $pdo->prepare($sql_count);
+    // Exécution de la requête SQL
+    $stmt_count->execute();
+    // Récupération du résultat
+    $row_count = $stmt_count->fetch(PDO::FETCH_ASSOC);
+    // Nombre total de personnes inscrites
+    $nombre_personnes_inscrites = $row_count['total'];
+} catch (PDOException $e) {
+    echo "Erreur de connexion à la base de données: " . $e->getMessage();
+}
+
 if (isset($_SESSION['username'])) {
     ?>
     <!DOCTYPE html>
@@ -24,6 +42,8 @@ if (isset($_SESSION['username'])) {
         </div>
         <h1>Administration</h1>
         <br>
+        <br>
+        <h1><?php echo $nombre_personnes_inscrites; ?> inscrit<?php echo ($nombre_personnes_inscrites > 1) ? 's' : ''; ?></h1>
         <br>
         <div class="button-div">
             <button type="button" class="btn btn-primary calibri text-white fw-bold" onclick="exportToExcel()">Télécharger le tableau Excel</button>
