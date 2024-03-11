@@ -1,13 +1,14 @@
 <?php
-include('../lib/phpqrcode/qrlib.php');
+include 'emailSender.php';
 require '../vendor/autoload.php';
 require 'dbConnect.php';
+
 
 $pdoManager = new DBManager('nwsnight');
 $pdo = $pdoManager->getPDO();
 
-error_reporting(0);
-ini_set('display_errors', 0);
+// error_reporting(0);
+// ini_set('display_errors', 0);
 
 class UserRegistration
 {

@@ -1,6 +1,6 @@
 <?php 
-error_reporting(0);
-ini_set('display_errors', 0);
+// error_reporting(0);
+// ini_set('display_errors', 0);
 
 require_once 'methodes/dbConnect.php';
 require_once 'methodes/visitorCounter.php';
@@ -18,7 +18,6 @@ require_once 'methodes/closingInfo.php';
         href="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
     <link rel="stylesheet" href="./css/global.css"dgb:  />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,7 +32,6 @@ require_once 'methodes/closingInfo.php';
     <script src="js/script.js" defer></script>
 
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" defer></script>
-    <script src="http://threejs.org/examples/js/libs/stats.min.js" defer></script>
     <link rel="shortcut icon" href="img/logo_1.webp" type="image/x-icon">
     <title>La Nuit de la NWS - Inscription</title>
 </head>

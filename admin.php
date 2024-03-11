@@ -14,6 +14,7 @@ if (isset($_SESSION['username'])) {
         <link rel="stylesheet" href="css/admin.css">
         <link rel="stylesheet" href="css/navbar.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <script src="js/envoidonnees.js" defer></script>
     </head>
     <body>
         <div class="navbar">
@@ -57,9 +58,11 @@ if (isset($_SESSION['username'])) {
                 <input type="submit" value="Ouvrir les inscriptions" class="custom-button-open">
                 <?php } 
                 ?>
+                </form>
+            <button id="bouton-envoi">Envoyer Données</button>
         </div>
             
-        </form>
+        
         <div class="container tableau">
             <div class="table-responsive">
                 <table>
