@@ -20,8 +20,7 @@ $sheet->setCellValue('F1', 'Poste');
 $sheet->setCellValue('G1', 'Date d\'inscription');
 $sheet->setCellValue('H1', 'Photo');
 
-
-$sql = "SELECT * FROM registrationgasp";
+$sql = "SELECT * FROM registrationgasp WHERE suppr != 1 OR suppr IS NULL";
 $stmt = $pdo->prepare($sql);
 $stmt->execute();
 $result = $stmt->fetchAll(PDO::FETCH_ASSOC);

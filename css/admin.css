@@ -20,10 +20,8 @@ h1 {
     padding: 10px 20px; /* Espacement intérieur */
 }
 
-
-
 .container {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 20px auto;
   padding: 20px;
   background-color: #fff;

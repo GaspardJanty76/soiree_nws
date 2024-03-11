@@ -121,7 +121,7 @@ require_once 'methodes/closingInfo.php';
                     <img src="img/logo_6.webp" class="partenaire-logo">
                 </a>
                 <a href="https://ocean-communication.com/" target="_blank">
-                    <img src="img/logo_7.png" class="partenaire-logo">
+                    <img src="img/logo_7.webp" class="partenaire-logo citizens">
                 </a>
                 <a href="https://www.devolis.com/" target="_blank">
                     <img src="img/logo_8.webp" class="partenaire-logo">
@@ -129,9 +129,9 @@ require_once 'methodes/closingInfo.php';
                 <a href="https://www.lemasonn.com/" target="_blank">
                     <img src="img/logo_9.webp" class="partenaire-logo">
                 </a>
-                <a href="https://www.metropole-rouen-normandie.fr/" target="_blank">
+                <!-- <a href="https://www.metropole-rouen-normandie.fr/" target="_blank">
                     <img src="img/logo_15.png" class="partenaire-logo metropole">
-                </a>
+                </a> -->
             </div>
             <div class="partenaires-logos">
                 <a href="https://nachos.fr/" target="_blank">
@@ -233,9 +233,11 @@ require_once 'methodes/closingInfo.php';
                 <?php
         } else {
         ?>
-                    <h3>
-                        Les inscriptions sont closes
-                    </h3>
+                    <p class="inscription-ferme">
+                        Les inscriptions sont désormais closes. <br>
+                        Nous vous informons qu'aucune nouvelle inscription ne peut être acceptée, <br>
+                        car toutes les places ont été attribuées.
+                    </p>
         <?php
         }
         ?>

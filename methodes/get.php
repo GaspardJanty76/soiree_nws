@@ -3,7 +3,8 @@ error_reporting(0);
 ini_set('display_errors', 0);
 session_start();
 
-if (isset($_SESSION['username'])) {
+    // Requête SQL pour sélectionner toutes les colonnes de la table "inscrit" sauf celles où suppr est égal à 1
+    $sql = "SELECT * FROM registrationgasp WHERE suppr != 1 OR suppr IS NULL";
 
     require_once 'dbConnect.php';
     $pdoManager = new DBManager('nwsnight');
@@ -46,5 +47,5 @@ if (isset($_SESSION['username'])) {
         // En cas d'erreur de connexion, afficher l'erreur
         echo "Erreur de connexion à la base de données: " . $e->getMessage();
     }
-}
+
 ?>

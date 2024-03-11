@@ -366,6 +366,7 @@
 
 .partenaires-logos {
   display: flex;
+  align-items: center;
   gap: 4rem;
   margin-top: 30px;
 }
@@ -552,6 +553,11 @@ h2 {
 .label-icone i {
   font-size: 20px;
   color: white;
+}
+
+.inscription-ferme {
+  display: flex;
+  text-align: center;
 }
 
 @media only screen and (max-width: 1086px) {

@@ -69,24 +69,31 @@ class UserRegistration
     private function sendConfirmationEmail($to, $firstname)
     {
         $subject = 'Confirmation d\'inscription à la Nuit de la NWS';
-        $message = "Cher(e) $firstname,
-        Nous vous confirmons votre inscription à la Nuit de la Normandie Web School.
-
-        Cette soirée d'échanges entre l'école et les professionnels promet des opportunités de collaborations innovantes.
-        
-        Nous attendons votre venu avec enthousiasme pour partager une soirée mémorable.
-        
-        Lieu : 
+    
+        // Début de la balise div pour limiter la largeur du contenu de l'e-mail
+        $message = '<div style="width: 600px;">';
+    
+        $message .= "Cher(e) $firstname,<br>
+        Nous vous confirmons votre inscription à la Nuit de la NWS.<br>
+        <br>
+        Cette soirée d'échanges entre l'école et les professionnels promet des opportunités de collaborations innovantes.<br>
+        Nous attendons votre venu avec enthousiasme pour partager une soirée mémorable.<br>
+        <br>
+        <strong>Lieu : </strong><br>
         Là où l'école a fait ses premiers pas, nous nous retrouverons à Seine Innopolis
-        72 Rue de la République, Le Petit-Quevilly
-        
-        Date : 
-        18 avril, 18h30
-        
-        Cordialement,
-        
-        La Normandie Web School";
-        
+        72 Rue de la République, Le Petit-Quevilly<br>
+        <br>
+        <strong>Date : </strong><br>
+        18 avril, 18h30<br>
+        En cas d'annulation de votre participation , le nombre de places étant limité,  veuillez contacter Bleuenn GARRY à l'adresse b.garry@normandiewebschool.fr pour annuler votre inscription.<br>
+        <br>
+        Cordialement,<br>
+        <br>
+        <strong>La Normandie Web School</strong>";
+    
+        // Fin de la balise div
+        $message .= '</div>';
+    
         $transport = (new Swift_SmtpTransport('smtp.gmail.com', 587, 'tls'))
             ->setUsername('partenairesnws@normandiewebschool.fr')
             ->setPassword('oBLPejhBnatRTAHkRxGG');
@@ -94,9 +101,9 @@ class UserRegistration
         $mailer = new Swift_Mailer($transport);
     
         $message = (new Swift_Message($subject))
-        ->setFrom(['noreply@nws.com' => 'NWS-La nuit de la NWS'])
-        ->setTo([$to])
-        ->setBody($message);
+            ->setFrom(['noreply@nws.com' => 'NWS-La nuit de la NWS'])
+            ->setTo([$to])
+            ->setBody($message, 'text/html'); // Indiquer que le message est au format HTML
     
         $result = $mailer->send($message);
     
@@ -105,8 +112,7 @@ class UserRegistration
         } else {
             echo 'Erreur lors de l\'envoi de l\'e-mail de confirmation.';
         }
-    }
-
+    }    
 
 
     private function generateQRCode($firstname, $lastname)
